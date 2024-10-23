@@ -1,7 +1,15 @@
 import React from "react";
 
 const AboutPage = () => {
-  return <div className="min-h-[100vh] pt-16">AboutPage</div>;
+  return (
+    <main>
+      <section className="flex justify-center items-center">
+        <div className="wrapper flex items-center gap-32 pt-48 pb-32">
+          AboutPage
+        </div>
+      </section>
+    </main>
+  );
 };
 
 export default AboutPage;

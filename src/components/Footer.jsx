@@ -1,7 +1,11 @@
 import React from "react";
 
 const Footer = () => {
-  return <footer className="w-[100vw] bg-neutral-400 py-4">Footer</footer>;
+  return (
+    <footer className="border-t border-t-white border-opacity-20">
+      <div className="wrapper">Footer</div>
+    </footer>
+  );
 };
 
 export default Footer;

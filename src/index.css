@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .button {
     @apply flex items-center justify-center gap-2 w-fit min-w-[160px] px-8 py-4 text-white font-medium bg-red-500 rounded-lg transition-all relative z-10 cursor-pointer;
   }
   .button:hover {
     @apply bg-red-700;
   }
-}
+} */
 
 :root {
   color-scheme: dark;
@@ -26,11 +26,9 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  margin: 0;
 }
 
 li {
@@ -85,6 +83,11 @@ button {
 }
 
 .wrapper {
-  width: min(100% - 64px, 1920px);
+  width: min(100% - 192px, 1920px);
   margin-inline: auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
 }
