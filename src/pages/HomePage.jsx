@@ -16,6 +16,31 @@ const HomePage = () => {
             </p>
           </div>
         </section>
+        <section>
+          <div className="wrapper">
+            <div className="flex items-center justify-center gap-2">
+              <button className="text-xl text-black bg-white px-4 py-2 rounded-xl">Todas</button>
+              <ul className="flex items-center text-xl border border-neutral-700 rounded-xl">
+                <li className="flex items-center gap-2 px-5 py-2">
+                  <a href="" className="hover:text-neutral-400">Categoria 1</a>
+                </li>
+                <li className="flex items-center gap-2 px-5 py-2">
+                  <a href="" className="hover:text-neutral-400">Categoria 2</a>
+                </li>
+                <li className="flex items-center gap-2 px-5 py-2">
+                  <a href="" className="hover:text-neutral-400">Categoria 3 </a>
+                </li>
+                <li className="flex items-center gap-2 px-5 py-2">
+                  <a href="" className="hover:text-neutral-400">Categoria 4</a>
+                </li>
+                <li className="flex items-center gap-2 px-5 py-2">
+                  <a href="" className="hover:text-neutral-400">Categoria 5</a>
+                </li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </section>
       </main>
     </>
   );
