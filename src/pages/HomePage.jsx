@@ -3,11 +3,13 @@ import ToolImage from "../assets/react.svg";
 
 const HomePage = () => {
   const FeaturedTool = ({ image, category, title }) => (
-    <div className="">
-      <img src={image} />
-      <div className="">
-        <span>{title}</span>
-        <span>{category}</span>
+    <div className="bg-neutral-900 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in">
+      <div className="flex items-center justify-center bg-neutral-800 rounded-b-xl">
+        <img src={image} className="w-2/3 p-16" />
+      </div>
+      <div className="flex flex-col gap-4 p-4">
+        <span className="text-2xl font-bold">{title}</span>
+        <span className="w-fit text-sm font-semibold text-black bg-white px-3 py-1 rounded-full">{category}</span>
       </div>
     </div>
   );
@@ -84,7 +86,7 @@ const HomePage = () => {
                 </li>
               </ul>
             </div>
-            <div className="grid grid-cols-4 gap-4 mb-16">
+            <div className="grid grid-cols-4 gap-8 mb-16">
               {featuredTools.map((post, index) => (
                 <FeaturedTool
                   key={index}
