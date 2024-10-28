@@ -17,23 +17,23 @@ const HomePage = () => {
   const featuredTools = [
     {
       image: ToolImage,
-      category: "Categoria 1",
-      title: "Ferramenta 1",
+      category: "Category 1",
+      title: "Tool 1",
     },
     {
       image: ToolImage,
-      category: "Categoria 2",
-      title: "Ferramenta 2",
+      category: "Category 2",
+      title: "Tool 2",
     },
     {
       image: ToolImage,
-      category: "Categoria 3",
-      title: "Ferramenta 3",
+      category: "Category 3",
+      title: "Tool 3",
     },
     {
       image: ToolImage,
-      category: "Categoria 4",
-      title: "Ferramenta 4",
+      category: "Category 4",
+      title: "Tool 4",
     },
   ];
 
@@ -56,32 +56,32 @@ const HomePage = () => {
           <div className="wrapper">
             <div className="flex items-center justify-center gap-2 mb-8">
               <button className="text-xl text-black bg-white px-4 py-2 rounded-xl">
-                Todas
+                All
               </button>
               <ul className="flex items-center text-xl border border-neutral-700 rounded-xl">
                 <li className="flex items-center gap-2 px-5 py-2">
                   <a href="" className="hover:text-neutral-400">
-                    Categoria 1
+                    Category 1
                   </a>
                 </li>
                 <li className="flex items-center gap-2 px-5 py-2">
                   <a href="" className="hover:text-neutral-400">
-                    Categoria 2
+                    Category 2
                   </a>
                 </li>
                 <li className="flex items-center gap-2 px-5 py-2">
                   <a href="" className="hover:text-neutral-400">
-                    Categoria 3{" "}
+                    Category 3{" "}
                   </a>
                 </li>
                 <li className="flex items-center gap-2 px-5 py-2">
                   <a href="" className="hover:text-neutral-400">
-                    Categoria 4
+                    Category 4
                   </a>
                 </li>
                 <li className="flex items-center gap-2 px-5 py-2">
                   <a href="" className="hover:text-neutral-400">
-                    Categoria 5
+                    Category 5
                   </a>
                 </li>
               </ul>
