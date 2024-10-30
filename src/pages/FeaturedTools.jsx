@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ToolImage from "../assets/react.svg";
+import Filter from "../components/Filter";
 
 const FeaturedTools = () => {
   const FeaturedTool = ({ image, category, title }) => (
@@ -61,7 +62,8 @@ const FeaturedTools = () => {
   ];
 
   return (
-    <>
+    <section className="wrapper">
+      <Filter />
       <div className="grid grid-cols-4 gap-8 mb-16">
         {featuredTools.map((post, index) => (
           <FeaturedTool
@@ -77,7 +79,7 @@ const FeaturedTools = () => {
         <span>1 of 2</span>
         <Link to="/2">Next{">"}</Link>
       </div>
-    </>
+    </section>
   );
 };
 
