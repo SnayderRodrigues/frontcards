@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import HomePage from "./pages/HomePage.jsx";
 import ErrorPage from "./pages/ErrorPage";
 import AboutPage from "./pages/AboutPage.jsx";
+import FeaturedToolsPage2 from "./pages/FeaturedToolsPage2.jsx";
+import FeaturedTools from "./pages/FeaturedTools.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: <FeaturedTools />,
+      },
+      {
+        path: "/2",
+        element: <FeaturedToolsPage2 />,
       },
       {
         path: "/about",
