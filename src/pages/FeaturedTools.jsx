@@ -77,7 +77,7 @@ const FeaturedTools = () => {
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link className="text-neutral-400 cursor-default">{"<"}Previous</Link>
+        <Link className="text-neutral-600 cursor-default">{"<"}Previous</Link>
         <span>1 of 2</span>
         <Link to="/2" onClick={scrollToTop}>
           Next{">"}

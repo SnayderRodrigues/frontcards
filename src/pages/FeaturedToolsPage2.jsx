@@ -81,7 +81,7 @@ const FeaturedToolsPage2 = () => {
           {"<"}Previous
         </Link>
         <span>2 of 2</span>
-        <Link className="text-neutral-400 cursor-default">Next{">"}</Link>
+        <Link className="text-neutral-600 cursor-default">Next{">"}</Link>
       </div>
     </section>
   );
