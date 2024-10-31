@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ToolImage from "../assets/react.svg";
+import ToolImage from "../assets/vite.svg";
 import Filter from "../components/Filter";
 
 const FeaturedToolsPage2 = () => {
+  const scrollToTop = () => window.scrollTo({ top: 0 });
+
   const FeaturedTool = ({ image, category, title }) => (
-    <div className="bg-neutral-900 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
+    <div className="bg-neutral-950 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
       <div className="flex items-center justify-center bg-neutral-800 rounded-b-xl">
         <img src={image} className="w-2/3 p-16" />
       </div>
@@ -21,43 +23,43 @@ const FeaturedToolsPage2 = () => {
   const featuredTools = [
     {
       image: ToolImage,
-      category: "Category 1",
-      title: "Tool 1",
+      category: "Category",
+      title: "Tool 9",
     },
     {
       image: ToolImage,
-      category: "Category 2",
-      title: "Tool 2",
+      category: "Category",
+      title: "Tool 10",
     },
     {
       image: ToolImage,
-      category: "Category 3",
-      title: "Tool 3",
+      category: "Category",
+      title: "Tool 11",
     },
     {
       image: ToolImage,
-      category: "Category 4",
-      title: "Tool 4",
+      category: "Category",
+      title: "Tool 12",
     },
     {
       image: ToolImage,
-      category: "Category 5",
-      title: "Tool 5",
+      category: "Category",
+      title: "Tool 13",
     },
     {
       image: ToolImage,
-      category: "Category 6",
-      title: "Tool 6",
+      category: "Category",
+      title: "Tool 14",
     },
     {
       image: ToolImage,
-      category: "Category 7",
-      title: "Tool 7",
+      category: "Category",
+      title: "Tool 15",
     },
     {
       image: ToolImage,
-      category: "Category 8",
-      title: "Tool 8",
+      category: "Category",
+      title: "Tool 16",
     },
   ];
 
@@ -75,9 +77,11 @@ const FeaturedToolsPage2 = () => {
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link to="/">{"<"}Previous</Link>
+        <Link to="/" onClick={scrollToTop}>
+          {"<"}Previous
+        </Link>
         <span>2 of 2</span>
-        <Link>Next{">"}</Link>
+        <Link className="text-neutral-400 cursor-default">Next{">"}</Link>
       </div>
     </section>
   );

@@ -1,41 +1,44 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Filter = () => {
   return (
     <div className="flex items-center justify-center gap-2 mb-8">
-      <Link to="/" className="text-xl text-black bg-white px-4 py-2 rounded-xl">
+      <Link
+        to="/"
+        className="text-xl text-black bg-white px-4 py-2 rounded-xl hover:bg-neutral-300 transition-colors"
+      >
         All
       </Link>
       <ul className="flex items-center text-xl border border-neutral-700 rounded-xl">
         <li className="flex items-center gap-2 px-5 py-2">
-          <a href="" className="hover:text-neutral-400">
+          <a href="" className="hover:text-neutral-400 transition-colors">
             Category 1
           </a>
         </li>
         <li className="flex items-center gap-2 px-5 py-2">
-          <a href="" className="hover:text-neutral-400">
+          <a href="" className="hover:text-neutral-400 transition-colors">
             Category 2
           </a>
         </li>
         <li className="flex items-center gap-2 px-5 py-2">
-          <a href="" className="hover:text-neutral-400">
+          <a href="" className="hover:text-neutral-400 transition-colors">
             Category 3{" "}
           </a>
         </li>
         <li className="flex items-center gap-2 px-5 py-2">
-          <a href="" className="hover:text-neutral-400">
+          <a href="" className="hover:text-neutral-400 transition-colors">
             Category 4
           </a>
         </li>
         <li className="flex items-center gap-2 px-5 py-2">
-          <a href="" className="hover:text-neutral-400">
+          <a href="" className="hover:text-neutral-400 transition-colors">
             Category 5
           </a>
         </li>
       </ul>
     </div>
   );
-}
+};
 
-export default Filter
+export default Filter;

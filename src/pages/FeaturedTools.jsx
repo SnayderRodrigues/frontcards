@@ -4,8 +4,10 @@ import ToolImage from "../assets/react.svg";
 import Filter from "../components/Filter";
 
 const FeaturedTools = () => {
+  const scrollToTop = () => window.scrollTo({ top: 0 });
+
   const FeaturedTool = ({ image, category, title }) => (
-    <div className="bg-neutral-900 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
+    <div className="bg-neutral-950 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
       <div className="flex items-center justify-center bg-neutral-800 rounded-b-xl">
         <img src={image} className="w-2/3 p-16" />
       </div>
@@ -21,42 +23,42 @@ const FeaturedTools = () => {
   const featuredTools = [
     {
       image: ToolImage,
-      category: "Category 1",
+      category: "Category",
       title: "Tool 1",
     },
     {
       image: ToolImage,
-      category: "Category 2",
+      category: "Category",
       title: "Tool 2",
     },
     {
       image: ToolImage,
-      category: "Category 3",
+      category: "Category",
       title: "Tool 3",
     },
     {
       image: ToolImage,
-      category: "Category 4",
+      category: "Category",
       title: "Tool 4",
     },
     {
       image: ToolImage,
-      category: "Category 5",
+      category: "Category",
       title: "Tool 5",
     },
     {
       image: ToolImage,
-      category: "Category 6",
+      category: "Category",
       title: "Tool 6",
     },
     {
       image: ToolImage,
-      category: "Category 7",
+      category: "Category",
       title: "Tool 7",
     },
     {
       image: ToolImage,
-      category: "Category 8",
+      category: "Category",
       title: "Tool 8",
     },
   ];
@@ -75,9 +77,11 @@ const FeaturedTools = () => {
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link>{"<"}Previous</Link>
+        <Link className="text-neutral-400 cursor-default">{"<"}Previous</Link>
         <span>1 of 2</span>
-        <Link to="/2">Next{">"}</Link>
+        <Link to="/2" onClick={scrollToTop}>
+          Next{">"}
+        </Link>
       </div>
     </section>
   );

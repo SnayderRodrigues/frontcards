@@ -6,18 +6,30 @@ const Footer = () => {
     <footer className="border-t border-t-white border-opacity-20">
       <div className="wrapper flex justify-between pt-16 pb-8">
         <div className="flex flex-col justify-between">
-          <Link to="/" className="text-4xl font-bold uppercase">
+          <a href="/" className="text-4xl font-bold uppercase">
             Frontend Tools
-          </Link>
+          </a>
           <div>
             Coded by{" "}
-            <a href="https://snayderrodrigues.vercel.app/" target="_blank">Snayder Rodrigues</a>
+            <a
+              href="https://snayderrodrigues.vercel.app/"
+              target="_blank"
+              className="font-semibold text-neutral-400 hover:text-white transition-colors"
+            >
+              Snayder Rodrigues
+            </a>
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <Link to="/about" className="w-fit">About</Link>
-          <Link to="" className="w-fit">Submit a Resource</Link>
-          <Link to="" className="w-fit">Legal</Link>
+          <Link to="/about" className="w-fit">
+            About
+          </Link>
+          <Link to="" className="w-fit">
+            Submit a Resource
+          </Link>
+          <Link to="" className="w-fit">
+            Legal
+          </Link>
         </div>
       </div>
     </footer>
