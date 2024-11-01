@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToTop = () => window.scrollTo({ top: 0 });
+
   return (
     <footer className="border-t border-t-white border-opacity-20">
       <div className="wrapper flex justify-between pt-16 pb-8">
@@ -27,6 +29,7 @@ const Footer = () => {
           <Link
             to="/about"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"
+            onClick={scrollToTop}
           >
             About
           </Link>

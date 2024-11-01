@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ToolImage from "../assets/vite.svg";
+import ToolImage from "../assets/react.svg";
 import Filter from "../components/Filter";
 
-const FeaturedToolsPage2 = () => {
+const FeaturedTools = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   const FeaturedTool = ({ image, category, title }) => (
@@ -24,42 +24,42 @@ const FeaturedToolsPage2 = () => {
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 9",
+      title: "Tool 1",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 10",
+      title: "Tool 2",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 11",
+      title: "Tool 3",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 12",
+      title: "Tool 4",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 13",
+      title: "Tool 5",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 14",
+      title: "Tool 6",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 15",
+      title: "Tool 7",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 16",
+      title: "Tool 8",
     },
   ];
 
@@ -77,14 +77,14 @@ const FeaturedToolsPage2 = () => {
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link to="/" onClick={scrollToTop}>
-          {"<"}Previous
+        <Link className="text-neutral-600 cursor-default">&lt;Previous</Link>
+        <span>1 of 2</span>
+        <Link to="/2" className="hover:text-neutral-400" onClick={scrollToTop}>
+          Next&gt;
         </Link>
-        <span>2 of 2</span>
-        <Link className="text-neutral-600 cursor-default">Next{">"}</Link>
       </div>
     </section>
   );
 };
 
-export default FeaturedToolsPage2;
+export default FeaturedTools;

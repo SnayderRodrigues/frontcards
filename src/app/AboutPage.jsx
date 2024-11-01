@@ -5,11 +5,29 @@ const AboutPage = () => {
   return (
     <>
       <section className="flex justify-center items-center">
-        <div className="wrapper flex justify-between gap-32 pt-48 pb-32">
+        <div className="wrapper flex justify-between gap-32 pt-48">
           <h1 className="text-6xl font-bold uppercase">
             About <br />{" "}
             <span className="text-neutral-400">Frontend Tools</span>
           </h1>
+          <div className="flex flex-col gap-8 text-2xl text-neutral-400 max-w-[60ch]">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              voluptatibus minima fuga ipsa harum consectetur iste sunt. Officia
+              ab explicabo, facilis ut ad dolore error quo quas commodi eaque
+              quidem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              voluptatibus minima fuga ipsa harum consectetur iste sunt. Officia
+              ab explicabo, facilis ut ad dolore error quo quas commodi eaque
+              quidem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex justify-center items-center">
+        <div className="wrapper flex items-center justify-between gap-32 pt-48 pb-32">
           <div className="flex flex-col gap-8 text-2xl text-neutral-400 max-w-[60ch]">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -30,24 +48,6 @@ const AboutPage = () => {
                 <span>snayderrodrigues@gmail.com</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex justify-center items-center">
-        <div className="wrapper flex items-center justify-between gap-32 pt-48 pb-32">
-          <div className="flex flex-col gap-8 text-2xl text-neutral-400 max-w-[60ch]">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              voluptatibus minima fuga ipsa harum consectetur iste sunt. Officia
-              ab explicabo, facilis ut ad dolore error quo quas commodi eaque
-              quidem.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              voluptatibus minima fuga ipsa harum consectetur iste sunt. Officia
-              ab explicabo, facilis ut ad dolore error quo quas commodi eaque
-              quidem.
-            </p>
           </div>
           <img
             src={AuthorImage}

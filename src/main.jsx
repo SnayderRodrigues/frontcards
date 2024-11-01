@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import ErrorPage from "./pages/ErrorPage";
-import AboutPage from "./pages/AboutPage.jsx";
-import FeaturedToolsPage2 from "./pages/FeaturedToolsPage2.jsx";
-import FeaturedTools from "./pages/FeaturedTools.jsx";
+import ErrorPage from "./app/ErrorPage";
+import AboutPage from "./app/AboutPage.jsx";
+import FeaturedToolsPage2 from "./app/FeaturedToolsPage2.jsx";
+import FeaturedTools from "./app/FeaturedTools.jsx";
 
 const router = createBrowserRouter([
   {

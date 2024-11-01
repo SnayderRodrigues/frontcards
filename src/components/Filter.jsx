@@ -23,7 +23,7 @@ const Filter = () => {
         </li>
         <li className="flex items-center gap-2 px-5 py-2">
           <a href="" className="hover:text-neutral-400 transition-colors">
-            Category 3{" "}
+            Category 3
           </a>
         </li>
         <li className="flex items-center gap-2 px-5 py-2">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ToolImage from "../assets/react.svg";
+import ToolImage from "../assets/vite.svg";
 import Filter from "../components/Filter";
 
-const FeaturedTools = () => {
+const FeaturedToolsPage2 = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   const FeaturedTool = ({ image, category, title }) => (
@@ -24,42 +24,42 @@ const FeaturedTools = () => {
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 1",
+      title: "Tool 9",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 2",
+      title: "Tool 10",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 3",
+      title: "Tool 11",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 4",
+      title: "Tool 12",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 5",
+      title: "Tool 13",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 6",
+      title: "Tool 14",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 7",
+      title: "Tool 15",
     },
     {
       image: ToolImage,
       category: "Category",
-      title: "Tool 8",
+      title: "Tool 16",
     },
   ];
 
@@ -77,14 +77,14 @@ const FeaturedTools = () => {
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link className="text-neutral-600 cursor-default">{"<"}Previous</Link>
-        <span>1 of 2</span>
-        <Link to="/2" onClick={scrollToTop}>
-          Next{">"}
+        <Link to="/" className="hover:text-neutral-400" onClick={scrollToTop}>
+          &lt;Previous
         </Link>
+        <span>2 of 2</span>
+        <Link className="text-neutral-600 cursor-default">Next&gt;</Link>
       </div>
     </section>
   );
 };
 
-export default FeaturedTools;
+export default FeaturedToolsPage2;
