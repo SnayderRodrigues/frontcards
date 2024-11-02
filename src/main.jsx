@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import "./index.css";
 import ErrorPage from "./app/ErrorPage";
 import AboutPage from "./app/AboutPage.jsx";
-import FeaturedToolsPage2 from "./app/FeaturedToolsPage2.jsx";
 import FeaturedTools from "./app/FeaturedTools.jsx";
 
 const router = createBrowserRouter([
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <FeaturedTools />,
-      },
-      {
-        path: "/2",
-        element: <FeaturedToolsPage2 />,
       },
       {
         path: "/about",
