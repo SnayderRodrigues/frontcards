@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import toolsData from "../data/toolsData";
-import Filter from "../components/Filter";
-import ToolCard from "../components/ToolCard";
+import toolsData from "../../data/toolsData.js";
+import Filter from "../../components/Filter.jsx";
+import Card from "../../components/Card.jsx";
 
 const FeaturedTools = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
@@ -36,12 +36,12 @@ const FeaturedTools = () => {
       <Filter />
       <div className="grid grid-cols-4 gap-8 mb-16">
         {currentTools.map((tool) => (
-          <ToolCard key={tool.id} tool={tool} />
+          <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="flex justify-center gap-8 text-2xl mb-16">
+      <div className="flex justify-center gap-6 text-2xl mb-16">
         <Link
-          className={`transition-colors ${
+          className={`font-medium transition-colors ${
             currentPage === 1
               ? "text-neutral-600 cursor-default"
               : "text-white hover:text-neutral-400"
@@ -54,7 +54,7 @@ const FeaturedTools = () => {
           {currentPage} of {totalPages}
         </span>
         <Link
-          className={`transition-colors ${
+          className={`font-medium transition-colors ${
             currentPage === totalPages
               ? "text-neutral-600 cursor-default"
               : "text-white hover:text-neutral-400"

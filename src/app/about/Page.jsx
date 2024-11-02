@@ -1,5 +1,5 @@
 import React from "react";
-import AuthorImage from "../assets/react.svg";
+import AuthorImage from "../../assets/react.svg";
 
 const AboutPage = () => {
   return (
@@ -43,8 +43,8 @@ const AboutPage = () => {
             </p>
             <div className="text-base flex items-center gap-4">
               <img src={AuthorImage} alt="" />
-              <div className="flex flex-col">
-                <span className="text-white text-xl">Snayder Rodrigues</span>
+              <div className="flex flex-col text-2xl">
+                <span className="text-white">Snayder Rodrigues</span>
                 <span>snayderrodrigues@gmail.com</span>
               </div>
             </div>

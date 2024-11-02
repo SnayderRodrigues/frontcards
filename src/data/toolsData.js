@@ -1,5 +1,6 @@
 import ToolImage from "../assets/react.svg";
 import ToolImage2 from "../assets/vite.svg";
+import ToolImage3 from "../assets/tailwind.svg";
 
 const toolsData = [
   {
@@ -156,6 +157,54 @@ const toolsData = [
     id: 26,
     title: "Tool 26",
     image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 27,
+    title: "Tool 27",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 28,
+    title: "Tool 28",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 29,
+    title: "Tool 29",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 30,
+    title: "Tool 30",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 31,
+    title: "Tool 31",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 32,
+    title: "Tool 32",
+    image: ToolImage2,
+    category: "Category",
+  },
+  {
+    id: 33,
+    title: "Tool 33",
+    image: ToolImage3,
+    category: "Category",
+  },
+  {
+    id: 34,
+    title: "Tool 34",
+    image: ToolImage3,
     category: "Category",
   },
 ];

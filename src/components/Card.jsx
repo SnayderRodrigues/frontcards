@@ -1,9 +1,9 @@
 import React from "react";
 
-const ToolCard = ({ tool }) => {
+const Card = ({ tool }) => {
   return (
     <div className="bg-neutral-950 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
-      <div className="flex items-center justify-center bg-neutral-800 rounded-b-xl">
+      <div className="aspect-square flex items-center justify-center bg-neutral-800 rounded-b-xl">
         <img src={tool.image} alt={tool.title} className="w-2/3 p-16" />
       </div>
       <div className="flex flex-col gap-4 p-4">
@@ -16,4 +16,4 @@ const ToolCard = ({ tool }) => {
   );
 };
 
-export default ToolCard;
+export default Card;
