@@ -1,102 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import ToolImage from "../assets/react.svg";
 import toolsData from "../data/toolsData";
 import Filter from "../components/Filter";
+import ToolCard from "../components/ToolCard";
 
 const FeaturedTools = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
-  const ToolCard = ({ tool }) => {
-    return (
-      <div className="tool-card">
-        <img src={tool.image} alt={tool.title} />
-        <h2>{tool.title}</h2>
-        <p>{tool.description}</p>
-        <span>{tool.category}</span>
-      </div>
-    );
+  const itemsPerPage = 16;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const currentTools = toolsData.slice(startIndex, endIndex);
+
+  const totalPages = Math.ceil(toolsData.length / itemsPerPage);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage((prevPage) => prevPage + 1);
+      scrollToTop();
+    }
   };
 
-  // const FeaturedTool = ({ image, category, title }) => (
-  //   <div className="bg-neutral-950 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer">
-  //     <div className="flex items-center justify-center bg-neutral-800 rounded-b-xl">
-  //       <img src={image} className="w-2/3 p-16" />
-  //     </div>
-  //     <div className="flex flex-col gap-4 p-4">
-  //       <span className="text-2xl font-bold">{title}</span>
-  //       <span className="w-fit text-sm font-semibold text-black bg-white px-3 py-1 rounded-full">
-  //         {category}
-  //       </span>
-  //     </div>
-  //   </div>
-  // );
-
-  // const featuredTools = [
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 1",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 2",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 3",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 4",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 5",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 6",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 7",
-  //   },
-  //   {
-  //     image: ToolImage,
-  //     category: "Category",
-  //     title: "Tool 8",
-  //   },
-  // ];
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage((prevPage) => prevPage - 1);
+      scrollToTop();
+    }
+  };
 
   return (
     <section className="wrapper">
       <Filter />
-      {/* <div className="grid grid-cols-4 gap-8 mb-16">
-        {featuredTools.map((post, index) => (
-          <FeaturedTool
-            key={index}
-            image={post.image}
-            category={post.category}
-            title={post.title}
-          />
-        ))}
-      </div> */}
       <div className="grid grid-cols-4 gap-8 mb-16">
-        {toolsData.map((tool) => (
+        {currentTools.map((tool) => (
           <ToolCard key={tool.id} tool={tool} />
         ))}
       </div>
       <div className="flex justify-center gap-8 text-2xl mb-16">
-        <Link className="text-neutral-600 cursor-default">&lt;Previous</Link>
-        <span>1 of 2</span>
-        <Link to="/2" className="hover:text-neutral-400" onClick={scrollToTop}>
+        <Link
+          className={`transition-colors ${
+            currentPage === 1
+              ? "text-neutral-600 cursor-default"
+              : "text-white hover:text-neutral-400"
+          }`}
+          onClick={handlePrevPage}
+        >
+          &lt;Previous
+        </Link>
+        <span>
+          {currentPage} of {totalPages}
+        </span>
+        <Link
+          className={`transition-colors ${
+            currentPage === totalPages
+              ? "text-neutral-600 cursor-default"
+              : "text-white hover:text-neutral-400"
+          }`}
+          onClick={handleNextPage}
+        >
           Next&gt;
         </Link>
       </div>
