@@ -11,6 +11,7 @@ const ResourcesData = [
     slug: "tool-1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const ResourcesData = [
     slug: "tool-2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "",
   },
   {
     id: 3,

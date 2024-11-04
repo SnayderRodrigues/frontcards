@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Header = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
@@ -21,12 +22,10 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            to=""
-            className="bg-blue-700 px-6 py-4 rounded-lg hover:bg-blue-800 transition-colors"
-          >
-            Submit a Resource
-          </Link>
+          <Button
+            text="Submit a Resource"
+            href=""
+          />
         </div>
       </nav>
     </header>
