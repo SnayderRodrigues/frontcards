@@ -2,18 +2,20 @@ import ToolImage from "../assets/react.svg";
 import ToolImage2 from "../assets/vite.svg";
 import ToolImage3 from "../assets/tailwind.svg";
 
-const toolsData = [
+const ResourcesData = [
   {
     id: 1,
     title: "Tool 1",
     image: ToolImage,
     category: "Category",
+    slug: "tool-1",
   },
   {
     id: 2,
     title: "Tool 2",
     image: ToolImage,
     category: "Category",
+    slug: "tool-2",
   },
   {
     id: 3,
@@ -209,4 +211,4 @@ const toolsData = [
   },
 ];
 
-export default toolsData;
+export default ResourcesData;

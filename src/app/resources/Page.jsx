@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import toolsData from "../../data/toolsData.js";
+import resourcesData from "../../data/ResourcesData.js";
 import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
 
@@ -13,9 +13,9 @@ const FeaturedTools = () => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const currentTools = toolsData.slice(startIndex, endIndex);
+  const currentTools = resourcesData.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(toolsData.length / itemsPerPage);
+  const totalPages = Math.ceil(resourcesData.length / itemsPerPage);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
@@ -39,9 +39,9 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="flex justify-center gap-6 text-2xl mb-16">
+      <div className="flex items-center justify-center gap-6 text-2xl mb-16">
         <Link
-          className={`font-medium transition-colors ${
+          className={`font-semibold transition-colors px-5 py-2 border border-neutral-700 rounded-xl ${
             currentPage === 1
               ? "text-neutral-600 cursor-default"
               : "text-white hover:text-neutral-400"
@@ -54,7 +54,7 @@ const FeaturedTools = () => {
           {currentPage} of {totalPages}
         </span>
         <Link
-          className={`font-medium transition-colors ${
+          className={`font-semibold transition-colors px-5 py-2 border border-neutral-700 rounded-xl ${
             currentPage === totalPages
               ? "text-neutral-600 cursor-default"
               : "text-white hover:text-neutral-400"

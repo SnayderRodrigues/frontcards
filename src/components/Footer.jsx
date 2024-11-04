@@ -14,18 +14,18 @@ const Footer = () => {
           >
             Frontend Tools
           </a>
-          <div>
+          <div className="text-xl font-medium">
             Coded by{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="font-semibold text-neutral-400 hover:text-white transition-colors"
+              className="font-bold text-neutral-400 hover:text-white transition-colors"
             >
               Snayder Rodrigues
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 font-medium">
           <Link
             to="/about"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"

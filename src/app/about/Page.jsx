@@ -4,8 +4,8 @@ import AuthorImage from "../../assets/react.svg";
 const AboutPage = () => {
   return (
     <>
-      <section className="flex justify-center items-center">
-        <div className="wrapper flex justify-between gap-32 pt-48">
+      <section className="font-medium">
+        <div className="wrapper grid grid-cols-2 gap-32 pt-48">
           <h1 className="text-6xl font-bold uppercase">
             About <br />{" "}
             <span className="text-neutral-400">Frontend Tools</span>
@@ -26,8 +26,8 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center">
-        <div className="wrapper flex items-center justify-between gap-32 pt-48 pb-32">
+      <section className="font-medium">
+        <div className="wrapper grid grid-cols-2 gap-32 pt-48 pb-32">
           <div className="flex flex-col gap-8 text-2xl text-neutral-400 max-w-[60ch]">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -45,7 +45,7 @@ const AboutPage = () => {
               <img src={AuthorImage} alt="" />
               <div className="flex flex-col text-2xl">
                 <span className="text-white">Snayder Rodrigues</span>
-                <span>snayderrodrigues@gmail.com</span>
+                <span>Frontend Developer</span>
               </div>
             </div>
           </div>

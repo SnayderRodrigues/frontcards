@@ -6,14 +6,14 @@ const Header = () => {
 
   return (
     <header className="fixed z-50 w-full bg-neutral-950 border-b border-b-white border-opacity-20 items-center justify-center flex">
-      <nav className="wrapper flex justify-between items-center py-3">
+      <nav className="wrapper flex justify-between items-center py-4">
         <a
           href="/"
           className="text-3xl font-bold uppercase hover:text-neutral-400 transition-colors"
         >
           Frontend Tools
         </a>
-        <div className="flex items-center gap-8 text-xl">
+        <div className="flex items-center gap-8 text-xl font-medium">
           <Link
             to="/about"
             className="hover:text-neutral-400 transition-colors"
@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
           <Link
             to=""
-            className="bg-blue-700 px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
+            className="bg-blue-700 px-6 py-4 rounded-lg hover:bg-blue-800 transition-colors"
           >
             Submit a Resource
           </Link>

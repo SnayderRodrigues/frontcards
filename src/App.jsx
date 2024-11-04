@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Header />
       <main>
-        {location.pathname !== "/about" && <Hero />}
+        {location.pathname === "/" && <Hero />}
         <Outlet />
       </main>
       <Footer />
