@@ -18,18 +18,16 @@ const Resource = () => {
         &lt;Back
       </Link>
       <div className="grid grid-cols-2 items-center gap-32 mt-8">
-        <img
-          src={tool.image}
-          alt={tool.title}
-          className="w-full max-h-96 border-[4px] border-neutral-700 rounded-2xl"
-        />
+        <div className="aspect-square flex items-center justify-center border-[4px] border-neutral-700 rounded-2xl">
+          <img src={tool.image} alt={tool.title} className="w-2/3 p-16" />
+        </div>
         <div className="flex flex-col gap-4">
-            <h1 className="text-4xl font-bold">{tool.title}</h1>
-            <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-200 px-4 py-2 rounded-full">
-              {tool.category}
-            </span>
-            <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>
-            <Button text="Visit Site" href={tool.source} />
+          <h1 className="text-4xl font-bold">{tool.title}</h1>
+          <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-200 px-4 py-2 rounded-full">
+            {tool.category}
+          </span>
+          <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>
+          <Button text="Visit Site" href={tool.source} />
         </div>
       </div>
     </div>
