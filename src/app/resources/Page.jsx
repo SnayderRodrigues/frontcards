@@ -33,7 +33,11 @@ const FeaturedTools = () => {
 
   return (
     <section className="wrapper">
-      <Filter />
+      <Filter
+        totalPages={totalPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
       <div className="grid grid-cols-4 gap-8 mb-16">
         {currentTools.map((tool) => (
           <Card key={tool.id} tool={tool} />
