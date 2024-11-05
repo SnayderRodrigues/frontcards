@@ -14,27 +14,27 @@ const Filter = () => {
         <ul className="flex items-center text-xl border border-neutral-700 rounded-xl">
           <li className="flex items-center gap-2 px-5 py-2">
             <a href="" className="hover:text-neutral-400 transition-colors">
-              Category 1
+              Development
             </a>
           </li>
           <li className="flex items-center gap-2 px-5 py-2">
             <a href="" className="hover:text-neutral-400 transition-colors">
-              Category 2
+              Design
             </a>
           </li>
           <li className="flex items-center gap-2 px-5 py-2">
             <a href="" className="hover:text-neutral-400 transition-colors">
-              Category 3
+              Knowledge & Learning
             </a>
           </li>
           <li className="flex items-center gap-2 px-5 py-2">
             <a href="" className="hover:text-neutral-400 transition-colors">
-              Category 4
+              Editing
             </a>
           </li>
           <li className="flex items-center gap-2 px-5 py-2">
             <a href="" className="hover:text-neutral-400 transition-colors">
-              Category 5
+              Web Tool
             </a>
           </li>
         </ul>

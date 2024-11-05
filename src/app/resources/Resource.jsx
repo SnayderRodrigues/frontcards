@@ -29,7 +29,7 @@ const Resource = () => {
               {tool.category}
             </span>
             <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>
-            <Button text="View Site" href={tool.source} />
+            <Button text="Visit Site" href={tool.source} />
         </div>
       </div>
     </div>

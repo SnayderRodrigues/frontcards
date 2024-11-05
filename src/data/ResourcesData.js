@@ -1,222 +1,214 @@
-import ToolImage from "../assets/react.svg";
-import ToolImage2 from "../assets/vite.svg";
-import ToolImage3 from "../assets/tailwind.svg";
+import AdobePhotoshop from "../assets/adobe-photoshop.svg";
+import CodePen from "../assets/codepen.svg";
+import DailyDev from "../assets/dailydev.svg";
+import Dribbble from "../assets/dribbble.svg";
+import Figma from "../assets/figma.svg";
+import GithubCopilot from "../assets/github-copilot.svg";
+import Gsap from "../assets/greensock.svg";
+import Jest from "../assets/jest.svg";
+import Lighthouse from "../assets/lighthouse.svg";
+import Mdn from "../assets/mdn.svg";
+import Next from "../assets/nextjs.svg";
+import Prettier from "../assets/prettier.svg";
+import React from "../assets/react.svg";
+import Sass from "../assets/sass.svg";
+import StackOverflow from "../assets/stackoverflow.svg";
+import Storybook from "../assets/storybook.svg";
+import Tailwind from "../assets/tailwind.svg";
+import ThreeJs from "../assets/threejs.svg";
+import Vite from "../assets/vitejs.svg";
 
 const ResourcesData = [
   {
     id: 1,
-    title: "Tool 1",
-    image: ToolImage,
-    category: "Category",
-    slug: "tool-1",
+    title: "Figma",
+    image: Figma,
+    category: "Design",
+    slug: "figma",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "",
+    source: "https://www.figma.com/",
   },
   {
     id: 2,
-    title: "Tool 2",
-    image: ToolImage,
-    category: "Category",
-    slug: "tool-2",
+    title: "Vite",
+    image: Vite,
+    category: "Development",
+    slug: "vite",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "",
+    source: "https://vite.dev/",
   },
   {
     id: 3,
-    title: "Tool 3",
-    image: ToolImage,
-    category: "Category",
+    title: "Daily.dev",
+    image: DailyDev,
+    category: "Knowledge & Learning",
+    slug: "daily-dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://daily.dev/",
   },
   {
     id: 4,
-    title: "Tool 4",
-    image: ToolImage,
-    category: "Category",
+    title: "Adobe Photoshop",
+    image: AdobePhotoshop,
+    category: "Editing",
+    slug: "adobe-photoshop",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source:
+      "https://www.adobe.com/br/products/photoshop/landpa.html?sdid=29NMCFXM&mv=search&mv2=paidsearch&ef_id=Cj0KCQiA_qG5BhDTARIsAA0UHSIO2WH_4wvpK3eyRLLHxO5B-N8gdd7-yGaUqI56I0YBAebaGBu2MfYaAhx1EALw_wcB:G:s&s_kwcid=AL!3085!3!534509111647!e!!g!!adobe%20photoshop!188192502!10077842982&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSIO2WH_4wvpK3eyRLLHxO5B-N8gdd7-yGaUqI56I0YBAebaGBu2MfYaAhx1EALw_wcB",
   },
   {
     id: 5,
-    title: "Tool 5",
-    image: ToolImage,
-    category: "Category",
+    title: "MDN",
+    image: Mdn,
+    category: "Knowledge & Learning",
+    slug: "mdn",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://developer.mozilla.org/en-US/",
   },
   {
     id: 6,
-    title: "Tool 6",
-    image: ToolImage,
-    category: "Category",
+    title: "CodePen",
+    image: CodePen,
+    category: "Web Tool",
+    slug: "codepen",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://codepen.io/",
   },
   {
     id: 7,
-    title: "Tool 7",
-    image: ToolImage,
-    category: "Category",
+    title: "Dribbble",
+    image: Dribbble,
+    category: "Design",
+    slug: "dribbble",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://dribbble.com/",
   },
   {
     id: 8,
-    title: "Tool 8",
-    image: ToolImage,
-    category: "Category",
+    title: "GitHub Copilot",
+    image: GithubCopilot,
+    category: "Development",
+    slug: "github-copilot",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://github.com/features/copilot",
   },
   {
     id: 9,
-    title: "Tool 9",
-    image: ToolImage,
-    category: "Category",
+    title: "GSAP",
+    image: Gsap,
+    category: "Development",
+    slug: "gsap",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://gsap.com/",
   },
   {
     id: 10,
-    title: "Tool 10",
-    image: ToolImage,
-    category: "Category",
+    title: "Jest",
+    image: Jest,
+    category: "Development",
+    slug: "jest",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://jestjs.io/",
   },
   {
     id: 11,
-    title: "Tool 11",
-    image: ToolImage,
-    category: "Category",
+    title: "Lighthouse",
+    image: Lighthouse,
+    category: "Web Tool",
+    slug: "lighthouse",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://developer.chrome.com/docs/lighthouse/overview",
   },
   {
     id: 12,
-    title: "Tool 12",
-    image: ToolImage,
-    category: "Category",
+    title: "Next.JS",
+    image: Next,
+    category: "Development",
+    slug: "nextjs",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://nextjs.org/",
   },
   {
     id: 13,
-    title: "Tool 13",
-    image: ToolImage,
-    category: "Category",
+    title: "Prettier",
+    image: Prettier,
+    category: "Development",
+    slug: "prettier",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://prettier.io/",
   },
   {
     id: 14,
-    title: "Tool 14",
-    image: ToolImage,
-    category: "Category",
+    title: "React",
+    image: React,
+    category: "Development",
+    slug: "react",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://react.dev/",
   },
   {
     id: 15,
-    title: "Tool 15",
-    image: ToolImage,
-    category: "Category",
+    title: "Sass",
+    image: Sass,
+    category: "Development",
+    slug: "sass",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://sass-lang.com/",
   },
   {
     id: 16,
-    title: "Tool 16",
-    image: ToolImage,
-    category: "Category",
+    title: "Stack Overflow",
+    image: StackOverflow,
+    category: "Knowledge & Learning",
+    slug: "gsap",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://stackoverflow.com/",
   },
   {
     id: 17,
-    title: "Tool 17",
-    image: ToolImage2,
-    category: "Category",
+    title: "Storybook",
+    image: Storybook,
+    category: "Development",
+    slug: "storybook",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://storybook.js.org/",
   },
   {
     id: 18,
-    title: "Tool 18",
-    image: ToolImage2,
-    category: "Category",
+    title: "Tailwind CSS",
+    image: Tailwind,
+    category: "Development",
+    slug: "tailwindcss",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://tailwindcss.com/",
   },
   {
     id: 19,
-    title: "Tool 19",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 20,
-    title: "Tool 20",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 21,
-    title: "Tool 21",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 22,
-    title: "Tool 22",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 23,
-    title: "Tool 23",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 24,
-    title: "Tool 24",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 25,
-    title: "Tool 25",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 26,
-    title: "Tool 26",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 27,
-    title: "Tool 27",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 28,
-    title: "Tool 28",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 29,
-    title: "Tool 29",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 30,
-    title: "Tool 30",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 31,
-    title: "Tool 31",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 32,
-    title: "Tool 32",
-    image: ToolImage2,
-    category: "Category",
-  },
-  {
-    id: 33,
-    title: "Tool 33",
-    image: ToolImage3,
-    category: "Category",
-  },
-  {
-    id: 34,
-    title: "Tool 34",
-    image: ToolImage3,
-    category: "Category",
-    slug: "tool-34",
+    title: "Three.JS",
+    image: ThreeJs,
+    category: "Development",
+    slug: "trheejs",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://threejs.org/",
   },
 ];
 
