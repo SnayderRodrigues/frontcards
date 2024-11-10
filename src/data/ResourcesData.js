@@ -20,36 +20,6 @@ import Vite from "../assets/vitejs.svg";
 
 const ResourcesData = [
   {
-    id: 1,
-    title: "Figma",
-    image: Figma,
-    category: "Design",
-    slug: "figma",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "https://www.figma.com/",
-  },
-  {
-    id: 2,
-    title: "Vite",
-    image: Vite,
-    category: "Development",
-    slug: "vite",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "https://vite.dev/",
-  },
-  {
-    id: 3,
-    title: "Daily.dev",
-    image: DailyDev,
-    category: "Knowledge & Learning",
-    slug: "daily-dev",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "https://daily.dev/",
-  },
-  {
     id: 4,
     title: "Adobe Photoshop",
     image: AdobePhotoshop,
@@ -59,16 +29,6 @@ const ResourcesData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
     source:
       "https://www.adobe.com/br/products/photoshop/landpa.html?sdid=29NMCFXM&mv=search&mv2=paidsearch&ef_id=Cj0KCQiA_qG5BhDTARIsAA0UHSIO2WH_4wvpK3eyRLLHxO5B-N8gdd7-yGaUqI56I0YBAebaGBu2MfYaAhx1EALw_wcB:G:s&s_kwcid=AL!3085!3!534509111647!e!!g!!adobe%20photoshop!188192502!10077842982&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSIO2WH_4wvpK3eyRLLHxO5B-N8gdd7-yGaUqI56I0YBAebaGBu2MfYaAhx1EALw_wcB",
-  },
-  {
-    id: 5,
-    title: "MDN",
-    image: Mdn,
-    category: "Knowledge & Learning",
-    slug: "mdn",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
-    source: "https://developer.mozilla.org/en-US/",
   },
   {
     id: 6,
@@ -81,6 +41,16 @@ const ResourcesData = [
     source: "https://codepen.io/",
   },
   {
+    id: 3,
+    title: "Daily.dev",
+    image: DailyDev,
+    category: "Knowledge & Learning",
+    slug: "daily-dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://daily.dev/",
+  },
+  {
     id: 7,
     title: "Dribbble",
     image: Dribbble,
@@ -89,6 +59,16 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
     source: "https://dribbble.com/",
+  },
+  {
+    id: 1,
+    title: "Figma",
+    image: Figma,
+    category: "Design",
+    slug: "figma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://www.figma.com/",
   },
   {
     id: 8,
@@ -129,6 +109,16 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
     source: "https://developer.chrome.com/docs/lighthouse/overview",
+  },
+  {
+    id: 5,
+    title: "MDN",
+    image: Mdn,
+    category: "Knowledge & Learning",
+    slug: "mdn",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://developer.mozilla.org/en-US/",
   },
   {
     id: 12,
@@ -209,6 +199,16 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
     source: "https://threejs.org/",
+  },
+  {
+    id: 2,
+    title: "Vite",
+    image: Vite,
+    category: "Development",
+    slug: "vite",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae! Enim minus hic culpa earum in! Quibusdam voluptas tempore voluptatum, ratione dolorem ad neque itaque nisi. Quisquam soluta quasi doloribus!",
+    source: "https://vite.dev/",
   },
 ];
 

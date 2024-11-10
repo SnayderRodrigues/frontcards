@@ -18,7 +18,7 @@ const Resource = () => {
         &lt;Back
       </Link>
       <div className="grid grid-cols-2 items-center gap-32 mt-8">
-        <div className="aspect-square flex items-center justify-center border-[4px] border-neutral-700 rounded-2xl">
+        <div className="aspect-square flex items-center justify-center bg-[#f7f7f7] border-[4px] border-neutral-700 rounded-2xl">
           <img src={tool.image} alt={tool.title} className="w-2/3 p-16" />
         </div>
         <div className="flex flex-col gap-4">
