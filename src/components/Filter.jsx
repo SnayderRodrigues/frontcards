@@ -12,8 +12,8 @@ const Filter = ({
     "Development",
     "Design",
     "Knowledge & Learning",
-    "Editing",
-    "Web Tool",
+    "Creators",
+    "Tools",
   ];
 
   const handleCategoryClick = (category) => {

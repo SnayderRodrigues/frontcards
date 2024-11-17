@@ -33,12 +33,13 @@ const Footer = () => {
           >
             About
           </Link>
-          <Link
-            to=""
+          <a
+            href=""
+            target="_blank"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"
           >
             Submit a Resource
-          </Link>
+          </a>
           <Link
             to="/legal"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"

@@ -23,7 +23,7 @@ const Resource = () => {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{tool.title}</h1>
-          <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-200 px-4 py-2 rounded-full">
+          <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-200 px-4 py-2 mb-4 rounded-full">
             {tool.category}
           </span>
           <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>

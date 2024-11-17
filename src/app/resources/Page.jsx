@@ -10,13 +10,11 @@ const FeaturedTools = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
-  const itemsPerPage = 8;
+  const itemsPerPage = 16;
 
-  const filteredTools =
-    selectedCategory === "All"
-      ? resourcesData
-      : resourcesData.filter((tool) => tool.category === selectedCategory);
-
+  const filteredTools = resourcesData.filter((tool) =>
+    selectedCategory === "All" ? true : tool.category.includes(selectedCategory)
+  );
   const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;

@@ -11,7 +11,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="bg-neutral-900 border-4 rounded-xl border-neutral-600 border-opacity-15 overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in cursor-pointer"
+      className="w-full relative bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600 after:content-['More_Info'] after:block after:absolute after:top-2 after:right-2 after:z-10 after:text-sm after:bg-blue-700 after:p-2 after:rounded-lg after:opacity-0 after:transition-opacity hover:after:opacity-100"
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-[#f7f7f7] rounded-b-xl">
@@ -19,6 +19,7 @@ const Card = ({ tool }) => {
       </div>
       <div className="flex flex-col gap-4 p-4">
         <span className="text-2xl font-bold">{tool.title}</span>
+        <span className="text-neutral-400">#{tool.tags}</span>
         <span className="w-fit text-sm font-semibold text-white bg-neutral-700 px-4 py-2 rounded-full">
           {tool.category}
         </span>
