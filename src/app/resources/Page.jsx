@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import resourcesData from "../../data/ResourcesData.js";
 import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
@@ -22,20 +21,6 @@ const FeaturedTools = () => {
 
   const currentTools = filteredTools.slice(startIndex, endIndex);
 
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage((prevPage) => prevPage + 1);
-      scrollToTop();
-    }
-  };
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage((prevPage) => prevPage - 1);
-      scrollToTop();
-    }
-  };
-
   return (
     <section className="wrapper">
       <Filter
@@ -50,30 +35,23 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="flex items-center justify-center gap-6 text-2xl mb-16">
-        <Link
-          className={`font-semibold transition-colors px-5 py-2 border border-neutral-700 rounded-xl ${
-            currentPage === 1
-              ? "text-neutral-600 cursor-default"
-              : "text-white hover:text-neutral-400"
-          }`}
-          onClick={handlePrevPage}
-        >
-          &lt;Previous
-        </Link>
-        <span>
-          {currentPage} of {totalPages}
-        </span>
-        <Link
-          className={`font-semibold transition-colors px-5 py-2 border border-neutral-700 rounded-xl ${
-            currentPage === totalPages
-              ? "text-neutral-600 cursor-default"
-              : "text-white hover:text-neutral-400"
-          }`}
-          onClick={handleNextPage}
-        >
-          Next&gt;
-        </Link>
+      <div className="justify-self-center w-fit flex items-center gap-2 p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => {
+              setCurrentPage(index + 1);
+              window.scrollTo({ top: 0 });
+            }}
+            className={`w-[42px] aspect-square flex items-center justify-center font-semibold rounded-lg transition-colors ${
+              currentPage === index + 1
+                ? "bg-neutral-100 text-black"
+                : "hover:bg-neutral-800"
+            }`}
+          >
+            {index + 1}
+          </button>
+        ))}
       </div>
     </section>
   );
