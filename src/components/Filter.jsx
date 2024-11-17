@@ -30,7 +30,7 @@ const Filter = ({
               key={category}
               className={`flex items-center gap-2 px-5 py-2 rounded-lg cursor-pointer transition-colors ${
                 selectedCategory === category
-                  ? "bg-white text-black"
+                  ? "bg-neutral-100 text-black"
                   : "hover:bg-neutral-800"
               }`}
               onClick={() => handleCategoryClick(category)}
@@ -47,7 +47,7 @@ const Filter = ({
             onClick={() => setCurrentPage(index + 1)}
             className={`w-[42px] aspect-square flex items-center justify-center font-semibold rounded-lg transition-colors ${
               currentPage === index + 1
-                ? "bg-white text-black"
+                ? "bg-neutral-100 text-black"
                 : "hover:bg-neutral-800"
             }`}
           >
