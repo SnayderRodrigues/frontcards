@@ -5,17 +5,24 @@ import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
 
 const FeaturedTools = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   const itemsPerPage = 16;
-  const [currentPage, setCurrentPage] = useState(1);
+
+  const filteredTools =
+    selectedCategory === "All"
+      ? resourcesData
+      : resourcesData.filter((tool) => tool.category === selectedCategory);
+
+  const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const currentTools = resourcesData.slice(startIndex, endIndex);
-
-  const totalPages = Math.ceil(resourcesData.length / itemsPerPage);
+  const currentTools = filteredTools.slice(startIndex, endIndex);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
@@ -37,6 +44,7 @@ const FeaturedTools = () => {
         totalPages={totalPages}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        setSelectedCategory={setSelectedCategory}
       />
       <div className="grid grid-cols-4 gap-8 mb-16">
         {currentTools.map((tool) => (

@@ -1,47 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Filter = ({ totalPages, currentPage, setCurrentPage }) => {
+const Filter = ({
+  totalPages,
+  currentPage,
+  setCurrentPage,
+  setSelectedCategory,
+}) => {
+  const categories = [
+    "All",
+    "Development",
+    "Design",
+    "Knowledge & Learning",
+    "Editing",
+    "Web Tool",
+  ];
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
   return (
     <div className="flex items-center justify-between gap-2 mb-8">
       <div className="flex gap-2">
-        <Link
-          to="/"
-          className="text-xl text-black bg-white px-4 py-2 rounded-xl hover:bg-neutral-300 transition-colors"
-        >
-          All
-        </Link>
         <ul className="flex items-center text-xl border border-neutral-700 rounded-xl">
-          <li className="flex items-center gap-2 px-5 py-2">
-            <a href="" className="hover:text-neutral-400 transition-colors">
-              Development
-            </a>
-          </li>
-          <li className="flex items-center gap-2 px-5 py-2">
-            <a href="" className="hover:text-neutral-400 transition-colors">
-              Design
-            </a>
-          </li>
-          <li className="flex items-center gap-2 px-5 py-2">
-            <a href="" className="hover:text-neutral-400 transition-colors">
-              Knowledge & Learning
-            </a>
-          </li>
-          <li className="flex items-center gap-2 px-5 py-2">
-            <a href="" className="hover:text-neutral-400 transition-colors">
-              Editing
-            </a>
-          </li>
-          <li className="flex items-center gap-2 px-5 py-2">
-            <a href="" className="hover:text-neutral-400 transition-colors">
-              Web Tool
-            </a>
-          </li>
+          {categories.map((category) => (
+            <li
+              key={category}
+              className="flex items-center gap-2 px-5 py-2 cursor-pointer hover:text-neutral-400 transition-colors"
+              onClick={() => handleCategoryClick(category)}
+            >
+              {category}
+            </li>
+          ))}
         </ul>
       </div>
       <div className="flex items-center gap-2">
         {Array.from({ length: totalPages }, (_, index) => (
-          <Link
+          <button
             key={index + 1}
             onClick={() => setCurrentPage(index + 1)}
             className={`w-[42px] aspect-square flex items-center justify-center font-semibold rounded-xl transition-colors ${
@@ -51,7 +47,7 @@ const Filter = ({ totalPages, currentPage, setCurrentPage }) => {
             }`}
           >
             {index + 1}
-          </Link>
+          </button>
         ))}
       </div>
     </div>
