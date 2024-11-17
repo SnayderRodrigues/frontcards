@@ -40,8 +40,9 @@ const Footer = () => {
             Submit a Resource
           </Link>
           <Link
-            to=""
+            to="/legal"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"
+            onClick={scrollToTop}
           >
             Legal
           </Link>

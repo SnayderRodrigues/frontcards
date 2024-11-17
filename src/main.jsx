@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import ErrorPage from "./app/error/Page.jsx";
 import AboutPage from "./app/about/Page.jsx";
+import LegalPage from "./app/legal/Page.jsx";
 import ResourcesPage from "./app/resources/Page.jsx";
 import ResourceItem from "./app/resources/Resource.jsx";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutPage />,
+      },
+      {
+        path: "/legal",
+        element: <LegalPage />,
       },
       {
         path: "/resources/:slug",
