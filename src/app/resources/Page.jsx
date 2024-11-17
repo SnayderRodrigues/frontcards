@@ -10,7 +10,7 @@ const FeaturedTools = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
-  const itemsPerPage = 16;
+  const itemsPerPage = 8;
 
   const filteredTools =
     selectedCategory === "All"
@@ -44,6 +44,7 @@ const FeaturedTools = () => {
         totalPages={totalPages}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
       <div className="grid grid-cols-4 gap-8 mb-16">
