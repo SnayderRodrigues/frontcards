@@ -23,7 +23,11 @@ const Resource = () => {
             <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-100 px-4 py-2 rounded-full">
               {tool.category}
             </span>
-            <span className="w-fit text-sm font-semibold">#{tool.tags}</span>
+            <span className="flex gap-2 w-fit text-sm font-semibold">
+              {tool.tags.map((tag, index) => (
+                <span key={index}>#{tag}</span>
+              ))}
+            </span>
           </div>
           <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>
           <div className="flex gap-4">

@@ -19,7 +19,13 @@ const Card = ({ tool }) => {
       </div>
       <div className="flex flex-col gap-4 p-4">
         <span className="text-2xl font-bold">{tool.title}</span>
-        <span className="text-neutral-400">#{tool.tags}</span>
+        <span className="flex gap-2 text-neutral-400">
+          {tool.tags.map((tag, index) => (
+            <span key={index}>
+              #{tag}
+            </span>
+          ))}
+        </span>
         <span className="w-fit text-sm font-semibold text-white bg-neutral-700 px-4 py-2 rounded-full">
           {tool.category}
         </span>

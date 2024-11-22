@@ -7,8 +7,6 @@ const FeaturedTools = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const scrollToTop = () => window.scrollTo({ top: 0 });
-
   const itemsPerPage = 16;
 
   const filteredTools = resourcesData.filter((tool) =>

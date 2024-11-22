@@ -22,10 +22,7 @@ const Header = () => {
           >
             About
           </Link>
-          <Button
-            text="Submit a Resource"
-            href=""
-          />
+          <Button text="Submit a Resource" href="" />
         </div>
       </nav>
     </header>
