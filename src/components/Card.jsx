@@ -11,7 +11,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="w-full relative bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600 after:content-['More_Info'] after:block after:absolute after:top-2 after:right-2 after:z-10 after:text-sm after:bg-blue-700 after:px-3 after:py-2 after:rounded-lg after:opacity-0 after:transition-opacity hover:after:opacity-100"
+      className="group w-full relative bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600"
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
@@ -21,14 +21,24 @@ const Card = ({ tool }) => {
         <span className="text-2xl font-bold">{tool.title}</span>
         <span className="flex gap-2 text-neutral-400">
           {tool.tags.map((tag, index) => (
-            <span key={index}>
-              #{tag}
-            </span>
+            <span key={index}>#{tag}</span>
           ))}
         </span>
         <span className="w-fit text-sm font-semibold text-white bg-neutral-700 px-4 py-2 rounded-full">
           {tool.category}
         </span>
+      </div>
+      <div className="flex items-center gap-1 absolute top-2 right-2 z-10 text-sm bg-blue-700 px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100">
+        More Info
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16px"
+          height="16px"
+          viewBox="0 -960 960 960"
+          fill="#fff"
+        >
+          <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+        </svg>
       </div>
     </div>
   );
