@@ -22,9 +22,9 @@ const Filter = ({
   };
 
   return (
-    <div className="flex items-center justify-between mb-8">
-      <div className="flex gap-2">
-        <ul className="flex items-center gap-2 text-xl p-2 border border-neutral-700 rounded-xl overflow-hidden">
+    <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+      <div className="shrink-0 hidden sm:flex gap-2">
+        <ul className=" flex items-center gap-2 text-xl p-2 border border-neutral-700 rounded-xl overflow-hidden">
           {categories.map((category) => (
             <li
               key={category}
@@ -40,7 +40,7 @@ const Filter = ({
           ))}
         </ul>
       </div>
-      <div className="flex items-center gap-2 p-2 border border-neutral-700 rounded-xl overflow-hidden">
+      <div className="shrink-0 flex items-center gap-2 p-2 border border-neutral-700 rounded-xl overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}
