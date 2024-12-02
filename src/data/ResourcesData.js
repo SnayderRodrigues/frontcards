@@ -31,8 +31,188 @@ import Udemy from "../assets/udemy.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
 import Webflow from "../assets/webflow.svg";
+import AugustoGalego from "../assets/Augusto Galego.webp";
+import ByHuy from "../assets/By Huy.webp";
+import ChrisDevInDev from "../assets/Chris DevInDev.webp";
+import CoderCoder from "../assets/Coder Coder.webp";
+import DesignCourse from "../assets/DesignCourse.webp";
+import Fireship from "../assets/Fireship.webp";
+import FluxAcademy from "../assets/Flux Academy.webp";
+import Hyperplexed from "../assets/Hyperplexed.webp";
+import Juxtopposed from "../assets/Juxtopposed.webp";
+import Kalypso from "../assets/Kalypso.webp";
+import KevinPowell from "../assets/Kevin Powell.webp";
+import LunDev from "../assets/Lun Dev.webp";
+import OlivierLarose from "../assets/Olivier Larose.webp";
+import Serliv from "../assets/Serliv.webp";
+import WebDevSimplified from "../assets/Web-Dev-Simplified.webp";
 
 const ResourcesData = [
+  {
+    id: uuidv4(),
+    title: "Augusto Galego",
+    image: AugustoGalego,
+    category: "Creators",
+    tags: ["Career", "Software Engineering"],
+    slug: "augusto-galego",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@GutoGalego",
+  },
+  {
+    id: uuidv4(),
+    title: "By Huy",
+    image: ByHuy,
+    category: "Creators",
+    tags: ["Frontend", "UI/UX", "Web Design"],
+    slug: "by-huy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@by_huy",
+  },
+  {
+    id: uuidv4(),
+    title: "Chris DevInDev",
+    image: ChrisDevInDev,
+    category: "Creators",
+    tags: ["Career", "Learning", "Mentoring"],
+    slug: "chris-devindev",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.instagram.com/chrisdevindev/",
+  },
+  {
+    id: uuidv4(),
+    title: "Coder Coder",
+    image: CoderCoder,
+    category: "Creators",
+    tags: ["Frontend", "Learning"],
+    slug: "coder-coder",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@TheCoderCoder",
+  },
+  {
+    id: uuidv4(),
+    title: "DesignCourse",
+    image: DesignCourse,
+    category: "Creators",
+    tags: ["Learning", "UI/UX"],
+    slug: "designcourse",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@DesignCourse",
+  },
+  {
+    id: uuidv4(),
+    title: "Fireship",
+    image: Fireship,
+    category: "Creators",
+    tags: ["Information", "Learning"],
+    slug: "fireship",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@Fireship",
+  },
+  {
+    id: uuidv4(),
+    title: "Flux Academy",
+    image: FluxAcademy,
+    category: "Creators",
+    tags: ["Learning", "UI/UX", "Web Design"],
+    slug: "flux-academy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@FluxAcademy",
+  },
+  {
+    id: uuidv4(),
+    title: "Hyperplexed",
+    image: Hyperplexed,
+    category: "Creators",
+    tags: ["Animation", "Frontend", "Learning"],
+    slug: "hyperplexed",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@Hyperplexed",
+  },
+  {
+    id: uuidv4(),
+    title: "Juxtopposed",
+    image: Juxtopposed,
+    category: "Creators",
+    tags: ["Frontend", "UI/UX", "Web Design"],
+    slug: "juxtopposed",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@juxtopposed",
+  },
+  {
+    id: uuidv4(),
+    title: "Kalypso",
+    image: Kalypso,
+    category: "Creators",
+    tags: ["Inspiration", "Resources", "Web Design"],
+    slug: "kalypso",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.instagram.com/kalypsodesigns/",
+  },
+  {
+    id: uuidv4(),
+    title: "Kevin Powell",
+    image: KevinPowell,
+    category: "Creators",
+    tags: ["Frontend", "Learning"],
+    slug: "kevin-powell",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@KevinPowell",
+  },
+  {
+    id: uuidv4(),
+    title: "Lun Dev",
+    image: LunDev,
+    category: "Creators",
+    tags: ["Animations", "Frontend", "Learning"],
+    slug: "lun-dev",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@LunDeveloper",
+  },
+  {
+    id: uuidv4(),
+    title: "Olivier Larose",
+    image: OlivierLarose,
+    category: "Creators",
+    tags: ["Animations", "Frontend", "Learning"],
+    slug: "olivier-larose",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@olivierlarose1",
+  },
+  {
+    id: uuidv4(),
+    title: "Serliv",
+    image: Serliv,
+    category: "Creators",
+    tags: ["Frontend", "Learning"],
+    slug: "serliv",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@serliv",
+  },
+  {
+    id: uuidv4(),
+    title: "Web Dev Simplified",
+    image: WebDevSimplified,
+    category: "Creators",
+    tags: ["Fullstack", "Learning"],
+    slug: "web-dev-simplified",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@WebDevSimplified",
+  },
   {
     id: uuidv4(),
     title: "Adobe Photoshop",

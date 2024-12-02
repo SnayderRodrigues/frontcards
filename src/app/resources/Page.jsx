@@ -7,7 +7,7 @@ const FeaturedTools = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const itemsPerPage = 16;
+  const itemsPerPage = 12;
 
   const filteredTools = resourcesData.filter((tool) =>
     selectedCategory === "All" ? true : tool.category.includes(selectedCategory)
