@@ -1,5 +1,6 @@
+import { v4 as uuidv4 } from "uuid";
 import AdobePhotoshop from "../assets/adobe-photoshop.svg";
-import Behance from "../assets/behance.svg";
+import Blender from "../assets/blender.svg";
 import CodePen from "../assets/codepen.svg";
 import Coursera from "../assets/coursera.svg";
 import DailyDev from "../assets/dailydev.svg";
@@ -13,11 +14,13 @@ import Lighthouse from "../assets/lighthouse.svg";
 import MaterialUI from "../assets/material-ui.svg";
 import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
+import Mobbin from "../assets/mobbin.svg";
 import Next from "../assets/nextjs.svg";
 import Notion from "../assets/notion.svg";
 import Pinterest from "../assets/pinterest.svg";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
+import Relume from "../assets/relume.svg";
 import Sketch from "../assets/sketch.svg";
 import Sass from "../assets/sass.svg";
 import StackOverflow from "../assets/stackoverflow.svg";
@@ -31,7 +34,7 @@ import Webflow from "../assets/webflow.svg";
 
 const ResourcesData = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Adobe Photoshop",
     image: AdobePhotoshop,
     category: "Tools",
@@ -42,18 +45,18 @@ const ResourcesData = [
     source: "https://www.adobe.com/products/photoshop.html",
   },
   {
-    id: 2,
-    title: "Behance",
-    image: Behance,
-    category: "Design",
-    tags: ["Portfolio", "Design Showcase"],
-    slug: "behance",
+    id: uuidv4(),
+    title: "Blender",
+    image: Blender,
+    category: "Tools",
+    tags: ["3D Modeling", "Animation"],
+    slug: "blender",
     description:
-      "A platform for showcasing and discovering creative work in fields like graphic design, photography, and illustration.",
-    source: "https://www.behance.net/",
+      "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
+    source: "https://www.blender.org/",
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: "CodePen",
     image: CodePen,
     category: "Development",
@@ -64,7 +67,7 @@ const ResourcesData = [
     source: "https://codepen.io/",
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Coursera",
     image: Coursera,
     category: "Knowledge & Learning",
@@ -75,7 +78,7 @@ const ResourcesData = [
     source: "https://www.coursera.org/",
   },
   {
-    id: 5,
+    id: uuidv4(),
     title: "Daily.dev",
     image: DailyDev,
     category: "Knowledge & Learning",
@@ -86,7 +89,7 @@ const ResourcesData = [
     source: "https://daily.dev/",
   },
   {
-    id: 6,
+    id: uuidv4(),
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
@@ -97,7 +100,7 @@ const ResourcesData = [
     source: "https://dribbble.com/",
   },
   {
-    id: 7,
+    id: uuidv4(),
     title: "Figma",
     image: Figma,
     category: "Design",
@@ -108,7 +111,7 @@ const ResourcesData = [
     source: "https://www.figma.com/",
   },
   {
-    id: 8,
+    id: uuidv4(),
     title: "Framer",
     image: Framer,
     category: "Design",
@@ -119,7 +122,7 @@ const ResourcesData = [
     source: "https://www.framer.com/",
   },
   {
-    id: 9,
+    id: uuidv4(),
     title: "GitHub Copilot",
     image: GithubCopilot,
     category: "Development",
@@ -130,7 +133,7 @@ const ResourcesData = [
     source: "https://github.com/features/copilot",
   },
   {
-    id: 10,
+    id: uuidv4(),
     title: "GSAP",
     image: Gsap,
     category: "Development",
@@ -141,7 +144,7 @@ const ResourcesData = [
     source: "https://gsap.com/",
   },
   {
-    id: 11,
+    id: uuidv4(),
     title: "Jest",
     image: Jest,
     category: "Development",
@@ -152,7 +155,7 @@ const ResourcesData = [
     source: "https://jestjs.io/",
   },
   {
-    id: 12,
+    id: uuidv4(),
     title: "Lighthouse",
     image: Lighthouse,
     category: "Tools",
@@ -163,7 +166,7 @@ const ResourcesData = [
     source: "https://developer.chrome.com/docs/lighthouse/overview",
   },
   {
-    id: 13,
+    id: uuidv4(),
     title: "Material UI",
     image: MaterialUI,
     category: "Development",
@@ -174,7 +177,7 @@ const ResourcesData = [
     source: "https://mui.com/",
   },
   {
-    id: 14,
+    id: uuidv4(),
     title: "MDN",
     image: Mdn,
     category: "Knowledge & Learning",
@@ -185,7 +188,7 @@ const ResourcesData = [
     source: "https://developer.mozilla.org/en-US/",
   },
   {
-    id: 15,
+    id: uuidv4(),
     title: "Midjourney",
     image: Midjourney,
     category: "Tools",
@@ -196,7 +199,18 @@ const ResourcesData = [
     source: "https://www.midjourney.com/",
   },
   {
-    id: 16,
+    id: uuidv4(),
+    title: "Mobbin",
+    image: Mobbin,
+    category: "Design",
+    tags: ["Design Inspiration", "UI/UX"],
+    slug: "mobbin",
+    description:
+      "A comprehensive library of mobile design patterns and user flows for inspiration and reference.",
+    source: "https://mobbin.com/",
+  },
+  {
+    id: uuidv4(),
     title: "Next.JS",
     image: Next,
     category: "Development",
@@ -207,7 +221,7 @@ const ResourcesData = [
     source: "https://nextjs.org/",
   },
   {
-    id: 17,
+    id: uuidv4(),
     title: "Notion",
     image: Notion,
     category: "Tools",
@@ -218,7 +232,7 @@ const ResourcesData = [
     source: "https://www.notion.so/",
   },
   {
-    id: 18,
+    id: uuidv4(),
     title: "Pinterest",
     image: Pinterest,
     category: "Design",
@@ -229,7 +243,7 @@ const ResourcesData = [
     source: "https://www.pinterest.com/",
   },
   {
-    id: 19,
+    id: uuidv4(),
     title: "Prettier",
     image: Prettier,
     category: "Development",
@@ -240,7 +254,7 @@ const ResourcesData = [
     source: "https://prettier.io/",
   },
   {
-    id: 20,
+    id: uuidv4(),
     title: "React",
     image: React,
     category: "Development",
@@ -251,7 +265,18 @@ const ResourcesData = [
     source: "https://react.dev/",
   },
   {
-    id: 21,
+    id: uuidv4(),
+    title: "Relume",
+    image: Relume,
+    category: "Tools",
+    tags: ["UI Design", "AI"],
+    slug: "relume",
+    description:
+      "A tool to help designers and developers build Webflow sites faster with pre-designed components and style guides.",
+    source: "https://www.relume.io/",
+  },
+  {
+    id: uuidv4(),
     title: "Sass",
     image: Sass,
     category: "Development",
@@ -262,7 +287,7 @@ const ResourcesData = [
     source: "https://sass-lang.com/",
   },
   {
-    id: 22,
+    id: uuidv4(),
     title: "Sketch",
     image: Sketch,
     category: "Design",
@@ -273,7 +298,7 @@ const ResourcesData = [
     source: "https://www.sketch.com/",
   },
   {
-    id: 23,
+    id: uuidv4(),
     title: "Stack Overflow",
     image: StackOverflow,
     category: "Knowledge & Learning",
@@ -284,7 +309,7 @@ const ResourcesData = [
     source: "https://stackoverflow.com/",
   },
   {
-    id: 24,
+    id: uuidv4(),
     title: "Storybook",
     image: Storybook,
     category: "Development",
@@ -295,7 +320,7 @@ const ResourcesData = [
     source: "https://storybook.js.org/",
   },
   {
-    id: 25,
+    id: uuidv4(),
     title: "Tailwind CSS",
     image: Tailwind,
     category: "Development",
@@ -306,7 +331,7 @@ const ResourcesData = [
     source: "https://tailwindcss.com/",
   },
   {
-    id: 26,
+    id: uuidv4(),
     title: "Three.JS",
     image: ThreeJs,
     category: "Development",
@@ -317,7 +342,7 @@ const ResourcesData = [
     source: "https://threejs.org/",
   },
   {
-    id: 27,
+    id: uuidv4(),
     title: "Udemy",
     image: Udemy,
     category: "Knowledge & Learning",
@@ -328,7 +353,7 @@ const ResourcesData = [
     source: "https://www.udemy.com/",
   },
   {
-    id: 28,
+    id: uuidv4(),
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
@@ -339,7 +364,7 @@ const ResourcesData = [
     source: "https://unsplash.com/",
   },
   {
-    id: 29,
+    id: uuidv4(),
     title: "Vite",
     image: Vite,
     category: "Development",
@@ -350,7 +375,7 @@ const ResourcesData = [
     source: "https://vite.dev/",
   },
   {
-    id: 30,
+    id: uuidv4(),
     title: "Webflow",
     image: Webflow,
     category: "Design",
