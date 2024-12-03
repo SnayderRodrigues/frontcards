@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
-  .button {
+@layer components {
+  /* .button {
     @apply flex items-center justify-center gap-2 w-fit min-w-[160px] px-8 py-4 text-white font-medium bg-red-500 rounded-lg transition-all relative z-10 cursor-pointer;
   }
   .button:hover {
     @apply bg-red-700;
-  }
-} */
+  } */
+}
 
 :root {
   color-scheme: dark;
@@ -89,6 +89,7 @@ button {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.1485148514851486rem + 3.1683168316831685vw, 4rem);
   font-weight: 700;
 }
