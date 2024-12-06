@@ -23,8 +23,8 @@ const Filter = ({
 
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-      <div className="shrink-0 hidden sm:flex gap-2">
-        <ul className=" flex items-center gap-2 text-xl p-2 border border-neutral-700 rounded-xl overflow-hidden">
+      <div className="sm:flex gap-2">
+        <ul className="flex items-center gap-2 text-xl p-2 border border-neutral-700 rounded-xl">
           {categories.map((category) => (
             <li
               key={category}

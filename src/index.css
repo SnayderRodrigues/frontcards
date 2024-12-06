@@ -13,7 +13,6 @@
 
 :root {
   color-scheme: dark;
-  /* scroll-behavior: smooth; */
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -28,6 +27,7 @@
 body {
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
   background-color: #0a0a0a;
   margin: 0;
 }
@@ -84,8 +84,38 @@ button {
 }
 
 .wrapper {
-  width: min(100% - 192px, 1920px);
+  width: min(100% - 40px, 1920px);
   margin-inline: auto;
+}
+@media (min-width: 640px) {
+  .wrapper {
+    width: min(100% - 64px, 1920px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: min(100% - 80px, 1920px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: min(100% - 80px, 1920px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    width: min(100% - 96px, 1920px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1536px) {
+  .wrapper {
+    width: min(100% - 192px, 1920px);
+    margin-inline: auto;
+  }
 }
 
 h1 {
