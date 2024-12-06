@@ -31,21 +31,21 @@ import Udemy from "../assets/udemy.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
 import Webflow from "../assets/webflow.svg";
-import AugustoGalego from "../assets/Augusto Galego.webp";
-import ByHuy from "../assets/By Huy.webp";
-import ChrisDevInDev from "../assets/Chris DevInDev.webp";
-import CoderCoder from "../assets/Coder Coder.webp";
-import DesignCourse from "../assets/DesignCourse.webp";
-import Fireship from "../assets/Fireship.webp";
-import FluxAcademy from "../assets/Flux Academy.webp";
-import Hyperplexed from "../assets/Hyperplexed.webp";
-import Juxtopposed from "../assets/Juxtopposed.webp";
-import Kalypso from "../assets/Kalypso.webp";
-import KevinPowell from "../assets/Kevin Powell.webp";
-import LunDev from "../assets/Lun Dev.webp";
-import OlivierLarose from "../assets/Olivier Larose.webp";
-import Serliv from "../assets/Serliv.webp";
-import WebDevSimplified from "../assets/Web-Dev-Simplified.webp";
+import AugustoGalego from "../assets/Augusto Galego.png";
+import ByHuy from "../assets/By Huy.png";
+import ChrisDevInDev from "../assets/Chris DevInDev.png";
+import CoderCoder from "../assets/Coder Coder.png";
+import DesignCourse from "../assets/DesignCourse.png";
+import Fireship from "../assets/Fireship.png";
+import FluxAcademy from "../assets/Flux Academy.png";
+import Hyperplexed from "../assets/Hyperplexed.png";
+import Juxtopposed from "../assets/Juxtopposed.png";
+import Kalypso from "../assets/Kalypso.png";
+import KevinPowell from "../assets/Kevin Powell.png";
+import LunDev from "../assets/Lun Dev.png";
+import OlivierLarose from "../assets/Olivier Larose.png";
+import Serliv from "../assets/Serliv.png";
+import WebDevSimplified from "../assets/Web-Dev-Simplified.png";
 
 const ResourcesData = [
   {

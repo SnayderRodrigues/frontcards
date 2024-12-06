@@ -15,7 +15,7 @@ const Card = ({ tool }) => {
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
-        <img src={tool.image} alt={tool.title} className="w-2/3 p-16" />
+        <img src={tool.image} alt={tool.title} className="w-2/3 p-8" />
       </div>
       <div className="flex flex-col gap-4 p-4">
         <span className="text-2xl font-bold">{tool.title}</span>
