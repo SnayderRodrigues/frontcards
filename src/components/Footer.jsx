@@ -6,15 +6,15 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-t-white border-opacity-20">
-      <div className="wrapper flex justify-between pt-16 pb-8">
-        <div className="flex flex-col justify-between">
+      <div className="wrapper flex flex-col sm:flex-row justify-between gap-12 pt-16 pb-8">
+        <div className="flex flex-col gap-4 justify-between">
           <a
             href="/"
-            className="text-4xl font-bold uppercase hover:text-neutral-400 transition-colors"
+            className="text-3xl sm:text-3xl md:text-4xl font-bold uppercase hover:text-neutral-400 transition-colors"
           >
             Frontend Tools
           </a>
-          <div className="text-xl font-medium">
+          <div className="text-lg lg:text-xl font-medium">
             Coded by{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
@@ -25,10 +25,10 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4 font-medium">
+        <div className="flex flex-col gap-4 text-lg lg:text-xl font-medium">
           <Link
             to="/about"
-            className="w-fit text-xl hover:text-neutral-400 transition-colors"
+            className="w-fit hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             About
@@ -36,13 +36,13 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit text-xl hover:text-neutral-400 transition-colors"
+            className="w-fit hover:text-neutral-400 transition-colors"
           >
             Submit a Resource
           </a>
           <Link
             to="/legal"
-            className="w-fit text-xl hover:text-neutral-400 transition-colors"
+            className="w-fit hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Legal
