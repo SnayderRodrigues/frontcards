@@ -28,7 +28,7 @@ const FeaturedTools = () => {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-6 md:mb-10 lg:mb-12 xl:mb-16">
         {currentTools.map((tool) => (
           <Card key={tool.id} tool={tool} />
         ))}
@@ -41,7 +41,7 @@ const FeaturedTools = () => {
               setCurrentPage(index + 1);
               window.scrollTo({ top: 0 });
             }}
-            className={`w-[42px] aspect-square flex items-center justify-center font-semibold rounded-lg transition-colors ${
+            className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center text-base lg:text-lg xl:text-xl font-semibold rounded-lg transition-colors ${
               currentPage === index + 1
                 ? "bg-neutral-100 text-black"
                 : "hover:bg-neutral-800"

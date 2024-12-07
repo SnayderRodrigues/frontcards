@@ -15,7 +15,7 @@ const Header = () => {
             Frontend Tools
           </div>
         </a>
-        <div className="flex items-center gap-8 sm:text-lg md:text-xl font-medium">
+        <div className="flex items-center gap-8 sm:text-lg lg:text-xl font-medium">
           <Link
             to="/about"
             className="hidden sm:block hover:text-neutral-400 transition-colors"
@@ -23,7 +23,10 @@ const Header = () => {
           >
             About
           </Link>
-          <Button text="Submit a Resource" href="" />
+          <Button
+            text="Submit a Resource"
+            href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
+          />
         </div>
       </nav>
     </header>

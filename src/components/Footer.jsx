@@ -34,7 +34,7 @@ const Footer = () => {
             About
           </Link>
           <a
-            href=""
+            href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
             className="w-fit text-xl hover:text-neutral-400 transition-colors"
           >

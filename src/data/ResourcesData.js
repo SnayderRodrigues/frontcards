@@ -250,7 +250,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Coursera",
     image: Coursera,
-    category: "Knowledge & Learning",
+    category: "Learning",
     tags: ["Online Courses", "Education"],
     slug: "coursera",
     description:
@@ -261,7 +261,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Daily.dev",
     image: DailyDev,
-    category: "Knowledge & Learning",
+    category: "Learning",
     tags: ["News", "Community"],
     slug: "daily-dev",
     description:
@@ -360,7 +360,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "MDN",
     image: Mdn,
-    category: "Knowledge & Learning",
+    category: "Learning",
     tags: ["Documentation", "Reference"],
     slug: "mdn",
     description:
@@ -481,7 +481,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Stack Overflow",
     image: StackOverflow,
-    category: "Knowledge & Learning",
+    category: "Learning",
     tags: ["Community", "Q&A"],
     slug: "stack-overflow",
     description:
@@ -525,7 +525,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Udemy",
     image: Udemy,
-    category: "Knowledge & Learning",
+    category: "Learning",
     tags: ["Online Courses", "Education"],
     slug: "udemy",
     description:

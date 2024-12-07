@@ -15,21 +15,23 @@ const Card = ({ tool }) => {
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
-        <img src={tool.image} alt={tool.title} className="w-2/3 p-8" />
+        <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
       </div>
       <div className="flex flex-col gap-4 p-4">
         <span className="text-2xl font-bold">{tool.title}</span>
-        <span className="flex gap-2 text-neutral-400">
+        <span className="flex flex-wrap gap-2 text-neutral-400">
           {tool.tags.map((tag, index) => (
-            <span key={index}>#{tag}</span>
+            <span key={index} className="shrink-0">
+              #{tag}
+            </span>
           ))}
         </span>
-        <span className="w-fit text-sm font-semibold text-white bg-neutral-700 px-4 py-2 rounded-full">
-          {tool.category}
-        </span>
+        <div className="w-fit flex items-center justify-center text-sm font-semibold text-white bg-slate-600 px-4 py-2 rounded-full">
+          <span className="mb-[2px]">{tool.category}</span>
+        </div>
       </div>
       <div className="flex items-center gap-1 absolute top-2 right-2 z-10 text-sm bg-blue-700 px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100">
-        More Info
+        <span className="mb-[2px]">More Info</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16px"
