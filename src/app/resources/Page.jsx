@@ -33,7 +33,7 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="sm:justify-self-center w-fit flex items-center gap-2 p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
+      <div className="sm:justify-self-end w-fit flex items-center gap-2 p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}

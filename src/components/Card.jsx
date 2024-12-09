@@ -27,7 +27,7 @@ const Card = ({ tool }) => {
           ))}
         </span>
         <div
-          className={`w-fit flex items-center justify-center text-sm font-semibold text-white  px-4 py-2 rounded-full ${
+          className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
             tool.category === "Development" ? "bg-blue-700" : ""
           } ${tool.category === "Design" ? "bg-purple-500" : ""} ${
             tool.category === "Learning" ? "bg-green-600" : ""

@@ -1,53 +1,83 @@
 import { v4 as uuidv4 } from "uuid";
+import AdobeIllustrator from "../assets/adobe-illustrator.svg";
 import AdobePhotoshop from "../assets/adobe-photoshop.svg";
+import AugustoGalego from "../assets/Augusto Galego.png";
+import Awwwards from "../assets/awwwards.svg";
 import Blender from "../assets/blender.svg";
+import ByHuy from "../assets/By Huy.png";
+import CanIUse from "../assets/caniuse.png";
+import ChrisDevInDev from "../assets/Chris DevInDev.png";
 import CodePen from "../assets/codepen.svg";
+import CoderCoder from "../assets/Coder Coder.png";
 import Coursera from "../assets/coursera.svg";
 import DailyDev from "../assets/dailydev.svg";
+import DesignCourse from "../assets/DesignCourse.png";
 import Dribbble from "../assets/dribbble.svg";
 import Figma from "../assets/figma.svg";
+import Fireship from "../assets/Fireship.png";
+import FluxAcademy from "../assets/Flux Academy.png";
 import Framer from "../assets/framer.svg";
+import FreeCodeCamp from "../assets/freecodecamp.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
 import Gsap from "../assets/greensock.svg";
+import Hyperplexed from "../assets/Hyperplexed.png";
 import Jest from "../assets/jest.svg";
+import Juxtopposed from "../assets/Juxtopposed.png";
+import Kalypso from "../assets/Kalypso.png";
+import KevinPowell from "../assets/Kevin Powell.png";
 import Lighthouse from "../assets/lighthouse.svg";
+import LunDev from "../assets/Lun Dev.png";
 import MaterialUI from "../assets/material-ui.svg";
+import MaxiBestOf from "../assets/maxibestof.png";
 import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
 import Mobbin from "../assets/mobbin.svg";
 import Next from "../assets/nextjs.svg";
 import Notion from "../assets/notion.svg";
+import OlivierLarose from "../assets/Olivier Larose.png";
 import Pinterest from "../assets/pinterest.svg";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
 import Relume from "../assets/relume.svg";
-import Sketch from "../assets/sketch.svg";
 import Sass from "../assets/sass.svg";
+import Serliv from "../assets/Serliv.png";
+import Sketch from "../assets/sketch.svg";
+import Spline from "../assets/spline.svg";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
 import Tailwind from "../assets/tailwind.svg";
 import ThreeJs from "../assets/threejs.svg";
+import TinyPNG from "../assets/tinypng.svg";
 import Udemy from "../assets/udemy.svg";
+import Uiverse from "../assets/uiverse.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
-import Webflow from "../assets/webflow.svg";
-import AugustoGalego from "../assets/Augusto Galego.png";
-import ByHuy from "../assets/By Huy.png";
-import ChrisDevInDev from "../assets/Chris DevInDev.png";
-import CoderCoder from "../assets/Coder Coder.png";
-import DesignCourse from "../assets/DesignCourse.png";
-import Fireship from "../assets/Fireship.png";
-import FluxAcademy from "../assets/Flux Academy.png";
-import Hyperplexed from "../assets/Hyperplexed.png";
-import Juxtopposed from "../assets/Juxtopposed.png";
-import Kalypso from "../assets/Kalypso.png";
-import KevinPowell from "../assets/Kevin Powell.png";
-import LunDev from "../assets/Lun Dev.png";
-import OlivierLarose from "../assets/Olivier Larose.png";
-import Serliv from "../assets/Serliv.png";
 import WebDevSimplified from "../assets/Web-Dev-Simplified.png";
+import Webflow from "../assets/webflow.svg";
 
 const ResourcesData = [
+  {
+    id: uuidv4(),
+    title: "Adobe Illustrator",
+    image: AdobeIllustrator,
+    category: "Tools",
+    tags: ["Illustration", "Vector Graphics"],
+    slug: "adobe-illustrator",
+    description:
+      "A vector graphics editor for creating illustrations, logos, and other scalable graphics.",
+    source: "https://www.adobe.com/products/illustrator.html",
+  },
+  {
+    id: uuidv4(),
+    title: "Adobe Photoshop",
+    image: AdobePhotoshop,
+    category: "Tools",
+    tags: ["Image Editing", "Graphics"],
+    slug: "adobe-photoshop",
+    description:
+      "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
+    source: "https://www.adobe.com/products/photoshop.html",
+  },
   {
     id: uuidv4(),
     title: "Augusto Galego",
@@ -58,6 +88,28 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@GutoGalego",
+  },
+  {
+    id: uuidv4(),
+    title: "Awwwards",
+    image: Awwwards,
+    category: "Design",
+    tags: ["Inspiration", "Web Design"],
+    slug: "awwwards",
+    description:
+      "A platform that showcases and awards the best web design projects from around the world.",
+    source: "https://www.awwwards.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Blender",
+    image: Blender,
+    category: "Tools",
+    tags: ["3D Modeling", "Animation"],
+    slug: "blender",
+    description:
+      "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
+    source: "https://www.blender.org/",
   },
   {
     id: uuidv4(),
@@ -72,6 +124,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Can I Use",
+    image: CanIUse,
+    category: "Tools",
+    tags: ["Browser Support", "Web Tool"],
+    slug: "can-i-use",
+    description:
+      "Can I use provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
+    source: "https://caniuse.com/",
+  },
+  {
+    id: uuidv4(),
     title: "Chris DevInDev",
     image: ChrisDevInDev,
     category: "Creators",
@@ -80,6 +143,17 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.instagram.com/chrisdevindev/",
+  },
+  {
+    id: uuidv4(),
+    title: "CodePen",
+    image: CodePen,
+    category: "Development",
+    tags: ["Community", "Prototyping"],
+    slug: "codepen",
+    description:
+      "An online code editor and community for testing and sharing HTML, CSS, and JavaScript snippets.",
+    source: "https://codepen.io/",
   },
   {
     id: uuidv4(),
@@ -92,16 +166,60 @@ const ResourcesData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@TheCoderCoder",
   },
+  // {
+  //   id: uuidv4(),
+  //   title: "Coursera",
+  //   image: Coursera,
+  //   category: "Learning",
+  //   tags: ["Online Courses", "Education"],
+  //   slug: "coursera",
+  //   description:
+  //     "An online learning platform offering courses, specializations, and degrees from top universities and companies.",
+  //   source: "https://www.coursera.org/",
+  // },
   {
     id: uuidv4(),
-    title: "DesignCourse",
-    image: DesignCourse,
-    category: "Creators",
-    tags: ["Learning", "UI/UX"],
-    slug: "designcourse",
+    title: "Daily.dev",
+    image: DailyDev,
+    category: "Learning",
+    tags: ["News", "Community"],
+    slug: "daily-dev",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@DesignCourse",
+      "A personalized feed for developers that aggregates programming news and updates from across the web.",
+    source: "https://daily.dev/",
+  },
+  // {
+  //   id: uuidv4(),
+  //   title: "DesignCourse",
+  //   image: DesignCourse,
+  //   category: "Creators",
+  //   tags: ["Learning", "UI/UX"],
+  //   slug: "designcourse",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+  //   source: "https://www.youtube.com/@DesignCourse",
+  // },
+  {
+    id: uuidv4(),
+    title: "Dribbble",
+    image: Dribbble,
+    category: "Design",
+    tags: ["UI/UX", "Inspiration"],
+    slug: "dribbble",
+    description:
+      "A platform for showcasing, discovering, and connecting with designers and their work.",
+    source: "https://dribbble.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Figma",
+    image: Figma,
+    category: "Design",
+    tags: ["UI/UX", "Collaboration"],
+    slug: "figma",
+    description:
+      "A collaborative interface design tool that allows teams to design, prototype, and gather feedback in real time.",
+    source: "https://www.figma.com/",
   },
   {
     id: uuidv4(),
@@ -125,6 +243,50 @@ const ResourcesData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@FluxAcademy",
   },
+  // {
+  //   id: uuidv4(),
+  //   title: "Framer",
+  //   image: Framer,
+  //   category: "Design",
+  //   tags: ["Prototyping", "Animation"],
+  //   slug: "framer",
+  //   description:
+  //     "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
+  //   source: "https://www.framer.com/",
+  // },
+  {
+    id: uuidv4(),
+    title: "freeCodeCamp",
+    image: FreeCodeCamp,
+    category: "Learning",
+    tags: ["Learning Resources", "Programming"],
+    slug: "freecodecamp",
+    description:
+      "An open-source platform offering coding lessons, projects, and certifications for developers.",
+    source: "https://www.freecodecamp.org/",
+  },
+  {
+    id: uuidv4(),
+    title: "GitHub Copilot",
+    image: GithubCopilot,
+    category: "Development",
+    tags: ["AI", "Coding Assistant"],
+    slug: "github-copilot",
+    description:
+      "An AI-powered code completion tool that suggests entire lines or functions as you type.",
+    source: "https://github.com/features/copilot",
+  },
+  {
+    id: uuidv4(),
+    title: "GSAP",
+    image: Gsap,
+    category: "Development",
+    tags: ["Animations", "Web"],
+    slug: "gsap",
+    description:
+      "A JavaScript library for creating high-performance animations and transitions for web applications.",
+    source: "https://gsap.com/",
+  },
   {
     id: uuidv4(),
     title: "Hyperplexed",
@@ -136,6 +298,17 @@ const ResourcesData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@Hyperplexed",
   },
+  // {
+  //   id: uuidv4(),
+  //   title: "Jest",
+  //   image: Jest,
+  //   category: "Development",
+  //   tags: ["Testing", "JavaScript"],
+  //   slug: "jest",
+  //   description:
+  //     "A delightful JavaScript testing framework with a focus on simplicity and performance.",
+  //   source: "https://jestjs.io/",
+  // },
   {
     id: uuidv4(),
     title: "Juxtopposed",
@@ -171,171 +344,6 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
-    title: "Lun Dev",
-    image: LunDev,
-    category: "Creators",
-    tags: ["Animations", "Frontend", "Learning"],
-    slug: "lun-dev",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@LunDeveloper",
-  },
-  {
-    id: uuidv4(),
-    title: "Olivier Larose",
-    image: OlivierLarose,
-    category: "Creators",
-    tags: ["Animations", "Frontend", "Learning"],
-    slug: "olivier-larose",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@olivierlarose1",
-  },
-  {
-    id: uuidv4(),
-    title: "Serliv",
-    image: Serliv,
-    category: "Creators",
-    tags: ["Frontend", "Learning"],
-    slug: "serliv",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@serliv",
-  },
-  {
-    id: uuidv4(),
-    title: "Web Dev Simplified",
-    image: WebDevSimplified,
-    category: "Creators",
-    tags: ["Fullstack", "Learning"],
-    slug: "web-dev-simplified",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@WebDevSimplified",
-  },
-  {
-    id: uuidv4(),
-    title: "Adobe Photoshop",
-    image: AdobePhotoshop,
-    category: "Tools",
-    tags: ["Image Editing", "Graphics"],
-    slug: "adobe-photoshop",
-    description:
-      "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
-    source: "https://www.adobe.com/products/photoshop.html",
-  },
-  {
-    id: uuidv4(),
-    title: "Blender",
-    image: Blender,
-    category: "Tools",
-    tags: ["3D Modeling", "Animation"],
-    slug: "blender",
-    description:
-      "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
-    source: "https://www.blender.org/",
-  },
-  {
-    id: uuidv4(),
-    title: "CodePen",
-    image: CodePen,
-    category: "Development",
-    tags: ["Community", "Prototyping"],
-    slug: "codepen",
-    description:
-      "An online code editor and community for testing and sharing HTML, CSS, and JavaScript snippets.",
-    source: "https://codepen.io/",
-  },
-  {
-    id: uuidv4(),
-    title: "Coursera",
-    image: Coursera,
-    category: "Learning",
-    tags: ["Online Courses", "Education"],
-    slug: "coursera",
-    description:
-      "An online learning platform offering courses, specializations, and degrees from top universities and companies.",
-    source: "https://www.coursera.org/",
-  },
-  {
-    id: uuidv4(),
-    title: "Daily.dev",
-    image: DailyDev,
-    category: "Learning",
-    tags: ["News", "Community"],
-    slug: "daily-dev",
-    description:
-      "A personalized feed for developers that aggregates programming news and updates from across the web.",
-    source: "https://daily.dev/",
-  },
-  {
-    id: uuidv4(),
-    title: "Dribbble",
-    image: Dribbble,
-    category: "Design",
-    tags: ["UI/UX", "Inspiration"],
-    slug: "dribbble",
-    description:
-      "A platform for showcasing, discovering, and connecting with designers and their work.",
-    source: "https://dribbble.com/",
-  },
-  {
-    id: uuidv4(),
-    title: "Figma",
-    image: Figma,
-    category: "Design",
-    tags: ["UI/UX", "Collaboration"],
-    slug: "figma",
-    description:
-      "A collaborative interface design tool that allows teams to design, prototype, and gather feedback in real time.",
-    source: "https://www.figma.com/",
-  },
-  {
-    id: uuidv4(),
-    title: "Framer",
-    image: Framer,
-    category: "Design",
-    tags: ["Prototyping", "Animation"],
-    slug: "framer",
-    description:
-      "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
-    source: "https://www.framer.com/",
-  },
-  {
-    id: uuidv4(),
-    title: "GitHub Copilot",
-    image: GithubCopilot,
-    category: "Development",
-    tags: ["AI", "Coding Assistant"],
-    slug: "github-copilot",
-    description:
-      "An AI-powered code completion tool that suggests entire lines or functions as you type.",
-    source: "https://github.com/features/copilot",
-  },
-  {
-    id: uuidv4(),
-    title: "GSAP",
-    image: Gsap,
-    category: "Development",
-    tags: ["Animations", "Web"],
-    slug: "gsap",
-    description:
-      "A JavaScript library for creating high-performance animations and transitions for web applications.",
-    source: "https://gsap.com/",
-  },
-  {
-    id: uuidv4(),
-    title: "Jest",
-    image: Jest,
-    category: "Development",
-    tags: ["Testing", "JavaScript"],
-    slug: "jest",
-    description:
-      "A delightful JavaScript testing framework with a focus on simplicity and performance.",
-    source: "https://jestjs.io/",
-  },
-  {
-    id: uuidv4(),
     title: "Lighthouse",
     image: Lighthouse,
     category: "Tools",
@@ -347,6 +355,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Lun Dev",
+    image: LunDev,
+    category: "Creators",
+    tags: ["Animations", "Frontend", "Learning"],
+    slug: "lun-dev",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@LunDeveloper",
+  },
+  {
+    id: uuidv4(),
     title: "Material UI",
     image: MaterialUI,
     category: "Development",
@@ -355,6 +374,17 @@ const ResourcesData = [
     description:
       "A popular React UI framework for building modern, responsive, and accessible web applications.",
     source: "https://mui.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "MaxiBestOf",
+    image: MaxiBestOf,
+    category: "Design",
+    tags: ["Inspiration", "Web Design"],
+    slug: "maxibestof",
+    description:
+      "A curated gallery of modern web design and user interfaces for inspiration.",
+    source: "https://maxibestof.one/",
   },
   {
     id: uuidv4(),
@@ -378,17 +408,17 @@ const ResourcesData = [
       "An AI-powered platform for creating stunning artwork and designs through text prompts.",
     source: "https://www.midjourney.com/",
   },
-  {
-    id: uuidv4(),
-    title: "Mobbin",
-    image: Mobbin,
-    category: "Design",
-    tags: ["Design Inspiration", "UI/UX"],
-    slug: "mobbin",
-    description:
-      "A comprehensive library of mobile design patterns and user flows for inspiration and reference.",
-    source: "https://mobbin.com/",
-  },
+  // {
+  //   id: uuidv4(),
+  //   title: "Mobbin",
+  //   image: Mobbin,
+  //   category: "Design",
+  //   tags: ["Design Inspiration", "UI/UX"],
+  //   slug: "mobbin",
+  //   description:
+  //     "A comprehensive library of mobile design patterns and user flows for inspiration and reference.",
+  //   source: "https://mobbin.com/",
+  // },
   {
     id: uuidv4(),
     title: "Next.JS",
@@ -413,15 +443,26 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
-    title: "Pinterest",
-    image: Pinterest,
-    category: "Design",
-    tags: ["Inspiration", "Ideas"],
-    slug: "pinterest",
+    title: "Olivier Larose",
+    image: OlivierLarose,
+    category: "Creators",
+    tags: ["Animations", "Frontend", "Learning"],
+    slug: "olivier-larose",
     description:
-      "A visual discovery engine for finding ideas and inspiration for projects, hobbies, and more.",
-    source: "https://www.pinterest.com/",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@olivierlarose1",
   },
+  // {
+  //   id: uuidv4(),
+  //   title: "Pinterest",
+  //   image: Pinterest,
+  //   category: "Design",
+  //   tags: ["Inspiration", "Ideas"],
+  //   slug: "pinterest",
+  //   description:
+  //     "A visual discovery engine for finding ideas and inspiration for projects, hobbies, and more.",
+  //   source: "https://www.pinterest.com/",
+  // },
   {
     id: uuidv4(),
     title: "Prettier",
@@ -466,6 +507,17 @@ const ResourcesData = [
       "A preprocessor scripting language that is interpreted into CSS, adding features like variables and nesting.",
     source: "https://sass-lang.com/",
   },
+  // {
+  //   id: uuidv4(),
+  //   title: "Serliv",
+  //   image: Serliv,
+  //   category: "Creators",
+  //   tags: ["Frontend", "Learning"],
+  //   slug: "serliv",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+  //   source: "https://www.youtube.com/@serliv",
+  // },
   {
     id: uuidv4(),
     title: "Sketch",
@@ -487,6 +539,17 @@ const ResourcesData = [
     description:
       "A community-driven platform where developers ask questions and share knowledge.",
     source: "https://stackoverflow.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Spline",
+    image: Spline,
+    category: "Design",
+    tags: ["3D Design", "Interactive"],
+    slug: "spline",
+    description:
+      "A 3D design tool to create interactive experiences directly in the browser.",
+    source: "https://spline.design/",
   },
   {
     id: uuidv4(),
@@ -523,6 +586,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "TinyPNG",
+    image: TinyPNG,
+    category: "Tools",
+    tags: ["Image Optimization"],
+    slug: "tinypng",
+    description:
+      "A tool for optimizing PNG and JPEG images while maintaining quality.",
+    source: "https://tinypng.com/",
+  },
+  {
+    id: uuidv4(),
     title: "Udemy",
     image: Udemy,
     category: "Learning",
@@ -531,6 +605,17 @@ const ResourcesData = [
     description:
       "A global learning platform offering a wide range of courses in various fields, taught by industry experts.",
     source: "https://www.udemy.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Uiverse",
+    image: Uiverse,
+    category: "Design",
+    tags: ["UI Components", "Web Design"],
+    slug: "uiverse",
+    description:
+      "A collection of open-source and customizable UI components for modern web projects.",
+    source: "https://uiverse.io/",
   },
   {
     id: uuidv4(),
@@ -553,6 +638,17 @@ const ResourcesData = [
     description:
       "A fast and modern frontend build tool that leverages native ES modules and offers lightning-fast hot module replacement.",
     source: "https://vite.dev/",
+  },
+  {
+    id: uuidv4(),
+    title: "Web Dev Simplified",
+    image: WebDevSimplified,
+    category: "Creators",
+    tags: ["Fullstack", "Learning"],
+    slug: "web-dev-simplified",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+    source: "https://www.youtube.com/@WebDevSimplified",
   },
   {
     id: uuidv4(),
