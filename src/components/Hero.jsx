@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <section className="flex items-center">
+      <section className="flex items-center" id="hero-section">
         <div className="wrapper flex flex-col pb-24 pt-48 xl:pb-32">
           <h1 className="flex max-w-[18ch] leading-tight mb-8 lg:mb-12 xl:mb-16">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.

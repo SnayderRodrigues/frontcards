@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-t-white border-opacity-20">
-      <div className="wrapper flex flex-col sm:flex-row justify-between gap-12 pt-16 pb-8">
+      <div className="wrapper relative flex flex-col md:flex-row justify-between gap-12 pt-16 pb-8">
         <div className="flex flex-col gap-4 justify-between">
           <a
             href="/"
@@ -48,6 +48,21 @@ const Footer = () => {
             Legal
           </Link>
         </div>
+        <a
+          href="#hero-section"
+          className="w-fit absolute bottom-8 right-0 flex md:hidden items-center gap-1 p-2 border border-neutral-700 rounded-xl"
+        >
+          Scroll to top
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18px"
+            height="18px"
+            viewBox="0 -960 960 960"
+            fill="#fff"
+          >
+            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+          </svg>
+        </a>
       </div>
     </footer>
   );
