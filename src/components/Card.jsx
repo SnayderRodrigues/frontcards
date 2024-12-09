@@ -26,7 +26,15 @@ const Card = ({ tool }) => {
             </span>
           ))}
         </span>
-        <div className="w-fit flex items-center justify-center text-sm font-semibold text-white bg-slate-600 px-4 py-2 rounded-full">
+        <div
+          className={`w-fit flex items-center justify-center text-sm font-semibold text-white  px-4 py-2 rounded-full ${
+            tool.category === "Development" ? "bg-blue-700" : ""
+          } ${tool.category === "Design" ? "bg-purple-500" : ""} ${
+            tool.category === "Learning" ? "bg-green-600" : ""
+          } ${tool.category === "Creators" ? "bg-red-500" : ""} ${
+            tool.category === "Tools" ? "bg-cyan-500" : ""
+          }`}
+        >
           <span className="mb-[2px]">{tool.category}</span>
         </div>
       </div>

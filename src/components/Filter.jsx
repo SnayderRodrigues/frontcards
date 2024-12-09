@@ -60,8 +60,8 @@ const Filter = ({
         </svg>
       </button>
       <ul
-        className={`w-full absolute bottom-[58px] z-10 flex flex-col md:hidden gap-2 text-base lg:text-lg xl:text-xl bg-neutral-950 p-2 border border-neutral-700 rounded-xl ${
-          isOpen ? "hidden" : ""
+        className={`w-full absolute bottom-[58px] z-10 flex flex-col md:hidden gap-2 text-base lg:text-lg xl:text-xl bg-neutral-950 p-2 border border-neutral-700 rounded-xl transition-opacity ${
+          isOpen ? "" : "opacity-0 select-none pointer-events-none"
         }`}
         onClick={() => setIsOpen(!isOpen)}
       >

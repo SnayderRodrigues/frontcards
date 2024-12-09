@@ -18,7 +18,7 @@ const Header = () => {
         <div className="flex items-center gap-8 sm:text-lg lg:text-xl font-medium">
           <Link
             to="/about"
-            className="hidden sm:block hover:text-neutral-400 transition-colors"
+            className="hidden md:block hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             About

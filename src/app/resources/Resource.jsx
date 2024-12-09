@@ -20,7 +20,15 @@ const Resource = () => {
         <div className="w-1/2 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{tool.title}</h1>
           <div className="flex items-center gap-4 mb-4">
-            <span className="w-fit text-sm font-semibold text-neutral-900 bg-neutral-100 px-4 py-2 rounded-full">
+            <span
+              className={`w-fit text-sm font-semibold text-white px-4 py-2 rounded-full ${
+                tool.category === "Development" ? "bg-blue-700" : ""
+              } ${tool.category === "Design" ? "bg-purple-500" : ""} ${
+                tool.category === "Learning" ? "bg-green-600" : ""
+              } ${tool.category === "Creators" ? "bg-red-500" : ""} ${
+                tool.category === "Tools" ? "bg-cyan-500" : ""
+              }`}
+            >
               {tool.category}
             </span>
             <span className="flex gap-2 w-fit text-sm font-semibold">
