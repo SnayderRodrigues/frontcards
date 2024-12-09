@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <section className="flex items-center" id="hero-section">
-        <div className="wrapper flex flex-col pb-24 pt-48 xl:pb-32">
+        <div className="wrapper flex flex-col pt-32 sm:pt-36 lg:pt-40 xl:pt-48 pb-24 xl:pb-32">
           <h1 className="flex max-w-[18ch] leading-tight mb-8 lg:mb-12 xl:mb-16">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </h1>
