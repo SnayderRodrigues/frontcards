@@ -16,8 +16,10 @@ import Dribbble from "../assets/dribbble.svg";
 import Figma from "../assets/figma.svg";
 import Fireship from "../assets/Fireship.png";
 import FluxAcademy from "../assets/Flux Academy.png";
+import Fontshare from "../assets/fontshare.svg";
 import Framer from "../assets/framer.svg";
 import FreeCodeCamp from "../assets/freecodecamp.svg";
+import FrontendMentor from "../assets/frontend-mentor.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
 import Gsap from "../assets/greensock.svg";
 import Hyperplexed from "../assets/Hyperplexed.png";
@@ -39,10 +41,11 @@ import Pinterest from "../assets/pinterest.svg";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
 import Relume from "../assets/relume.svg";
+import Roadmap from "../assets/roadmap-sh.svg";
 import Sass from "../assets/sass.svg";
 import Serliv from "../assets/Serliv.png";
 import Sketch from "../assets/sketch.svg";
-import Spline from "../assets/spline.svg";
+import Spline from "../assets/spline.png";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
 import Tailwind from "../assets/tailwind.svg";
@@ -50,8 +53,10 @@ import ThreeJs from "../assets/threejs.svg";
 import TinyPNG from "../assets/tinypng.svg";
 import Udemy from "../assets/udemy.svg";
 import Uiverse from "../assets/uiverse.svg";
+import Uncut from "../assets/uncut.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
+import W3Schools from "../assets/w3schools.svg";
 import WebDevSimplified from "../assets/Web-Dev-Simplified.png";
 import Webflow from "../assets/webflow.svg";
 
@@ -72,7 +77,7 @@ const ResourcesData = [
     title: "Adobe Photoshop",
     image: AdobePhotoshop,
     category: "Tools",
-    tags: ["Image Editing", "Graphics"],
+    tags: ["Graphic Design", "Image Editing"],
     slug: "adobe-photoshop",
     description:
       "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
@@ -171,7 +176,7 @@ const ResourcesData = [
   //   title: "Coursera",
   //   image: Coursera,
   //   category: "Learning",
-  //   tags: ["Online Courses", "Education"],
+  //   tags: ["Education", "Online Courses"],
   //   slug: "coursera",
   //   description:
   //     "An online learning platform offering courses, specializations, and degrees from top universities and companies.",
@@ -182,7 +187,7 @@ const ResourcesData = [
     title: "Daily.dev",
     image: DailyDev,
     category: "Learning",
-    tags: ["News", "Community"],
+    tags: ["Community", "News"],
     slug: "daily-dev",
     description:
       "A personalized feed for developers that aggregates programming news and updates from across the web.",
@@ -204,7 +209,7 @@ const ResourcesData = [
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
-    tags: ["UI/UX", "Inspiration"],
+    tags: ["Inspiration", "UI/UX"],
     slug: "dribbble",
     description:
       "A platform for showcasing, discovering, and connecting with designers and their work.",
@@ -215,7 +220,7 @@ const ResourcesData = [
     title: "Figma",
     image: Figma,
     category: "Design",
-    tags: ["UI/UX", "Collaboration"],
+    tags: ["Collaboration", "UI/UX"],
     slug: "figma",
     description:
       "A collaborative interface design tool that allows teams to design, prototype, and gather feedback in real time.",
@@ -243,12 +248,23 @@ const ResourcesData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@FluxAcademy",
   },
+  {
+    id: uuidv4(),
+    title: "Fontshare",
+    image: Fontshare,
+    category: "Design",
+    tags: ["Assets", "Typography"],
+    slug: "fontshare",
+    description:
+      "A free font service by Indian Type Foundry for professional-grade fonts.",
+    source: "https://www.fontshare.com/",
+  },
   // {
   //   id: uuidv4(),
   //   title: "Framer",
   //   image: Framer,
   //   category: "Design",
-  //   tags: ["Prototyping", "Animation"],
+  //   tags: ["Animation", "Prototyping"],
   //   slug: "framer",
   //   description:
   //     "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
@@ -267,6 +283,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Frontend Mentor",
+    image: FrontendMentor,
+    category: "Learning",
+    tags: ["Frontend", "Practice Challenges"],
+    slug: "frontend-mentor",
+    description:
+      "A platform offering front-end coding challenges to help improve coding and design skills.",
+    source: "https://www.frontendmentor.io/",
+  },
+  {
+    id: uuidv4(),
     title: "GitHub Copilot",
     image: GithubCopilot,
     category: "Development",
@@ -281,7 +308,7 @@ const ResourcesData = [
     title: "GSAP",
     image: Gsap,
     category: "Development",
-    tags: ["Animations", "Web"],
+    tags: ["Animations", "Web Development"],
     slug: "gsap",
     description:
       "A JavaScript library for creating high-performance animations and transitions for web applications.",
@@ -303,7 +330,7 @@ const ResourcesData = [
   //   title: "Jest",
   //   image: Jest,
   //   category: "Development",
-  //   tags: ["Testing", "JavaScript"],
+  //   tags: ["JavaScript", "Testing"],
   //   slug: "jest",
   //   description:
   //     "A delightful JavaScript testing framework with a focus on simplicity and performance.",
@@ -369,7 +396,7 @@ const ResourcesData = [
     title: "Material UI",
     image: MaterialUI,
     category: "Development",
-    tags: ["UI Components", "Design System"],
+    tags: ["Design System", "UI Components"],
     slug: "material-ui",
     description:
       "A popular React UI framework for building modern, responsive, and accessible web applications.",
@@ -435,7 +462,7 @@ const ResourcesData = [
     title: "Notion",
     image: Notion,
     category: "Tools",
-    tags: ["Productivity", "Organization"],
+    tags: ["Organization", "Productivity"],
     slug: "notion",
     description:
       "A versatile workspace that combines notes, tasks, databases, and more to organize your personal and professional life.",
@@ -457,7 +484,7 @@ const ResourcesData = [
   //   title: "Pinterest",
   //   image: Pinterest,
   //   category: "Design",
-  //   tags: ["Inspiration", "Ideas"],
+  //   tags: ["Inspiration"],
   //   slug: "pinterest",
   //   description:
   //     "A visual discovery engine for finding ideas and inspiration for projects, hobbies, and more.",
@@ -490,11 +517,22 @@ const ResourcesData = [
     title: "Relume",
     image: Relume,
     category: "Tools",
-    tags: ["UI Design", "AI"],
+    tags: ["AI", "UI Design"],
     slug: "relume",
     description:
       "A tool to help designers and developers build Webflow sites faster with pre-designed components and style guides.",
     source: "https://www.relume.io/",
+  },
+  {
+    id: uuidv4(),
+    title: "Roadmap.sh",
+    image: Roadmap,
+    category: "Learning",
+    tags: ["Career", "Learning Resources"],
+    slug: "roadmap-sh",
+    description:
+      "Interactive roadmaps, guides, and resources to help developers navigate their careers.",
+    source: "https://roadmap.sh/",
   },
   {
     id: uuidv4(),
@@ -523,7 +561,7 @@ const ResourcesData = [
     title: "Sketch",
     image: Sketch,
     category: "Design",
-    tags: ["UI Design", "Prototyping"],
+    tags: ["Prototyping", "UI Design"],
     slug: "sketch",
     description:
       "A vector graphics editor for designing user interfaces, prototypes, and digital products.",
@@ -556,7 +594,7 @@ const ResourcesData = [
     title: "Storybook",
     image: Storybook,
     category: "Development",
-    tags: ["UI Components", "Documentation"],
+    tags: ["Documentation", "UI Components"],
     slug: "storybook",
     description:
       "An open-source tool for building and documenting isolated UI components.",
@@ -600,7 +638,7 @@ const ResourcesData = [
     title: "Udemy",
     image: Udemy,
     category: "Learning",
-    tags: ["Online Courses", "Education"],
+    tags: ["Education", "Online Courses"],
     slug: "udemy",
     description:
       "A global learning platform offering a wide range of courses in various fields, taught by industry experts.",
@@ -619,10 +657,21 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Uncut",
+    image: Uncut,
+    category: "Design",
+    tags: ["Assets", "Typography"],
+    slug: "uncut",
+    description:
+      "A curated platform showcasing fresh and modern fonts for inspiration.",
+    source: "https://www.uncut.wtf/",
+  },
+  {
+    id: uuidv4(),
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
-    tags: ["Resources", "Photography"],
+    tags: ["Photography", "Resources"],
     slug: "unsplash",
     description:
       "A platform providing high-quality, freely usable images shared by photographers around the world.",
@@ -638,6 +687,17 @@ const ResourcesData = [
     description:
       "A fast and modern frontend build tool that leverages native ES modules and offers lightning-fast hot module replacement.",
     source: "https://vite.dev/",
+  },
+  {
+    id: uuidv4(),
+    title: "W3Schools",
+    image: W3Schools,
+    category: "Learning",
+    tags: ["References", "Tutorials", "Web Development"],
+    slug: "w3schools",
+    description:
+      "An educational website offering tutorials and references for web development and programming.",
+    source: "https://www.w3schools.com/",
   },
   {
     id: uuidv4(),

@@ -22,11 +22,11 @@ const Resource = () => {
           <div className="flex items-center gap-4 mb-4">
             <span
               className={`w-fit text-sm font-semibold text-white px-4 py-2 rounded-full ${
-                tool.category === "Development" ? "bg-blue-700" : ""
-              } ${tool.category === "Design" ? "bg-purple-500" : ""} ${
-                tool.category === "Learning" ? "bg-green-600" : ""
-              } ${tool.category === "Creators" ? "bg-red-500" : ""} ${
-                tool.category === "Tools" ? "bg-cyan-500" : ""
+                tool.category === "Development" ? "bg-indigo-700" : ""
+              } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
+                tool.category === "Learning" ? "bg-emerald-600" : ""
+              } ${tool.category === "Creators" ? "bg-rose-600" : ""} ${
+                tool.category === "Tools" ? "bg-slate-500" : ""
               }`}
             >
               {tool.category}
