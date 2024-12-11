@@ -9,7 +9,7 @@ const LegalPage = () => {
           <h1 className="text-6xl font-bold uppercase">
             Legal <br /> <span className="text-neutral-400">Information</span>
           </h1>
-          <div className="flex flex-col gap-8 text-2xl text-neutral-400 max-w-[60ch]">
+          <div className="flex flex-col gap-8 text-2xl text-neutral-200 max-w-[60ch]">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
               voluptatibus minima fuga ipsa harum consectetur iste sunt. Officia

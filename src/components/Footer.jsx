@@ -52,16 +52,17 @@ const Footer = () => {
           href="#hero-section"
           className="w-fit absolute bottom-8 right-0 flex md:hidden items-center gap-1 p-2 border border-neutral-700 rounded-xl"
         >
-          Scroll to top
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18px"
-            height="18px"
-            viewBox="0 -960 960 960"
-            fill="#fff"
-          >
-            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
-          </svg>
+          <div className="bg-white rounded-lg p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 -960 960 960"
+              fill="#000"
+            >
+              <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg>
+          </div>
         </a>
       </div>
     </footer>

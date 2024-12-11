@@ -26,7 +26,7 @@ const Resource = () => {
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
                 tool.category === "Learning" ? "bg-emerald-600" : ""
               } ${tool.category === "Creators" ? "bg-rose-600" : ""} ${
-                tool.category === "Tools" ? "bg-slate-500" : ""
+                tool.category === "Tools" ? "bg-casper-700" : ""
               }`}
             >
               {tool.category}
@@ -37,7 +37,7 @@ const Resource = () => {
               ))}
             </span>
           </div>
-          <p className="text-2xl text-neutral-400 mb-4">{tool.description}</p>
+          <p className="text-2xl text-neutral-200 mb-4">{tool.description}</p>
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}

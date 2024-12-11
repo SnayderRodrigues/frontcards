@@ -9,7 +9,7 @@ const Hero = () => {
             Handpicked Resources and Tools for Frontend Developers and Web
             Designers.
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl max-w-[48ch]">
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl max-w-[48ch] text-neutral-200">
             Explore a collection of curated tools and resources that will
             enhance your skills and help you grow as a developer and designer.
           </p>
