@@ -11,15 +11,15 @@ const Resource = () => {
 
   return (
     <div className="wrapper pt-32 pb-32">
-      <div className="flex items-center gap-32 mt-8">
-        <div className="w-1/2 aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
-          <div className="w-2/3 p-16">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-8 lg:gap-16 xl:gap-32 md:mt-8">
+        <div className="w-full md:w-1/2 aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
+          <div className="w-2/3 sm:p-6 md:p-8 xl:p-16">
             <img src={tool.image} alt={tool.title} className="w-full h-full" />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col gap-4">
+        <div className="-order-1 md:order-1 md:w-1/2 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{tool.title}</h1>
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex flex-wrap items-center gap-4 mb-4">
             <span
               className={`w-fit text-sm font-semibold text-white px-4 py-2 rounded-full ${
                 tool.category === "Development" ? "bg-indigo-700" : ""
@@ -31,13 +31,17 @@ const Resource = () => {
             >
               {tool.category}
             </span>
-            <span className="flex gap-2 w-fit text-sm font-semibold">
+            <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-semibold">
               {tool.tags.map((tag, index) => (
-                <span key={index}>#{tag}</span>
+                <span key={index} className="shrink-0">
+                  #{tag}
+                </span>
               ))}
             </span>
           </div>
-          <p className="text-2xl text-neutral-200 mb-4">{tool.description}</p>
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-neutral-200 mb-4">
+            {tool.description}
+          </p>
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}
