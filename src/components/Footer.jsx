@@ -48,9 +48,9 @@ const Footer = () => {
             Legal
           </Link>
         </div>
-        <a
-          href="#hero-section"
+        <button
           className="w-fit absolute bottom-8 right-0 flex md:hidden items-center gap-1 p-2 border border-neutral-700 rounded-xl"
+          onClick={scrollToTop}
         >
           <div className="bg-white rounded-lg p-2">
             <svg
@@ -63,7 +63,7 @@ const Footer = () => {
               <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
             </svg>
           </div>
-        </a>
+        </button>
       </div>
     </footer>
   );

@@ -20,8 +20,8 @@ const Resource = () => {
         <div className="-order-1 md:order-1 md:w-1/2 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{tool.title}</h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
-            <span
-              className={`w-fit text-sm font-semibold text-white px-4 py-2 rounded-full ${
+            <div
+              className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
                 tool.category === "Development" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
                 tool.category === "Learning" ? "bg-emerald-600" : ""
@@ -29,8 +29,8 @@ const Resource = () => {
                 tool.category === "Tools" ? "bg-casper-700" : ""
               }`}
             >
-              {tool.category}
-            </span>
+              <span className="mb-[2px]">{tool.category}</span>
+            </div>
             <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-semibold">
               {tool.tags.map((tag, index) => (
                 <span key={index} className="shrink-0">
@@ -45,7 +45,7 @@ const Resource = () => {
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}
-              className="group flex items-center justify-center gap-1 text-xl font-medium text-white bg-neutral-950 px-5 py-2 border border-neutral-700 rounded-lg transition-colors hover:text-neutral-400"
+              className="group flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-950 px-5 py-2 border border-neutral-700 rounded-lg transition-colors hover:text-neutral-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Resource = () => {
                 height="16px"
                 viewBox="0 -960 960 960"
                 fill="#fff"
-                className="ml-[-4px] group-hover:fill-neutral-400 transition-colors"
+                className="w-3 md:w-4 ml-[-4px] group-hover:fill-neutral-400 transition-colors"
               >
                 <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
               </svg>
