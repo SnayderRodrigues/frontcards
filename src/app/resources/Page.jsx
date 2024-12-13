@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import resourcesData from "../../data/ResourcesData.js";
 import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
 
 const FeaturedTools = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [currentPage, setCurrentPage] = useState(
+    Number(searchParams.get("page")) || 1
+  );
+  const [selectedCategory, setSelectedCategory] = useState(
+    searchParams.get("category") || "All"
+  );
 
   const itemsPerPage = 12;
 
@@ -16,8 +22,14 @@ const FeaturedTools = () => {
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-
   const currentTools = filteredTools.slice(startIndex, endIndex);
+
+  useEffect(() => {
+    const params = {};
+    if (selectedCategory !== "All") params.category = selectedCategory;
+    if (currentPage > 1) params.page = currentPage;
+    setSearchParams(params);
+  }, [selectedCategory, currentPage, setSearchParams]);
 
   return (
     <section className="wrapper">
