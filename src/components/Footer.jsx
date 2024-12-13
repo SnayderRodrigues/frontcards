@@ -7,19 +7,25 @@ const Footer = () => {
   return (
     <footer className="border-t border-t-white border-opacity-20">
       <div className="wrapper relative flex flex-col md:flex-row justify-between gap-12 pt-16 pb-8">
-        <div className="flex flex-col gap-4 justify-between">
-          <a
-            href="/"
-            className="text-3xl sm:text-3xl md:text-4xl font-bold uppercase hover:text-neutral-400 transition-colors"
-          >
-            Frontend Tools
-          </a>
-          <div className="text-lg lg:text-xl font-medium">
-            Coded by{" "}
+        <div className="flex flex-col justify-between gap-4 md:gap-12">
+          <div className="flex flex-col gap-4">
+            <a
+              href="/"
+              className="w-fit text-3xl sm:text-3xl md:text-4xl font-bold uppercase hover:text-neutral-400 transition-colors"
+            >
+              Frontend Tools
+            </a>
+            <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
+              Uma coleção selecionada de recursos de desenvolvimento e design,
+              frequentemente atualizada para a comunidade.
+            </p>
+          </div>
+          <div className="text-base font-medium">
+            © 2024{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="font-bold text-neutral-400 hover:text-white transition-colors"
+              className="font-semibold text-neutral-400 hover:text-white transition-colors"
             >
               Snayder Rodrigues
             </a>
@@ -27,25 +33,32 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 text-lg lg:text-xl font-medium">
           <Link
+            to="/"
+            className="w-fit hover:text-neutral-400 transition-colors"
+            onClick={scrollToTop}
+          >
+            Início
+          </Link>
+          <Link
             to="/about"
             className="w-fit hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
-            About
+            Sobre
           </Link>
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
             className="w-fit hover:text-neutral-400 transition-colors"
           >
-            Submit a Resource
+            Indicar Ferramenta
           </a>
           <Link
             to="/legal"
             className="w-fit hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
-            Legal
+            Termos Legais
           </Link>
         </div>
         <button

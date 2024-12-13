@@ -28,11 +28,11 @@ const Card = ({ tool }) => {
         </span>
         <div
           className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
-            tool.category === "Development" ? "bg-indigo-700" : ""
+            tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-            tool.category === "Learning" ? "bg-emerald-600" : ""
-          } ${tool.category === "Creators" ? "bg-rose-600" : ""} ${
-            tool.category === "Tools" ? "bg-casper-700" : ""
+            tool.category === "Aprendizado" ? "bg-emerald-600" : ""
+          } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
+            tool.category === "Ferramentas" ? "bg-casper-700" : ""
           }`}
         >
           <span className="mb-[2px]">{tool.category}</span>
@@ -40,14 +40,14 @@ const Card = ({ tool }) => {
       </div>
       <div
         className={`flex items-center gap-1 absolute top-2 right-2 z-10 text-sm ${
-          tool.category === "Development" ? "bg-indigo-700" : ""
+          tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
         } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-          tool.category === "Learning" ? "bg-emerald-600" : ""
-        } ${tool.category === "Creators" ? "bg-rose-600" : ""} ${
-          tool.category === "Tools" ? "bg-casper-700" : ""
+          tool.category === "Aprendizado" ? "bg-emerald-600" : ""
+        } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
+          tool.category === "Ferramentas" ? "bg-casper-700" : ""
         } px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100`}
       >
-        <span className="mb-[2px]">More Info</span>
+        <span className="mb-[2px]">Mais Informações</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16px"

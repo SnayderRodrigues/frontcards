@@ -7,7 +7,7 @@ const LegalPage = () => {
       <section className="font-medium">
         <div className="wrapper grid grid-cols-2 gap-32 pt-48 pb-32">
           <h1 className="text-6xl font-bold uppercase">
-            Legal <br /> <span className="text-neutral-400">Information</span>
+            Termos <br /> <span className="text-neutral-400">Legais</span>
           </h1>
           <div className="flex flex-col gap-8 text-2xl text-neutral-200 max-w-[60ch]">
             <p>

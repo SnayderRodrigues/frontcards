@@ -10,13 +10,13 @@ const FeaturedTools = () => {
     Number(searchParams.get("page")) || 1
   );
   const [selectedCategory, setSelectedCategory] = useState(
-    searchParams.get("category") || "All"
+    searchParams.get("category") || "Todas"
   );
 
   const itemsPerPage = 12;
 
   const filteredTools = resourcesData.filter((tool) =>
-    selectedCategory === "All" ? true : tool.category.includes(selectedCategory)
+    selectedCategory === "Todas" ? true : tool.category.includes(selectedCategory)
   );
   const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
 
@@ -26,7 +26,7 @@ const FeaturedTools = () => {
 
   useEffect(() => {
     const params = {};
-    if (selectedCategory !== "All") params.category = selectedCategory;
+    if (selectedCategory !== "Todas") params.category = selectedCategory;
     if (currentPage > 1) params.page = currentPage;
     setSearchParams(params);
   }, [selectedCategory, currentPage, setSearchParams]);

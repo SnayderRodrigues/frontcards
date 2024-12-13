@@ -11,12 +11,12 @@ const Filter = ({
   const [isOpen, setIsOpen] = useState(false);
 
   const categories = [
-    "All",
-    "Development",
+    "Todas",
+    "Desenvolvimento",
     "Design",
-    "Learning",
-    "Creators",
-    "Tools",
+    "Aprendizado",
+    "Criadores",
+    "Ferramentas",
   ];
 
   const handleCategoryClick = (category) => {

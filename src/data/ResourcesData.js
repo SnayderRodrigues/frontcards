@@ -9,9 +9,7 @@ import CanIUse from "../assets/caniuse.png";
 import ChrisDevInDev from "../assets/Chris DevInDev.png";
 import CodePen from "../assets/codepen.svg";
 import CoderCoder from "../assets/Coder Coder.png";
-import Coursera from "../assets/coursera.svg";
 import DailyDev from "../assets/dailydev.svg";
-import DesignCourse from "../assets/DesignCourse.png";
 import Dribbble from "../assets/dribbble.svg";
 import Figma from "../assets/figma.svg";
 import Fireship from "../assets/Fireship.png";
@@ -23,7 +21,6 @@ import FrontendMentor from "../assets/frontend-mentor.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
 import Gsap from "../assets/greensock.svg";
 import Hyperplexed from "../assets/Hyperplexed.png";
-import Jest from "../assets/jest.svg";
 import Juxtopposed from "../assets/Juxtopposed.png";
 import Kalypso from "../assets/Kalypso.png";
 import KevinPowell from "../assets/Kevin Powell.png";
@@ -33,17 +30,14 @@ import MaterialUI from "../assets/material-ui.svg";
 import MaxiBestOf from "../assets/maxibestof.png";
 import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
-import Mobbin from "../assets/mobbin.svg";
 import Next from "../assets/nextjs.svg";
 import Notion from "../assets/notion.svg";
 import OlivierLarose from "../assets/Olivier Larose.png";
-import Pinterest from "../assets/pinterest.svg";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
 import Relume from "../assets/relume.svg";
 import Roadmap from "../assets/roadmap-sh.svg";
 import Sass from "../assets/sass.svg";
-import Serliv from "../assets/Serliv.png";
 import Sketch from "../assets/sketch.svg";
 import Spline from "../assets/spline.png";
 import StackOverflow from "../assets/stackoverflow.svg";
@@ -65,8 +59,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Adobe Illustrator",
     image: AdobeIllustrator,
-    category: "Tools",
-    tags: ["Illustration", "Vector Graphics"],
+    category: "Ferramentas",
+    tags: ["Gráficos Vetoriais", "Ilustrações"],
     slug: "adobe-illustrator",
     description:
       "A vector graphics editor for creating illustrations, logos, and other scalable graphics.",
@@ -76,8 +70,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Adobe Photoshop",
     image: AdobePhotoshop,
-    category: "Tools",
-    tags: ["Graphic Design", "Image Editing"],
+    category: "Ferramentas",
+    tags: ["Design Gráfico", "Edição de Imagens"],
     slug: "adobe-photoshop",
     description:
       "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
@@ -87,8 +81,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Augusto Galego",
     image: AugustoGalego,
-    category: "Creators",
-    tags: ["Career", "Software Engineering"],
+    category: "Criadores",
+    tags: ["Carreira", "Engenharia de Software"],
     slug: "augusto-galego",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -99,7 +93,7 @@ const ResourcesData = [
     title: "Awwwards",
     image: Awwwards,
     category: "Design",
-    tags: ["Inspiration", "Web Design"],
+    tags: ["Inspiração", "Web Design"],
     slug: "awwwards",
     description:
       "A platform that showcases and awards the best web design projects from around the world.",
@@ -109,8 +103,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Blender",
     image: Blender,
-    category: "Tools",
-    tags: ["3D Modeling", "Animation"],
+    category: "Ferramentas",
+    tags: ["Animações", "Modelagem 3D"],
     slug: "blender",
     description:
       "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
@@ -120,7 +114,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "By Huy",
     image: ByHuy,
-    category: "Creators",
+    category: "Criadores",
     tags: ["Frontend", "UI/UX", "Web Design"],
     slug: "by-huy",
     description:
@@ -131,8 +125,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Can I Use",
     image: CanIUse,
-    category: "Tools",
-    tags: ["Browser Support", "Web Tool"],
+    category: "Ferramentas",
+    tags: ["Compatibilidade", "Ferramentas Web"],
     slug: "can-i-use",
     description:
       "Can I use provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
@@ -142,8 +136,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Chris DevInDev",
     image: ChrisDevInDev,
-    category: "Creators",
-    tags: ["Career", "Learning", "Mentoring"],
+    category: "Criadores",
+    tags: ["Aprendizado", "Carreira", "Mentoria"],
     slug: "chris-devindev",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -153,8 +147,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "CodePen",
     image: CodePen,
-    category: "Development",
-    tags: ["Community", "Prototyping"],
+    category: "Desenvolvimento",
+    tags: ["Editor de Código", "Prototipagem"],
     slug: "codepen",
     description:
       "An online code editor and community for testing and sharing HTML, CSS, and JavaScript snippets.",
@@ -164,52 +158,30 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Coder Coder",
     image: CoderCoder,
-    category: "Creators",
-    tags: ["Frontend", "Learning"],
+    category: "Criadores",
+    tags: ["Aprendizado", "Frontend"],
     slug: "coder-coder",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@TheCoderCoder",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Coursera",
-  //   image: Coursera,
-  //   category: "Learning",
-  //   tags: ["Education", "Online Courses"],
-  //   slug: "coursera",
-  //   description:
-  //     "An online learning platform offering courses, specializations, and degrees from top universities and companies.",
-  //   source: "https://www.coursera.org/",
-  // },
   {
     id: uuidv4(),
     title: "Daily.dev",
     image: DailyDev,
-    category: "Learning",
-    tags: ["Community", "News"],
+    category: "Aprendizado",
+    tags: ["Comunidade", "Informações"],
     slug: "daily-dev",
     description:
       "A personalized feed for developers that aggregates programming news and updates from across the web.",
     source: "https://daily.dev/",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "DesignCourse",
-  //   image: DesignCourse,
-  //   category: "Creators",
-  //   tags: ["Learning", "UI/UX"],
-  //   slug: "designcourse",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-  //   source: "https://www.youtube.com/@DesignCourse",
-  // },
   {
     id: uuidv4(),
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
-    tags: ["Inspiration", "UI/UX"],
+    tags: ["Inspiração", "UI/UX"],
     slug: "dribbble",
     description:
       "A platform for showcasing, discovering, and connecting with designers and their work.",
@@ -220,7 +192,7 @@ const ResourcesData = [
     title: "Figma",
     image: Figma,
     category: "Design",
-    tags: ["Collaboration", "UI/UX"],
+    tags: ["Colaboração", "UI/UX"],
     slug: "figma",
     description:
       "A collaborative interface design tool that allows teams to design, prototype, and gather feedback in real time.",
@@ -230,8 +202,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Fireship",
     image: Fireship,
-    category: "Creators",
-    tags: ["Information", "Learning"],
+    category: "Criadores",
+    tags: ["Aprendizado", "Informação"],
     slug: "fireship",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -241,8 +213,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Flux Academy",
     image: FluxAcademy,
-    category: "Creators",
-    tags: ["Learning", "UI/UX", "Web Design"],
+    category: "Criadores",
+    tags: ["Aprendizado", "UI/UX", "Web Design"],
     slug: "flux-academy",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -253,29 +225,29 @@ const ResourcesData = [
     title: "Fontshare",
     image: Fontshare,
     category: "Design",
-    tags: ["Assets", "Typography"],
+    tags: ["Recursos", "Tipografia"],
     slug: "fontshare",
     description:
       "A free font service by Indian Type Foundry for professional-grade fonts.",
     source: "https://www.fontshare.com/",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Framer",
-  //   image: Framer,
-  //   category: "Design",
-  //   tags: ["Animation", "Prototyping"],
-  //   slug: "framer",
-  //   description:
-  //     "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
-  //   source: "https://www.framer.com/",
-  // },
+  {
+    id: uuidv4(),
+    title: "Framer",
+    image: Framer,
+    category: "Design",
+    tags: ["Animações", "Prototipagem"],
+    slug: "framer",
+    description:
+      "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
+    source: "https://www.framer.com/",
+  },
   {
     id: uuidv4(),
     title: "freeCodeCamp",
     image: FreeCodeCamp,
-    category: "Learning",
-    tags: ["Learning Resources", "Programming"],
+    category: "Aprendizado",
+    tags: ["Certificações", "Programação"],
     slug: "freecodecamp",
     description:
       "An open-source platform offering coding lessons, projects, and certifications for developers.",
@@ -285,8 +257,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Frontend Mentor",
     image: FrontendMentor,
-    category: "Learning",
-    tags: ["Frontend", "Practice Challenges"],
+    category: "Aprendizado",
+    tags: ["Desafios", "Frontend"],
     slug: "frontend-mentor",
     description:
       "A platform offering front-end coding challenges to help improve coding and design skills.",
@@ -296,8 +268,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "GitHub Copilot",
     image: GithubCopilot,
-    category: "Development",
-    tags: ["AI", "Coding Assistant"],
+    category: "Desenvolvimento",
+    tags: ["IA", "Assistente de Código"],
     slug: "github-copilot",
     description:
       "An AI-powered code completion tool that suggests entire lines or functions as you type.",
@@ -307,8 +279,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "GSAP",
     image: Gsap,
-    category: "Development",
-    tags: ["Animations", "Web Development"],
+    category: "Desenvolvimento",
+    tags: ["Animações", "Frontend", "JavaScript"],
     slug: "gsap",
     description:
       "A JavaScript library for creating high-performance animations and transitions for web applications.",
@@ -318,29 +290,18 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Hyperplexed",
     image: Hyperplexed,
-    category: "Creators",
-    tags: ["Animation", "Frontend", "Learning"],
+    category: "Criadores",
+    tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "hyperplexed",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@Hyperplexed",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Jest",
-  //   image: Jest,
-  //   category: "Development",
-  //   tags: ["JavaScript", "Testing"],
-  //   slug: "jest",
-  //   description:
-  //     "A delightful JavaScript testing framework with a focus on simplicity and performance.",
-  //   source: "https://jestjs.io/",
-  // },
   {
     id: uuidv4(),
     title: "Juxtopposed",
     image: Juxtopposed,
-    category: "Creators",
+    category: "Criadores",
     tags: ["Frontend", "UI/UX", "Web Design"],
     slug: "juxtopposed",
     description:
@@ -351,8 +312,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Kalypso",
     image: Kalypso,
-    category: "Creators",
-    tags: ["Inspiration", "Resources", "Web Design"],
+    category: "Criadores",
+    tags: ["Inspiração", "Recursos", "Web Design"],
     slug: "kalypso",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -362,8 +323,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Kevin Powell",
     image: KevinPowell,
-    category: "Creators",
-    tags: ["Frontend", "Learning"],
+    category: "Criadores",
+    tags: ["Aprendizado", "Frontend"],
     slug: "kevin-powell",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -373,7 +334,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Lighthouse",
     image: Lighthouse,
-    category: "Tools",
+    category: "Ferramentas",
     tags: ["Performance", "SEO"],
     slug: "lighthouse",
     description:
@@ -384,8 +345,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Lun Dev",
     image: LunDev,
-    category: "Creators",
-    tags: ["Animations", "Frontend", "Learning"],
+    category: "Criadores",
+    tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "lun-dev",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
@@ -395,8 +356,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Material UI",
     image: MaterialUI,
-    category: "Development",
-    tags: ["Design System", "UI Components"],
+    category: "Desenvolvimento",
+    tags: ["Componentes", "Design System", "UI"],
     slug: "material-ui",
     description:
       "A popular React UI framework for building modern, responsive, and accessible web applications.",
@@ -407,7 +368,7 @@ const ResourcesData = [
     title: "MaxiBestOf",
     image: MaxiBestOf,
     category: "Design",
-    tags: ["Inspiration", "Web Design"],
+    tags: ["Inspiração", "Web Design"],
     slug: "maxibestof",
     description:
       "A curated gallery of modern web design and user interfaces for inspiration.",
@@ -417,40 +378,29 @@ const ResourcesData = [
     id: uuidv4(),
     title: "MDN",
     image: Mdn,
-    category: "Learning",
-    tags: ["Documentation", "Reference"],
+    category: "Aprendizado",
+    tags: ["Documentação", "Referências"],
     slug: "mdn",
     description:
-      "Mozilla Developer Network provides comprehensive web development documentation, tutorials, and guides.",
+      "Mozilla Developer Network provides comprehensive web Desenvolvimento documentation, tutorials, and guides.",
     source: "https://developer.mozilla.org/en-US/",
   },
   {
     id: uuidv4(),
     title: "Midjourney",
     image: Midjourney,
-    category: "Tools",
-    tags: ["AI Art", "Generative"],
+    category: "Ferramentas",
+    tags: ["IA", "Gerador de Imagens"],
     slug: "midjourney",
     description:
       "An AI-powered platform for creating stunning artwork and designs through text prompts.",
     source: "https://www.midjourney.com/",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Mobbin",
-  //   image: Mobbin,
-  //   category: "Design",
-  //   tags: ["Design Inspiration", "UI/UX"],
-  //   slug: "mobbin",
-  //   description:
-  //     "A comprehensive library of mobile design patterns and user flows for inspiration and reference.",
-  //   source: "https://mobbin.com/",
-  // },
   {
     id: uuidv4(),
     title: "Next.JS",
     image: Next,
-    category: "Development",
+    category: "Desenvolvimento",
     tags: ["Framework", "React"],
     slug: "nextjs",
     description:
@@ -461,8 +411,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Notion",
     image: Notion,
-    category: "Tools",
-    tags: ["Organization", "Productivity"],
+    category: "Ferramentas",
+    tags: ["Organização", "Produtividade"],
     slug: "notion",
     description:
       "A versatile workspace that combines notes, tasks, databases, and more to organize your personal and professional life.",
@@ -472,30 +422,19 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Olivier Larose",
     image: OlivierLarose,
-    category: "Creators",
-    tags: ["Animations", "Frontend", "Learning"],
+    category: "Criadores",
+    tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "olivier-larose",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@olivierlarose1",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Pinterest",
-  //   image: Pinterest,
-  //   category: "Design",
-  //   tags: ["Inspiration"],
-  //   slug: "pinterest",
-  //   description:
-  //     "A visual discovery engine for finding ideas and inspiration for projects, hobbies, and more.",
-  //   source: "https://www.pinterest.com/",
-  // },
   {
     id: uuidv4(),
     title: "Prettier",
     image: Prettier,
-    category: "Development",
-    tags: ["Code Formatting", "JavaScript"],
+    category: "Desenvolvimento",
+    tags: ["Extensão", "Formatação de Código"],
     slug: "prettier",
     description:
       "An opinionated code formatter that enforces a consistent style across your codebase.",
@@ -505,8 +444,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "React",
     image: React,
-    category: "Development",
-    tags: ["Library", "UI"],
+    category: "Desenvolvimento",
+    tags: ["Biblioteca", "Frontend"],
     slug: "react",
     description:
       "A JavaScript library for building user interfaces with a component-based architecture.",
@@ -516,8 +455,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Relume",
     image: Relume,
-    category: "Tools",
-    tags: ["AI", "UI Design"],
+    category: "Ferramentas",
+    tags: ["IA", "UI Design"],
     slug: "relume",
     description:
       "A tool to help designers and developers build Webflow sites faster with pre-designed components and style guides.",
@@ -527,8 +466,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Roadmap.sh",
     image: Roadmap,
-    category: "Learning",
-    tags: ["Career", "Learning Resources"],
+    category: "Aprendizado",
+    tags: ["Carreira", "Recursos"],
     slug: "roadmap-sh",
     description:
       "Interactive roadmaps, guides, and resources to help developers navigate their careers.",
@@ -538,30 +477,19 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Sass",
     image: Sass,
-    category: "Development",
-    tags: ["CSS Preprocessor", "Styles"],
+    category: "Desenvolvimento",
+    tags: ["CSS", "Estilização"],
     slug: "sass",
     description:
       "A preprocessor scripting language that is interpreted into CSS, adding features like variables and nesting.",
     source: "https://sass-lang.com/",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Serliv",
-  //   image: Serliv,
-  //   category: "Creators",
-  //   tags: ["Frontend", "Learning"],
-  //   slug: "serliv",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-  //   source: "https://www.youtube.com/@serliv",
-  // },
   {
     id: uuidv4(),
     title: "Sketch",
     image: Sketch,
     category: "Design",
-    tags: ["Prototyping", "UI Design"],
+    tags: ["Prototipagem", "UI Design"],
     slug: "sketch",
     description:
       "A vector graphics editor for designing user interfaces, prototypes, and digital products.",
@@ -571,8 +499,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Stack Overflow",
     image: StackOverflow,
-    category: "Learning",
-    tags: ["Community", "Q&A"],
+    category: "Aprendizado",
+    tags: ["Comunidade", "Programação"],
     slug: "stack-overflow",
     description:
       "A community-driven platform where developers ask questions and share knowledge.",
@@ -583,7 +511,7 @@ const ResourcesData = [
     title: "Spline",
     image: Spline,
     category: "Design",
-    tags: ["3D Design", "Interactive"],
+    tags: ["3D Design", "Modelagem"],
     slug: "spline",
     description:
       "A 3D design tool to create interactive experiences directly in the browser.",
@@ -593,8 +521,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Storybook",
     image: Storybook,
-    category: "Development",
-    tags: ["Documentation", "UI Components"],
+    category: "Desenvolvimento",
+    tags: ["Componentes", "Documentação", "UI"],
     slug: "storybook",
     description:
       "An open-source tool for building and documenting isolated UI components.",
@@ -604,8 +532,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Tailwind CSS",
     image: Tailwind,
-    category: "Development",
-    tags: ["CSS Framework", "Utility-first"],
+    category: "Desenvolvimento",
+    tags: ["Estilização", "Framework CSS"],
     slug: "tailwindcss",
     description:
       "A utility-first CSS framework for creating custom designs directly in your HTML.",
@@ -615,8 +543,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Three.JS",
     image: ThreeJs,
-    category: "Development",
-    tags: ["3D Graphics", "WebGL"],
+    category: "Desenvolvimento",
+    tags: ["Biblioteca 3D", "WebGL"],
     slug: "threejs",
     description:
       "A JavaScript library for creating 3D content in web applications using WebGL.",
@@ -626,8 +554,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "TinyPNG",
     image: TinyPNG,
-    category: "Tools",
-    tags: ["Image Optimization"],
+    category: "Ferramentas",
+    tags: ["Otimização de Imagem"],
     slug: "tinypng",
     description:
       "A tool for optimizing PNG and JPEG images while maintaining quality.",
@@ -637,11 +565,11 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Udemy",
     image: Udemy,
-    category: "Learning",
-    tags: ["Education", "Online Courses"],
+    category: "Aprendizado",
+    tags: ["Certificações", "Educação"],
     slug: "udemy",
     description:
-      "A global learning platform offering a wide range of courses in various fields, taught by industry experts.",
+      "A global Aprendizado platform offering a wide range of courses in various fields, taught by industry experts.",
     source: "https://www.udemy.com/",
   },
   {
@@ -649,7 +577,7 @@ const ResourcesData = [
     title: "Uiverse",
     image: Uiverse,
     category: "Design",
-    tags: ["UI Components", "Web Design"],
+    tags: ["Componentes", "inspiração", "Web Design"],
     slug: "uiverse",
     description:
       "A collection of open-source and customizable UI components for modern web projects.",
@@ -660,7 +588,7 @@ const ResourcesData = [
     title: "Uncut",
     image: Uncut,
     category: "Design",
-    tags: ["Assets", "Typography"],
+    tags: ["Recursos", "Tipografia"],
     slug: "uncut",
     description:
       "A curated platform showcasing fresh and modern fonts for inspiration.",
@@ -671,7 +599,7 @@ const ResourcesData = [
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
-    tags: ["Photography", "Resources"],
+    tags: ["Fotografia", "Recursos"],
     slug: "unsplash",
     description:
       "A platform providing high-quality, freely usable images shared by photographers around the world.",
@@ -681,8 +609,8 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Vite",
     image: Vite,
-    category: "Development",
-    tags: ["Build Tool", "Frontend"],
+    category: "Desenvolvimento",
+    tags: ["Ferramenta de Build", "Frontend"],
     slug: "vite",
     description:
       "A fast and modern frontend build tool that leverages native ES modules and offers lightning-fast hot module replacement.",
@@ -692,19 +620,19 @@ const ResourcesData = [
     id: uuidv4(),
     title: "W3Schools",
     image: W3Schools,
-    category: "Learning",
-    tags: ["References", "Tutorials", "Web Development"],
+    category: "Aprendizado",
+    tags: ["Programação", "Referências", "Tutoriais"],
     slug: "w3schools",
     description:
-      "An educational website offering tutorials and references for web development and programming.",
+      "An educational website offering tutorials and references for web Desenvolvimento and programming.",
     source: "https://www.w3schools.com/",
   },
   {
     id: uuidv4(),
     title: "Web Dev Simplified",
     image: WebDevSimplified,
-    category: "Creators",
-    tags: ["Fullstack", "Learning"],
+    category: "Criadores",
+    tags: ["Aprendizado", "Fullstack"],
     slug: "web-dev-simplified",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",

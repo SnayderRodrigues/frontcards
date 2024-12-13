@@ -22,11 +22,11 @@ const Resource = () => {
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
               className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
-                tool.category === "Development" ? "bg-indigo-700" : ""
+                tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-                tool.category === "Learning" ? "bg-emerald-600" : ""
-              } ${tool.category === "Creators" ? "bg-rose-600" : ""} ${
-                tool.category === "Tools" ? "bg-casper-700" : ""
+                tool.category === "Aprendizado" ? "bg-emerald-600" : ""
+              } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
+                tool.category === "Ferramentas" ? "bg-casper-700" : ""
               }`}
             >
               <span className="mb-[2px]">{tool.category}</span>
@@ -57,9 +57,9 @@ const Resource = () => {
               >
                 <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
               </svg>
-              <span className="mb-[2px]">Back</span>
+              <span className="mb-[2px]">Voltar</span>
             </Link>
-            <Button text="View Resource" href={tool.source} />
+            <Button text="Explorar" href={tool.source} />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const ErrorPage = () => {
       <Header />
       <main>
         <div className="wrapper py-32">
-          <h1>Not Found</h1>
+          <h1>Página não encontrada</h1>
         </div>
       </main>
       <Footer />

@@ -7,7 +7,7 @@ const AboutPage = () => {
       <section className="font-medium">
         <div className="wrapper grid grid-cols-2 gap-32 pt-48">
           <h1 className="text-6xl font-bold uppercase">
-            About <br />{" "}
+            Sobre <br />{" "}
             <span className="text-neutral-400">Frontend Tools</span>
           </h1>
           <div className="flex flex-col gap-8 text-2xl text-neutral-200 max-w-[60ch]">

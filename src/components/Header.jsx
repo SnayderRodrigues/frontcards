@@ -17,14 +17,21 @@ const Header = () => {
         </a>
         <div className="flex items-center gap-8 sm:text-lg lg:text-xl font-medium">
           <Link
+            to="/"
+            className="hidden md:block hover:text-neutral-400 transition-colors"
+            onClick={scrollToTop}
+          >
+            Início
+          </Link>
+          <Link
             to="/about"
             className="hidden md:block hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
-            About
+            Sobre
           </Link>
           <Button
-            text="Submit a Resource"
+            text="Indicar Ferramenta"
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
           />
         </div>
