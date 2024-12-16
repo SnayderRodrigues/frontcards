@@ -45,7 +45,7 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="w-fit flex items-center gap-2 p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
+      <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold  p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}
@@ -53,7 +53,7 @@ const FeaturedTools = () => {
               setCurrentPage(index + 1);
               window.scrollTo({ top: 0 });
             }}
-            className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center text-base lg:text-lg xl:text-xl font-semibold rounded-lg transition-colors ${
+            className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center rounded-lg transition-colors ${
               currentPage === index + 1
                 ? "bg-neutral-100 text-black"
                 : "hover:bg-neutral-800"

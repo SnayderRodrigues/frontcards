@@ -22,12 +22,10 @@ const Resource = () => {
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
               className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
-                tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
+                tool.category === "Frontend" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
                 tool.category === "Aprendizado" ? "bg-emerald-600" : ""
-              } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
-                tool.category === "Ferramentas" ? "bg-casper-700" : ""
-              }`}
+              } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
             >
               <span className="mb-[2px]">{tool.category}</span>
             </div>

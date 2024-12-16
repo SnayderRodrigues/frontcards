@@ -31,7 +31,6 @@ import MaxiBestOf from "../assets/maxibestof.png";
 import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
 import Next from "../assets/nextjs.svg";
-import Notion from "../assets/notion.svg";
 import OlivierLarose from "../assets/Olivier Larose.png";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
@@ -59,7 +58,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Adobe Illustrator",
     image: AdobeIllustrator,
-    category: "Ferramentas",
+    category: "Design",
     tags: ["Gráficos Vetoriais", "Ilustrações"],
     slug: "adobe-illustrator",
     description:
@@ -70,7 +69,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Adobe Photoshop",
     image: AdobePhotoshop,
-    category: "Ferramentas",
+    category: "Design",
     tags: ["Design Gráfico", "Edição de Imagens"],
     slug: "adobe-photoshop",
     description:
@@ -103,7 +102,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Blender",
     image: Blender,
-    category: "Ferramentas",
+    category: "Design",
     tags: ["Animações", "Modelagem 3D"],
     slug: "blender",
     description:
@@ -125,7 +124,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Can I Use",
     image: CanIUse,
-    category: "Ferramentas",
+    category: "Frontend",
     tags: ["Compatibilidade", "Ferramentas Web"],
     slug: "can-i-use",
     description:
@@ -147,7 +146,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "CodePen",
     image: CodePen,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Editor de Código", "Prototipagem"],
     slug: "codepen",
     description:
@@ -268,7 +267,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "GitHub Copilot",
     image: GithubCopilot,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["IA", "Assistente de Código"],
     slug: "github-copilot",
     description:
@@ -279,7 +278,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "GSAP",
     image: Gsap,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Animações", "Frontend", "JavaScript"],
     slug: "gsap",
     description:
@@ -334,7 +333,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Lighthouse",
     image: Lighthouse,
-    category: "Ferramentas",
+    category: "Frontend",
     tags: ["Performance", "SEO"],
     slug: "lighthouse",
     description:
@@ -356,7 +355,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Material UI",
     image: MaterialUI,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Componentes", "Design System", "UI"],
     slug: "material-ui",
     description:
@@ -382,14 +381,14 @@ const ResourcesData = [
     tags: ["Documentação", "Referências"],
     slug: "mdn",
     description:
-      "Mozilla Developer Network provides comprehensive web Desenvolvimento documentation, tutorials, and guides.",
+      "Mozilla Developer Network provides comprehensive web development documentation, tutorials, and guides.",
     source: "https://developer.mozilla.org/en-US/",
   },
   {
     id: uuidv4(),
     title: "Midjourney",
     image: Midjourney,
-    category: "Ferramentas",
+    category: "Design",
     tags: ["IA", "Gerador de Imagens"],
     slug: "midjourney",
     description:
@@ -400,23 +399,12 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Next.JS",
     image: Next,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Framework", "React"],
     slug: "nextjs",
     description:
       "A React-based framework for building server-rendered and static web applications with ease.",
     source: "https://nextjs.org/",
-  },
-  {
-    id: uuidv4(),
-    title: "Notion",
-    image: Notion,
-    category: "Ferramentas",
-    tags: ["Organização", "Produtividade"],
-    slug: "notion",
-    description:
-      "A versatile workspace that combines notes, tasks, databases, and more to organize your personal and professional life.",
-    source: "https://www.notion.so/",
   },
   {
     id: uuidv4(),
@@ -433,7 +421,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Prettier",
     image: Prettier,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Extensão", "Formatação de Código"],
     slug: "prettier",
     description:
@@ -444,7 +432,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "React",
     image: React,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Biblioteca", "Frontend"],
     slug: "react",
     description:
@@ -455,7 +443,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Relume",
     image: Relume,
-    category: "Ferramentas",
+    category: "Design",
     tags: ["IA", "UI Design"],
     slug: "relume",
     description:
@@ -477,7 +465,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Sass",
     image: Sass,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["CSS", "Estilização"],
     slug: "sass",
     description:
@@ -521,7 +509,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Storybook",
     image: Storybook,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Componentes", "Documentação", "UI"],
     slug: "storybook",
     description:
@@ -532,7 +520,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Tailwind CSS",
     image: Tailwind,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Estilização", "Framework CSS"],
     slug: "tailwindcss",
     description:
@@ -543,7 +531,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Three.JS",
     image: ThreeJs,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Biblioteca 3D", "WebGL"],
     slug: "threejs",
     description:
@@ -554,7 +542,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "TinyPNG",
     image: TinyPNG,
-    category: "Ferramentas",
+    category: "Frontend",
     tags: ["Otimização de Imagem"],
     slug: "tinypng",
     description:
@@ -609,7 +597,7 @@ const ResourcesData = [
     id: uuidv4(),
     title: "Vite",
     image: Vite,
-    category: "Desenvolvimento",
+    category: "Frontend",
     tags: ["Ferramenta de Build", "Frontend"],
     slug: "vite",
     description:
@@ -624,7 +612,7 @@ const ResourcesData = [
     tags: ["Programação", "Referências", "Tutoriais"],
     slug: "w3schools",
     description:
-      "An educational website offering tutorials and references for web Desenvolvimento and programming.",
+      "An educational website offering tutorials and references for web development and programming.",
     source: "https://www.w3schools.com/",
   },
   {

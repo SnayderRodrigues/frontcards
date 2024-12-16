@@ -28,24 +28,20 @@ const Card = ({ tool }) => {
         </span>
         <div
           className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
-            tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
+            tool.category === "Frontend" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
             tool.category === "Aprendizado" ? "bg-emerald-600" : ""
-          } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
-            tool.category === "Ferramentas" ? "bg-casper-700" : ""
-          }`}
+          } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
         >
           <span className="mb-[2px]">{tool.category}</span>
         </div>
       </div>
       <div
         className={`flex items-center gap-1 absolute top-2 right-2 z-10 text-sm ${
-          tool.category === "Desenvolvimento" ? "bg-indigo-700" : ""
+          tool.category === "Frontend" ? "bg-indigo-700" : ""
         } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
           tool.category === "Aprendizado" ? "bg-emerald-600" : ""
-        } ${tool.category === "Criadores" ? "bg-rose-600" : ""} ${
-          tool.category === "Ferramentas" ? "bg-casper-700" : ""
-        } px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100`}
+        } ${tool.category === "Criadores" ? "bg-rose-600" : ""} px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100`}
       >
         <span className="mb-[2px]">Mais Informações</span>
         <svg
