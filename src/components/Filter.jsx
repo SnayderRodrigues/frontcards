@@ -36,7 +36,7 @@ const Filter = ({
   };
 
   return (
-    <div className="relative flex flex-wrap items-end justify-between gap-2 sm:gap-4 mb-6 sm:mb-8">
+    <div className="w-full fixed left-0 bottom-0 z-50 md:relative flex flex-wrap items-end justify-between gap-2 sm:gap-4 px-5 sm:px-8 mb-6 sm:mb-8">
       <ul className="hidden md:flex items-center gap-2 text-base lg:text-lg xl:text-xl p-2 border border-neutral-700 rounded-xl">
         {categories.map((category) => (
           <li
@@ -53,7 +53,7 @@ const Filter = ({
         ))}
       </ul>
       <button
-        className="flex-1 md:hidden flex items-center gap-2 p-2 border border-neutral-700 rounded-xl"
+        className="flex-1 md:hidden flex items-center gap-2 bg-neutral-950 p-2 border border-neutral-700 rounded-xl"
         onClick={handleCategoryIsOpen}
       >
         <span className="flex-1 flex bg-neutral-100 text-black px-2 py-1 rounded-lg cursor-pointer transition-colors">
@@ -71,7 +71,7 @@ const Filter = ({
         </svg>
       </button>
       <ul
-        className={`w-full absolute bottom-[58px] z-10 flex flex-col md:hidden gap-2 text-base lg:text-lg xl:text-xl bg-neutral-950 p-2 border border-neutral-700 rounded-xl transition-opacity ${
+        className={`absolute left-0 bottom-[58px] z-10 flex flex-col md:hidden gap-2 text-base lg:text-lg xl:text-xl bg-neutral-950 p-2 border border-neutral-700 rounded-xl mx-5 sm:mx-8 transition-opacity ${
           isOpen ? "" : "opacity-0 select-none pointer-events-none"
         }`}
         onClick={() => setIsOpen(!isOpen)}
@@ -106,7 +106,7 @@ const Filter = ({
         ))}
       </div>
       <button
-        className="md:hidden flex items-center gap-2 p-2 border border-neutral-700 rounded-xl"
+        className="md:hidden flex items-center gap-2 bg-neutral-950 p-2 border border-neutral-700 rounded-xl"
         onClick={handleIsPaginationOpen}
       >
         <span className="flex-1 flex bg-neutral-100 text-black px-3 py-1 rounded-lg cursor-pointer transition-colors">
@@ -124,7 +124,7 @@ const Filter = ({
         </svg>
       </button>
       <div
-        className={`shrink-0 w-full absolute bottom-[58px] z-10 flex md:hidden flex-col gap-2 bg-neutral-950 p-2 border border-neutral-700 rounded-xl transition-opacity overflow-hidden ${
+        className={`shrink-0 absolute right-0 bottom-[58px] z-10 flex md:hidden flex-col gap-2 bg-neutral-950 p-2 border border-neutral-700 rounded-xl mx-5 sm:mx-8 transition-opacity overflow-hidden ${
           isPaginationOpen ? "" : "opacity-0 select-none pointer-events-none"
         }`}
         onClick={() => setIsPaginationOpen(!isPaginationOpen)}
@@ -133,7 +133,7 @@ const Filter = ({
           <button
             key={index + 1}
             onClick={() => setCurrentPage(index + 1)}
-            className={`w-full flex text-base px-2 py-1 font-semibold rounded-lg transition-colors ${
+            className={`w-full flex items-center justify-center text-base px-3 py-1 font-semibold rounded-lg transition-colors ${
               currentPage === index + 1
                 ? "bg-neutral-100 text-black"
                 : "hover:bg-neutral-800"
