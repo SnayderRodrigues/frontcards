@@ -21,7 +21,7 @@ const Resource = () => {
           <h1 className="text-4xl font-bold">{tool.title}</h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
-              className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
+              className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${
                 tool.category === "Frontend" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
                 tool.category === "Aprendizado" ? "bg-emerald-600" : ""
@@ -43,7 +43,7 @@ const Resource = () => {
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}
-              className="group flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-950 px-5 py-2 border border-neutral-700 rounded-lg transition-colors hover:text-neutral-400"
+              className="group flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-900 px-5 py-2 border-2 border-neutral-800 rounded-lg transition-colors hover:bg-neutral-950"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

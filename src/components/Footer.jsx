@@ -5,7 +5,7 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   return (
-    <footer className="border-t border-t-white border-opacity-20">
+    <footer className="border-t-2 border-t-neutral-800">
       <div className="wrapper relative flex flex-col md:flex-row justify-between gap-12 pt-16 pb-8">
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">

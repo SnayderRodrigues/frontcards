@@ -14,12 +14,12 @@ const Card = ({ tool }) => {
       className="group w-full relative flex flex-col justify-between bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600"
       onClick={handleClick}
     >
-      <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
+      <div className="aspect-square flex items-center justify-center bg-neutral-100">
         <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
       </div>
       <div className="flex-1 flex flex-col gap-4 p-4">
-        <span className="text-2xl font-bold">{tool.title}</span>
-        <span className="flex-1 flex flex-wrap gap-2 text-neutral-400">
+        <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
+        <span className="flex-1 flex flex-wrap gap-2 text-sm text-neutral-400">
           {tool.tags.map((tag, index) => (
             <span key={index} className="shrink-0">
               #{tag}
@@ -27,7 +27,7 @@ const Card = ({ tool }) => {
           ))}
         </span>
         <div
-          className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-full ${
+          className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${
             tool.category === "Frontend" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
             tool.category === "Aprendizado" ? "bg-emerald-600" : ""
@@ -41,7 +41,9 @@ const Card = ({ tool }) => {
           tool.category === "Frontend" ? "bg-indigo-700" : ""
         } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
           tool.category === "Aprendizado" ? "bg-emerald-600" : ""
-        } ${tool.category === "Criadores" ? "bg-rose-600" : ""} px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100`}
+        } ${
+          tool.category === "Criadores" ? "bg-rose-600" : ""
+        } px-3 py-2 rounded-lg opacity-0 transition-opacity group-hover:opacity-100`}
       >
         <span className="mb-[2px]">Mais Informações</span>
         <svg

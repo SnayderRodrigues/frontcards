@@ -40,12 +40,12 @@ const FeaturedTools = () => {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-10 lg:mb-12 xl:mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 sm:mb-4 md:mb-6">
         {currentTools.map((tool) => (
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold  p-2 border border-neutral-700 rounded-xl mb-16 overflow-hidden">
+      <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl mb-16 overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}

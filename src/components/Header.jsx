@@ -7,7 +7,7 @@ const Header = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   return (
-    <header className="fixed z-50 w-full bg-neutral-950 border-b border-b-white border-opacity-20 items-center justify-center flex">
+    <header className="fixed z-50 w-full bg-neutral-950 border-b-2 border-b-neutral-800 items-center justify-center flex">
       <nav className="wrapper flex items-center justify-between gap-4 py-4">
         <a href="/" className="group flex items-center gap-3">
           <img src={Logo} alt="Logo" className="" width={48} />
@@ -15,17 +15,17 @@ const Header = () => {
             Frontend Tools
           </div>
         </a>
-        <div className="flex items-center gap-8 sm:text-lg lg:text-xl font-medium">
+        <div className="flex items-center gap-4 sm:text-lg lg:text-xl font-medium">
           <Link
             to="/"
-            className="hidden md:block hover:text-neutral-400 transition-colors"
+            className="hidden md:block px-3 py-2 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/about"
-            className="hidden md:block hover:text-neutral-400 transition-colors"
+            className="hidden md:block px-3 py-2 mr-3 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Sobre

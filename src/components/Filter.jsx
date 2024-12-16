@@ -35,9 +35,9 @@ const Filter = ({
   };
 
   return (
-    <div className="mb-6 md:mb-8">
+    <div className="mb-6 sm:mb-4 md:mb-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <ul className="hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold p-2 border border-neutral-700 rounded-xl">
+        <ul className="hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl">
           {categories.map((category) => (
             <li
               key={category}
@@ -70,7 +70,7 @@ const Filter = ({
             </li>
           ))}
         </ul>
-        <div className="shrink-0 hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold p-2 border border-neutral-700 rounded-xl overflow-hidden">
+        <div className="shrink-0 hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}
