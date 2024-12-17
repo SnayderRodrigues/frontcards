@@ -14,7 +14,7 @@ const Card = ({ tool }) => {
       className="group w-full relative flex flex-col justify-between bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600"
       onClick={handleClick}
     >
-      <div className="aspect-square flex items-center justify-center bg-neutral-100">
+      <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
         <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
       </div>
       <div className="flex-1 flex flex-col gap-4 p-4">

@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t-2 border-t-neutral-800">
-      <div className="wrapper relative flex flex-col md:flex-row justify-between gap-12 pt-16 pb-8">
+      <div className="wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 pb-28">
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
             <a
@@ -46,13 +46,6 @@ const Footer = () => {
           >
             Sobre
           </Link>
-          <a
-            href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
-            target="_blank"
-            className="w-fit hover:text-neutral-400 transition-colors"
-          >
-            Indicar Ferramenta
-          </a>
           <Link
             to="/legal"
             className="w-fit hover:text-neutral-400 transition-colors"
@@ -60,22 +53,29 @@ const Footer = () => {
           >
             Termos Legais
           </Link>
+          <a
+            href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
+            target="_blank"
+            className="w-fit hover:text-neutral-400 transition-colors"
+          >
+            Indicar Ferramenta
+          </a>
         </div>
         <button
-          className="w-fit absolute bottom-8 right-0 flex md:hidden items-center gap-1 p-2 border border-neutral-700 rounded-xl"
+          className="w-fit absolute bottom-28 right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl"
           onClick={scrollToTop}
         >
-          <div className="bg-white rounded-lg p-2">
+          
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
               viewBox="0 -960 960 960"
-              fill="#000"
+              fill="#fff"
             >
               <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
             </svg>
-          </div>
+          
         </button>
       </div>
     </footer>
