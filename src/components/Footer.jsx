@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t-2 border-t-neutral-800">
-      <div className="wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 pb-28">
+      <div className="wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 pb-28 md:pb-8">
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
             <a

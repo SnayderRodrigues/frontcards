@@ -268,7 +268,7 @@ const ResourcesData = [
     title: "GitHub Copilot",
     image: GithubCopilot,
     category: "Frontend",
-    tags: ["IA", "Assistente de Código"],
+    tags: ["Assistente de Código", "IA"],
     slug: "github-copilot",
     description:
       "An AI-powered code completion tool that suggests entire lines or functions as you type.",
@@ -389,7 +389,7 @@ const ResourcesData = [
     title: "Midjourney",
     image: Midjourney,
     category: "Design",
-    tags: ["IA", "Gerador de Imagens"],
+    tags: ["Gerador de Imagens", "IA"],
     slug: "midjourney",
     description:
       "An AI-powered platform for creating stunning artwork and designs through text prompts.",
@@ -565,7 +565,7 @@ const ResourcesData = [
     title: "Uiverse",
     image: Uiverse,
     category: "Design",
-    tags: ["Componentes", "inspiração", "Web Design"],
+    tags: ["Componentes", "Inspiração", "Web Design"],
     slug: "uiverse",
     description:
       "A collection of open-source and customizable UI components for modern web projects.",

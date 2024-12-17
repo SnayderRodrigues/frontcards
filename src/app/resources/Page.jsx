@@ -45,23 +45,30 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl mb-16 overflow-hidden">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => {
-              setCurrentPage(index + 1);
-              window.scrollTo({ top: 0 });
-            }}
-            className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center rounded-lg transition-colors ${
-              currentPage === index + 1
-                ? "bg-neutral-100 text-black"
-                : "hover:bg-neutral-800"
-            }`}
-          >
-            {index + 1}
-          </button>
-        ))}
+      <div className="hidden md:flex items-center gap-4 mb-16">
+        <div className="w-fit flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index + 1}
+              onClick={() => {
+                setCurrentPage(index + 1);
+                window.scrollTo({ top: 0 });
+              }}
+              className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center rounded-lg transition-colors ${
+                currentPage === index + 1
+                  ? "bg-neutral-100 text-black"
+                  : "hover:bg-neutral-800"
+              }`}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
+        <div className="flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
+          <span className="px-2 lg:px-3 xl:px-4 py-1 xl:py-2">
+            {startIndex + 1}-{currentPage == totalPages? filteredTools.length : itemsPerPage * currentPage} <span className="text-neutral-400">de</span> {filteredTools.length}
+          </span>
+        </div>
       </div>
     </section>
   );
