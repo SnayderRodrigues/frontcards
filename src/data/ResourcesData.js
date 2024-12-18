@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
+import AccessibilityNotChecklist from "../assets/accessibility-not-checklist.png";
 import AdobeIllustrator from "../assets/adobe-illustrator.svg";
-import AdobePhotoshop from "../assets/adobe-photoshop.svg";
 import AugustoGalego from "../assets/Augusto Galego.png";
 import Awwwards from "../assets/awwwards.svg";
 import Blender from "../assets/blender.svg";
@@ -9,7 +9,10 @@ import CanIUse from "../assets/caniuse.png";
 import ChrisDevInDev from "../assets/Chris DevInDev.png";
 import CodePen from "../assets/codepen.svg";
 import CoderCoder from "../assets/Coder Coder.png";
+import ColorHunt from "../assets/color-hunt.png";
+import CssBattle from "../assets/css-battle.png";
 import DailyDev from "../assets/dailydev.svg";
+import DesignSystems from "../assets/design-systems.png";
 import Dribbble from "../assets/dribbble.svg";
 import Figma from "../assets/figma.svg";
 import Fireship from "../assets/Fireship.png";
@@ -21,9 +24,12 @@ import FrontendMentor from "../assets/frontend-mentor.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
 import Gsap from "../assets/greensock.svg";
 import Hyperplexed from "../assets/Hyperplexed.png";
+import Inkscape from "../assets/inkscape.svg";
+import JoshWComeau from "../assets/josh-w-comeau.png";
 import Juxtopposed from "../assets/Juxtopposed.png";
 import Kalypso from "../assets/Kalypso.png";
 import KevinPowell from "../assets/Kevin Powell.png";
+import LenisScroll from "../assets/lenis-scroll.png";
 import Lighthouse from "../assets/lighthouse.svg";
 import LunDev from "../assets/Lun Dev.png";
 import MaterialUI from "../assets/material-ui.svg";
@@ -32,21 +38,30 @@ import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
 import Next from "../assets/nextjs.svg";
 import OlivierLarose from "../assets/Olivier Larose.png";
+import Photopea from "../assets/photopea.svg";
+import Photoshop from "../assets/photoshop.svg";
 import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
+import ReactHookForm from "../assets/react-hook-form.png";
+import RealtimeColors from "../assets/realtime-colors.png";
 import Relume from "../assets/relume.svg";
 import Roadmap from "../assets/roadmap-sh.svg";
 import Sass from "../assets/sass.svg";
+import ShadcnUI from "../assets/shadcn-ui.png";
+import Shots from "../assets/shots-so.png";
 import Sketch from "../assets/sketch.svg";
+import SmashingMagazine from "../assets/smashing-magazine.png";
 import Spline from "../assets/spline.png";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
 import Tailwind from "../assets/tailwind.svg";
+import TheOdinProject from "../assets/the-odin-project.svg";
 import ThreeJs from "../assets/threejs.svg";
 import TinyPNG from "../assets/tinypng.svg";
 import Udemy from "../assets/udemy.svg";
 import Uiverse from "../assets/uiverse.svg";
 import Uncut from "../assets/uncut.svg";
+import Unlighthouse from "../assets/unlighthouse.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
 import W3Schools from "../assets/w3schools.svg";
@@ -54,6 +69,17 @@ import WebDevSimplified from "../assets/Web-Dev-Simplified.png";
 import Webflow from "../assets/webflow.svg";
 
 const ResourcesData = [
+  {
+    id: uuidv4(),
+    title: "Accessibility Not-Checklist",
+    image: AccessibilityNotChecklist,
+    category: "Aprendizado",
+    tags: ["Acessibilidade", "Boas Práticas"],
+    slug: "accessibility-not-checklist",
+    description:
+      "Lista de boas práticas e dicas em formato de checklist para assegurar acessibilidade digital.",
+    source: "https://not-checklist.intopia.digital/",
+  },
   {
     id: uuidv4(),
     title: "Adobe Illustrator",
@@ -64,17 +90,6 @@ const ResourcesData = [
     description:
       "A vector graphics editor for creating illustrations, logos, and other scalable graphics.",
     source: "https://www.adobe.com/products/illustrator.html",
-  },
-  {
-    id: uuidv4(),
-    title: "Adobe Photoshop",
-    image: AdobePhotoshop,
-    category: "Design",
-    tags: ["Design Gráfico", "Edição de Imagens"],
-    slug: "adobe-photoshop",
-    description:
-      "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
-    source: "https://www.adobe.com/products/photoshop.html",
   },
   {
     id: uuidv4(),
@@ -166,6 +181,28 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Color Hunt",
+    image: ColorHunt,
+    category: "Design",
+    tags: ["Inspiração", "Paletas de Cores"],
+    slug: "color-hunt",
+    description:
+      "Coleção de paletas de cores selecionadas para inspirar seus projetos.",
+    source: "https://colorhunt.co/",
+  },
+  {
+    id: uuidv4(),
+    title: "CSS Battle",
+    image: CssBattle,
+    category: "Frontend",
+    tags: ["CSS", "Desafios"],
+    slug: "css-battle",
+    description:
+      "Plataforma para desafiar suas habilidades de CSS recriando designs com o menor código possível.",
+    source: "https://cssbattle.dev/",
+  },
+  {
+    id: uuidv4(),
     title: "Daily.dev",
     image: DailyDev,
     category: "Aprendizado",
@@ -174,6 +211,17 @@ const ResourcesData = [
     description:
       "A personalized feed for developers that aggregates programming news and updates from across the web.",
     source: "https://daily.dev/",
+  },
+  {
+    id: uuidv4(),
+    title: "Design Systems",
+    image: DesignSystems,
+    category: "Aprendizado",
+    tags: ["Design Systems", "Guia Prático"],
+    slug: "design-systems",
+    description:
+      "Recurso interativo para aprender e explorar sistemas de design.",
+    source: "https://designsystems.surf/design-systems",
   },
   {
     id: uuidv4(),
@@ -298,6 +346,28 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Inkscape",
+    image: Inkscape,
+    category: "Design",
+    tags: ["Gráficos Vetoriais", "Ilustração"],
+    slug: "inkscape",
+    description:
+      "Editor de gráficos vetoriais gratuito e de código aberto para criar ilustrações e designs escaláveis.",
+    source: "https://inkscape.org/",
+  },
+  {
+    id: uuidv4(),
+    title: "Josh W Comeau",
+    image: JoshWComeau,
+    category: "Criadores",
+    tags: ["Artigos", "Frontend", "Guias Práticos"],
+    slug: "josh-w-comeau",
+    description:
+      "Blog repleto de dicas e tutoriais práticos para desenvolvimento frontend e React.",
+    source: "https://www.joshwcomeau.com/",
+  },
+  {
+    id: uuidv4(),
     title: "Juxtopposed",
     image: Juxtopposed,
     category: "Criadores",
@@ -328,6 +398,17 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@KevinPowell",
+  },
+  {
+    id: uuidv4(),
+    title: "Lenis Scroll",
+    image: LenisScroll,
+    category: "Frontend",
+    tags: ["Animações", "Scroll"],
+    slug: "lenis-scroll",
+    description:
+      "Biblioteca para criar rolagens suaves e fluídas em aplicações web.",
+    source: "https://lenis.darkroom.engineering/",
   },
   {
     id: uuidv4(),
@@ -419,6 +500,28 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Photopea",
+    image: Photopea,
+    category: "Design",
+    tags: ["Edição de Imagens", "Editor Online"],
+    slug: "photopea",
+    description:
+      "Editor avançado de imagens online que suporta arquivos PSD, Sketch, XD e mais.",
+    source: "https://www.photopea.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Photoshop",
+    image: Photoshop,
+    category: "Design",
+    tags: ["Design Gráfico", "Edição de Imagens"],
+    slug: "photoshop",
+    description:
+      "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
+    source: "https://www.adobe.com/products/photoshop.html",
+  },
+  {
+    id: uuidv4(),
     title: "Prettier",
     image: Prettier,
     category: "Frontend",
@@ -438,6 +541,28 @@ const ResourcesData = [
     description:
       "A JavaScript library for building user interfaces with a component-based architecture.",
     source: "https://react.dev/",
+  },
+  {
+    id: uuidv4(),
+    title: "React Hook Form",
+    image: ReactHookForm,
+    category: "Frontend",
+    tags: ["Formulários", "React"],
+    slug: "react-hook-form",
+    description:
+      "Biblioteca leve para gerenciar formulários de forma eficiente no React.",
+    source: "https://react-hook-form.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "Realtime Colors",
+    image: RealtimeColors,
+    category: "Design",
+    tags: ["Paletas de Cores"],
+    slug: "realtime-colors",
+    description:
+      "Ferramenta interativa para explorar combinações e paletas de cores em tempo real.",
+    source: "https://realtimecolors.com/",
   },
   {
     id: uuidv4(),
@@ -474,6 +599,28 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Shadcn UI",
+    image: ShadcnUI,
+    category: "Frontend",
+    tags: ["Componentes", "UI/UX"],
+    slug: "shadcn-ui",
+    description:
+      "Biblioteca de componentes React acessíveis e personalizáveis para construção de interfaces.",
+    source: "https://ui.shadcn.dev/",
+  },
+  {
+    id: uuidv4(),
+    title: "Shots.so",
+    image: Shots,
+    category: "Design",
+    tags: ["Mockups", "Recursos"],
+    slug: "shots-so",
+    description:
+      "Ferramenta para criar apresentações de projetos e mockups de forma simples, elegante e personalizável.",
+    source: "https://shots.so/",
+  },
+  {
+    id: uuidv4(),
     title: "Sketch",
     image: Sketch,
     category: "Design",
@@ -485,14 +632,14 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
-    title: "Stack Overflow",
-    image: StackOverflow,
+    title: "Smashing Magazine",
+    image: SmashingMagazine,
     category: "Aprendizado",
-    tags: ["Comunidade", "Programação"],
-    slug: "stack-overflow",
+    tags: ["Artigos Técnicos", "Frontend"],
+    slug: "smashing-magazine",
     description:
-      "A community-driven platform where developers ask questions and share knowledge.",
-    source: "https://stackoverflow.com/",
+      "Revista online com artigos, tutoriais e dicas para desenvolvedores e designers.",
+    source: "https://www.smashingmagazine.com/",
   },
   {
     id: uuidv4(),
@@ -504,6 +651,17 @@ const ResourcesData = [
     description:
       "A 3D design tool to create interactive experiences directly in the browser.",
     source: "https://spline.design/",
+  },
+  {
+    id: uuidv4(),
+    title: "Stack Overflow",
+    image: StackOverflow,
+    category: "Aprendizado",
+    tags: ["Comunidade", "Programação"],
+    slug: "stack-overflow",
+    description:
+      "A community-driven platform where developers ask questions and share knowledge.",
+    source: "https://stackoverflow.com/",
   },
   {
     id: uuidv4(),
@@ -526,6 +684,17 @@ const ResourcesData = [
     description:
       "A utility-first CSS framework for creating custom designs directly in your HTML.",
     source: "https://tailwindcss.com/",
+  },
+  {
+    id: uuidv4(),
+    title: "The Odin Project",
+    image: TheOdinProject,
+    category: "Aprendizado",
+    tags: ["Desenvolvimento Web", "Cursos Gratuitos"],
+    slug: "the-odin-project",
+    description:
+      "Plataforma gratuita que oferece currículos completos para aprender desenvolvimento web.",
+    source: "https://www.theodinproject.com/",
   },
   {
     id: uuidv4(),
@@ -581,6 +750,17 @@ const ResourcesData = [
     description:
       "A curated platform showcasing fresh and modern fonts for inspiration.",
     source: "https://www.uncut.wtf/",
+  },
+  {
+    id: uuidv4(),
+    title: "Unlighthouse",
+    image: Unlighthouse,
+    category: "Frontend",
+    tags: ["Auditoria", "Performance"],
+    slug: "unlighthouse",
+    description:
+      "Ferramenta para auditoria de performance e SEO de websites de forma contínua.",
+    source: "https://unlighthouse.dev/",
   },
   {
     id: uuidv4(),
