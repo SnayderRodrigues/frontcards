@@ -17,7 +17,7 @@ const Resource = () => {
             <img src={tool.image} alt={tool.title} className="w-full h-full" />
           </div>
         </div>
-        <div className="-order-1 md:order-1 md:w-1/2 flex flex-col gap-4">
+        <div className="-order-1 md:order-1 w-full md:w-1/2 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{tool.title}</h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div

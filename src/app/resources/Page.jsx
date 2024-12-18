@@ -16,7 +16,9 @@ const FeaturedTools = () => {
   const itemsPerPage = 12;
 
   const filteredTools = resourcesData.filter((tool) =>
-    selectedCategory === "Todas" ? true : tool.category.includes(selectedCategory)
+    selectedCategory === "Todas"
+      ? true
+      : tool.category.includes(selectedCategory)
   );
   const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
 
@@ -40,13 +42,13 @@ const FeaturedTools = () => {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-12 md:mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-6">
         {currentTools.map((tool) => (
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="hidden md:flex items-center gap-4 mb-16">
-        <div className="w-fit flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
+      <div className="flex items-center gap-4 mb-12 md:mb-16">
+        <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}
@@ -64,10 +66,58 @@ const FeaturedTools = () => {
             </button>
           ))}
         </div>
-        <div className="flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
+        <div className="hidden md:flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
           <span className="px-2 lg:px-3 xl:px-4 py-1 xl:py-2">
-            {startIndex + 1}-{currentPage == totalPages? filteredTools.length : itemsPerPage * currentPage} <span className="text-neutral-400">de</span> {filteredTools.length}
+            {startIndex + 1}-
+            {currentPage == totalPages
+              ? filteredTools.length
+              : itemsPerPage * currentPage}{" "}
+            <span className="text-neutral-400">de</span> {filteredTools.length}
           </span>
+        </div>
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
+            onClick={() => {
+              if (currentPage > 1) {
+                setCurrentPage(currentPage - 1);
+                window.scrollTo({ top: 0 });
+              }
+            }}
+            disabled={currentPage === 1}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+              className={`${currentPage === 1 ? "fill-neutral-800" : ""}`}
+            >
+              <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+            </svg>
+          </button>
+          <button
+            className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
+            onClick={() => {
+              if (currentPage < totalPages) {
+                setCurrentPage(currentPage + 1);
+                window.scrollTo({ top: 0 });
+              }
+            }}
+            disabled={currentPage === totalPages}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+              className={`${currentPage === totalPages ? "fill-neutral-800" : ""}`}
+            >
+              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
