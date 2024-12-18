@@ -32,6 +32,7 @@ const Filter = ({
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setCurrentPage(1);
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -148,7 +149,10 @@ const Filter = ({
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}
-              onClick={() => setCurrentPage(index + 1)}
+              onClick={() => {
+                setCurrentPage(index + 1);
+                window.scrollTo({ top: 0 });
+              }}
               className={`w-full flex items-center justify-start text-base font-semibold px-3 py-2 rounded-lg transition-colors ${
                 currentPage === index + 1
                   ? "bg-neutral-800"
