@@ -11,7 +11,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="group w-full relative flex flex-col justify-between bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer hover:border-neutral-600"
+      className="group w-full relative flex flex-col justify-between bg-neutral-900 border-4 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-b-xl">
@@ -37,7 +37,7 @@ const Card = ({ tool }) => {
         </div>
       </div>
       <div
-        className={`flex items-center gap-1 absolute top-2 right-2 z-10 text-sm ${
+        className={`hidden md:flex items-center gap-1 absolute top-2 right-2 z-10 text-sm ${
           tool.category === "Frontend" ? "bg-indigo-700" : ""
         } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
           tool.category === "Aprendizado" ? "bg-emerald-600" : ""

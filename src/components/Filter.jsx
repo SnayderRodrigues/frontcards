@@ -87,9 +87,15 @@ const Filter = ({
           ))}
         </div>
       </div>
-      <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8">
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
         <button
-          className="w-full md:hidden flex items-center gap-2 font-semibold bg-neutral-800 px-3 py-2 rounded-xl"
+          className={`w-full md:hidden flex items-center gap-2 font-semibold ${
+            selectedCategory === "Todas" ? "bg-neutral-800" : ""
+          } ${selectedCategory === "Frontend" ? "bg-indigo-700" : ""} ${
+            selectedCategory === "Design" ? "bg-purple-600" : ""
+          } ${selectedCategory === "Aprendizado" ? "bg-emerald-600" : ""} ${
+            selectedCategory === "Criadores" ? "bg-rose-600" : ""
+          } px-3 py-2 rounded-xl`}
           onClick={handleCategoryIsOpen}
         >
           <svg
@@ -115,7 +121,27 @@ const Filter = ({
             <li
               key={category}
               className={`flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-colors ${
-                selectedCategory === category ? "bg-neutral-800" : ""
+                selectedCategory === category && selectedCategory === "Todas"
+                  ? "bg-neutral-800"
+                  : ""
+              } ${
+                selectedCategory === category && selectedCategory === "Frontend"
+                  ? "bg-indigo-700"
+                  : ""
+              } ${
+                selectedCategory === category && selectedCategory === "Design"
+                  ? "bg-purple-600"
+                  : ""
+              } ${
+                selectedCategory === category &&
+                selectedCategory === "Aprendizado"
+                  ? "bg-emerald-600"
+                  : ""
+              } ${
+                selectedCategory === category &&
+                selectedCategory === "Criadores"
+                  ? "bg-rose-600"
+                  : ""
               }`}
               onClick={() => handleCategoryClick(category)}
             >

@@ -20,6 +20,10 @@ export default {
         },
         // ...
       },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+        "4xl": "0 30px 40px 30px rgba(0, 0, 0, 0.8)",
+      },
     },
   },
   plugins: [],
