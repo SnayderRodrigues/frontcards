@@ -112,7 +112,7 @@ const Filter = ({
           </span>
         </button>
         <ul
-          className={`absolute left-[-2px] right-[-2px] bottom-[68px] z-10 flex flex-col md:hidden gap-2 text-base font-semibold bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl  transition-opacity ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[68px] z-10 flex flex-col md:hidden gap-2 text-base font-semibold bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl transition-opacity ${
             isOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsOpen(!isOpen)}

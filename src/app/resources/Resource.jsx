@@ -10,7 +10,7 @@ const Resource = () => {
   const tool = resourcesData.find((tool) => tool.slug === slug);
 
   return (
-    <div className="wrapper pt-32 pb-32">
+    <div className="wrapper pt-32 pb-12 md:pb-16 lg:pb-32">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-8 lg:gap-16 xl:gap-32 md:mt-8">
         <div className="w-full md:w-1/2 aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
           <div className="w-2/3 sm:p-6 md:p-8 xl:p-16">
