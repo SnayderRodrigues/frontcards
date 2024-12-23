@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <>
       <section className="font-medium">
-        <div className="wrapper pt-32 sm:pt-36 lg:pt-40 xl:pt-48 pb-12 md:pb-16 lg:pb-32">
+        <div className="wrapper pt-32 sm:pt-36 lg:pt-36 xl:pt-40 pb-12 md:pb-16 lg:pb-32">
           <h1 className="leading-tight font-bold mb-8 lg:mb-12 xl:mb-16">
             Sobre <br /> <span className="text-indigo-400">Frontend Tools</span>
           </h1>
