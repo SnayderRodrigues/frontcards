@@ -690,7 +690,7 @@ const ResourcesData = [
     title: "The Odin Project",
     image: TheOdinProject,
     category: "Aprendizado",
-    tags: ["Desenvolvimento Web", "Cursos Gratuitos"],
+    tags: ["Cursos Gratuitos", "Desenvolvimento Web"],
     slug: "the-odin-project",
     description:
       "Plataforma gratuita que oferece currículos completos para aprender desenvolvimento web.",

@@ -33,8 +33,37 @@ const FeaturedTools = () => {
     setSearchParams(params);
   }, [selectedCategory, currentPage, setSearchParams]);
 
+  const categoryTitles = {
+    Todas: "Todas as Ferramentas",
+    Frontend: "Ferramentas para Frontend",
+    Design: "Ferramentas de Design",
+    Aprendizado: "Recursos de Aprendizado",
+    Criadores: "Criadores de Conteúdo",
+  };
+
   return (
     <section className="wrapper">
+      <h2
+        className={`md:hidden w-fit text-lg xsm:text-xl font-semibold ${
+          selectedCategory === "Todas"
+            ? "bg-neutral-900 border-neutral-800"
+            : ""
+        } ${
+          selectedCategory === "Frontend"
+            ? "bg-indigo-700 border-indigo-700"
+            : ""
+        } ${
+          selectedCategory === "Design" ? "bg-purple-600 border-purple-600" : ""
+        } ${
+          selectedCategory === "Aprendizado"
+            ? "bg-emerald-600 border-emerald-600"
+            : ""
+        } ${
+          selectedCategory === "Criadores" ? "bg-rose-600 border-rose-600" : ""
+        } px-4 py-3 border-2 rounded-xl mb-6`}
+      >
+        {categoryTitles[selectedCategory]}
+      </h2>
       <Filter
         totalPages={totalPages}
         currentPage={currentPage}
@@ -113,7 +142,9 @@ const FeaturedTools = () => {
               height="24px"
               viewBox="0 -960 960 960"
               fill="#fff"
-              className={`${currentPage === totalPages ? "fill-neutral-800" : ""}`}
+              className={`${
+                currentPage === totalPages ? "fill-neutral-800" : ""
+              }`}
             >
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
             </svg>

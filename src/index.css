@@ -125,7 +125,8 @@ button {
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-size: clamp(2.5rem, 1.8784530386740332rem + 2.6519337016574585vw, 4rem);
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.171270718232044rem + 3.535911602209945vw, 4rem);
   font-weight: 700;
+  line-height: 1.2;
 }

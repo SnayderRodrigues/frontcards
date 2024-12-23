@@ -43,7 +43,7 @@ const Resource = () => {
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}
-              className="group flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-900 px-5 py-2 border-2 border-neutral-800 rounded-lg transition-colors hover:bg-neutral-950"
+              className="flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-900 px-5 py-2 border-2 border-neutral-800 rounded-lg transition-colors hover:bg-neutral-950"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Resource = () => {
                 height="16px"
                 viewBox="0 -960 960 960"
                 fill="#fff"
-                className="w-3 md:w-4 ml-[-4px] group-hover:fill-neutral-400 transition-colors"
+                className="w-3 md:w-4 ml-[-4px]"
               >
                 <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
               </svg>

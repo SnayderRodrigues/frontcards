@@ -5,8 +5,8 @@ const Hero = () => {
     <>
       <section className="flex items-center" id="hero-section">
         <div className="wrapper flex flex-col pt-32 sm:pt-36 lg:pt-36 xl:pt-40 pb-12 xsm:pb-16 md:pb-20">
-          <h1 className="max-w-[19ch] leading-tight mb-8 lg:mb-12">
-            Recursos e ferramentas para <span className="text-indigo-400">Desenvolvedores Frontend</span> e <span className="text-purple-400">
+          <h1 className="max-w-[19ch] mb-8 lg:mb-12">
+            Ferramentas e Recursos úteis para <span className="text-indigo-400">Devs Frontend</span> e <span className="text-purple-400">
               Web
               Designers
             </span>.

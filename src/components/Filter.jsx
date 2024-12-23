@@ -87,15 +87,9 @@ const Filter = ({
           ))}
         </div>
       </div>
-      <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
         <button
-          className={`w-full md:hidden flex items-center gap-2 font-semibold ${
-            selectedCategory === "Todas" ? "bg-neutral-800" : ""
-          } ${selectedCategory === "Frontend" ? "bg-indigo-700" : ""} ${
-            selectedCategory === "Design" ? "bg-purple-600" : ""
-          } ${selectedCategory === "Aprendizado" ? "bg-emerald-600" : ""} ${
-            selectedCategory === "Criadores" ? "bg-rose-600" : ""
-          } px-3 py-2 rounded-xl`}
+          className={`w-full md:hidden flex items-center gap-2 font-semibold bg-neutral-800 p-3 rounded-lg`}
           onClick={handleCategoryIsOpen}
         >
           <svg
@@ -112,7 +106,7 @@ const Filter = ({
           </span>
         </button>
         <ul
-          className={`absolute left-[-2px] right-[-2px] bottom-[68px] z-10 flex flex-col md:hidden gap-2 text-base font-semibold bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl transition-opacity ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex flex-col md:hidden gap-2 text-base font-semibold bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl transition-opacity duration-300 ${
             isOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsOpen(!isOpen)}
@@ -120,7 +114,7 @@ const Filter = ({
           {categories.map((category) => (
             <li
               key={category}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-colors ${
+              className={`flex items-center gap-2 p-3 rounded-lg cursor-pointer transition-colors ${
                 selectedCategory === category && selectedCategory === "Todas"
                   ? "bg-neutral-800"
                   : ""
@@ -150,7 +144,7 @@ const Filter = ({
           ))}
         </ul>
         <button
-          className="md:hidden flex items-center gap-2 bg-neutral-800 px-3 py-2 rounded-xl"
+          className="md:hidden flex items-center gap-2 bg-neutral-800 p-3 rounded-lg"
           onClick={handleIsPaginationOpen}
         >
           <span className="flex-1 flex font-semibold rounded-lg cursor-pointer transition-colors">
@@ -167,7 +161,7 @@ const Filter = ({
           </svg>
         </button>
         <div
-          className={`absolute left-[-2px] right-[-2px] bottom-[68px] z-10 flex md:hidden flex-col gap-2 bg-neutral-900 px-4 py-3 border-2 border-neutral-800 rounded-xl transition-opacity overflow-hidden ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex md:hidden flex-col gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl transition-opacity duration-300 overflow-hidden ${
             isPaginationOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsPaginationOpen(!isPaginationOpen)}
@@ -179,7 +173,7 @@ const Filter = ({
                 setCurrentPage(index + 1);
                 window.scrollTo({ top: 0 });
               }}
-              className={`w-full flex items-center justify-start text-base font-semibold px-3 py-2 rounded-lg transition-colors ${
+              className={`w-full flex items-center justify-start text-base font-semibold p-3 rounded-lg transition-colors ${
                 currentPage === index + 1
                   ? "bg-neutral-800"
                   : "hover:bg-neutral-800"
