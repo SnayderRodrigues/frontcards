@@ -31,24 +31,24 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4 text-lg lg:text-xl font-medium">
+        <div className="shrink-0 flex flex-col gap-4 text-lg lg:text-xl font-medium">
           <Link
             to="/"
-            className="w-fit hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/about"
-            className="w-fit hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
           <Link
             to="/legal"
-            className="w-fit hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Termos Legais
@@ -56,7 +56,7 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
           >
             Indicar Ferramenta
           </a>
