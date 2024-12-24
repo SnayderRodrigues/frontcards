@@ -2,14 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  /* .button {
+/* @layer base {
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
+      format("woff2");
+  }
+} */
+
+/* @layer components {
+  .button {
     @apply flex items-center justify-center gap-2 w-fit min-w-[160px] px-8 py-4 text-white font-medium bg-red-500 rounded-lg transition-all relative z-10 cursor-pointer;
   }
   .button:hover {
     @apply bg-red-700;
-  } */
-}
+  }
+} */
 
 :root {
   color-scheme: dark;

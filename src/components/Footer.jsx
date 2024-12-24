@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "/public/logo-test.svg";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -16,11 +17,15 @@ const Footer = () => {
       >
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
-            <a
-              href="/"
-              className="w-fit text-3xl sm:text-3xl md:text-4xl font-bold uppercase hover:text-neutral-400 transition-colors"
-            >
-              Frontend Tools
+            <a href="/" className="group w-fit flex items-center gap-4 mb-4">
+              <img
+                src={Logo}
+                alt="Logo"
+                width={60}
+              />
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                Weblioteca
+              </div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
               Uma coleção selecionada de recursos de desenvolvimento e design,
@@ -32,7 +37,7 @@ const Footer = () => {
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="font-semibold text-neutral-400 hover:text-white transition-colors"
+              className="font-semibold text-indigo-300 hover:text-white transition-colors"
             >
               Snayder Rodrigues
             </a>
@@ -41,21 +46,21 @@ const Footer = () => {
         <div className="shrink-0 flex flex-col gap-4 text-lg lg:text-xl font-medium">
           <Link
             to="/"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-indigo-300 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/about"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-indigo-300 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
           <Link
             to="/legal"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-indigo-300 transition-colors"
             onClick={scrollToTop}
           >
             Termos Legais
@@ -63,9 +68,9 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:hover:text-indigo-300 transition-colors"
           >
-            Indicar Ferramenta
+            Indique uma Ferramenta
           </a>
         </div>
         <button
