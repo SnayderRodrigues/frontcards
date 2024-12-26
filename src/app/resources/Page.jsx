@@ -43,27 +43,34 @@ const FeaturedTools = () => {
 
   return (
     <section className="wrapper">
-      <h2
-        className={`md:hidden w-fit text-lg xsm:text-xl font-semibold ${
-          selectedCategory === "Todas"
-            ? "bg-neutral-900 border-neutral-800"
-            : ""
-        } ${
-          selectedCategory === "Frontend"
-            ? "bg-indigo-700 border-indigo-700"
-            : ""
-        } ${
-          selectedCategory === "Design" ? "bg-purple-600 border-purple-600" : ""
-        } ${
-          selectedCategory === "Aprendizado"
-            ? "bg-emerald-600 border-emerald-600"
-            : ""
-        } ${
-          selectedCategory === "Criadores" ? "bg-rose-600 border-rose-600" : ""
-        } px-4 py-3 border-2 rounded-xl mb-6`}
-      >
-        {categoryTitles[selectedCategory]}
-      </h2>
+      <div className="flex md:hidden items-center gap-2 mb-6">
+        <h2
+          className={`shrink-0 w-fit text-lg xsm:text-xl font-semibold ${
+            selectedCategory === "Todas"
+              ? "bg-neutral-900 border-neutral-800"
+              : ""
+          } ${
+            selectedCategory === "Frontend"
+              ? "bg-indigo-700 border-indigo-700"
+              : ""
+          } ${
+            selectedCategory === "Design"
+              ? "bg-purple-600 border-purple-600"
+              : ""
+          } ${
+            selectedCategory === "Aprendizado"
+              ? "bg-emerald-600 border-emerald-600"
+              : ""
+          } ${
+            selectedCategory === "Criadores"
+              ? "bg-rose-600 border-rose-600"
+              : ""
+          } px-4 py-3 border-2 rounded-xl`}
+        >
+          {categoryTitles[selectedCategory]}
+        </h2>
+        <div className="w-full h-[2px] bg-neutral-800"></div>
+      </div>
       <Filter
         totalPages={totalPages}
         currentPage={currentPage}

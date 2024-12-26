@@ -7,11 +7,11 @@ const Header = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   return (
-    <header className="fixed z-50 w-full bg-neutral-950 border-b-2 border-b-neutral-800 items-center justify-center flex">
+    <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b-2 border-b-neutral-800">
       <nav className="wrapper flex items-center justify-between gap-4 py-4">
         <a href="/" className="group flex items-center gap-2 xsm:gap-3">
-          <img src={Logo} alt="Logo" width={40} className="w-7 xsm:w-10" />
-          <div className="text-xl xsm:text-2xl md:text-3xl lg:text-4xl font-bold">
+          <img src={Logo} alt="Logo" width={40} className="w-8 xsm:w-10" />
+          <div className="text-2xl xsm:text-3xl lg:text-4xl font-bold">
             Weblioteca
           </div>
         </a>
