@@ -10,13 +10,13 @@ const FeaturedTools = () => {
     Number(searchParams.get("page")) || 1
   );
   const [selectedCategory, setSelectedCategory] = useState(
-    searchParams.get("category") || "Todas"
+    searchParams.get("category") || "Todos"
   );
 
   const itemsPerPage = 12;
 
   const filteredTools = resourcesData.filter((tool) =>
-    selectedCategory === "Todas"
+    selectedCategory === "Todos"
       ? true
       : tool.category.includes(selectedCategory)
   );
@@ -28,13 +28,13 @@ const FeaturedTools = () => {
 
   useEffect(() => {
     const params = {};
-    if (selectedCategory !== "Todas") params.category = selectedCategory;
+    if (selectedCategory !== "Todos") params.category = selectedCategory;
     if (currentPage > 1) params.page = currentPage;
     setSearchParams(params);
   }, [selectedCategory, currentPage, setSearchParams]);
 
   const categoryTitles = {
-    Todas: "Todas as Ferramentas",
+    Todos: "Todos os Cards",
     Frontend: "Ferramentas para Frontend",
     Design: "Ferramentas de Design",
     Aprendizado: "Recursos de Aprendizado",
@@ -46,7 +46,7 @@ const FeaturedTools = () => {
       <div className="flex md:hidden items-center gap-2 mb-6">
         <h2
           className={`shrink-0 w-fit text-lg xsm:text-xl font-semibold ${
-            selectedCategory === "Todas"
+            selectedCategory === "Todos"
               ? "bg-neutral-900 border-neutral-800"
               : ""
           } ${
@@ -83,7 +83,7 @@ const FeaturedTools = () => {
           <Card key={tool.id} tool={tool} />
         ))}
       </div>
-      <div className="flex items-center gap-4 mb-12 md:mb-16">
+      <div className="flex items-center gap-6 mb-12 md:mb-16">
         <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
@@ -102,15 +102,7 @@ const FeaturedTools = () => {
             </button>
           ))}
         </div>
-        <div className="hidden md:flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
-          <span className="px-2 lg:px-3 xl:px-4 py-1 xl:py-2">
-            {startIndex + 1}-
-            {currentPage == totalPages
-              ? filteredTools.length
-              : itemsPerPage * currentPage}{" "}
-            <span className="text-neutral-400">de</span> {filteredTools.length}
-          </span>
-        </div>
+
         <div className="flex md:hidden items-center gap-2">
           <button
             className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
@@ -156,6 +148,15 @@ const FeaturedTools = () => {
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
             </svg>
           </button>
+        </div>
+        <div className="flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
+          <span className="px-1 md:px-2 lg:px-3 xl:px-4 md:py-1 xl:py-2">
+            {startIndex + 1}{" "}-{" "}
+            {currentPage == totalPages
+              ? filteredTools.length
+              : itemsPerPage * currentPage}{" "}
+            <span className="text-neutral-400">de</span> {filteredTools.length} cards
+          </span>
         </div>
       </div>
     </section>

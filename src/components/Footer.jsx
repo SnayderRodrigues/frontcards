@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "/public/logo-test.svg";
+import Logo from "/public/logotest.svg";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -25,7 +25,7 @@ const Footer = () => {
                 className="w-12 md:w-16"
               />
               <div className="text-4xl md:text-5xl font-bold">
-                Weblioteca
+                Frontcards
               </div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">

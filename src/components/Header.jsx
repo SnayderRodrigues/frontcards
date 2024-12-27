@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import Logo from "/public/logo-test.svg";
+import Logo from "/public/logotest.svg";
 
 const Header = () => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
@@ -12,7 +12,7 @@ const Header = () => {
         <a href="/" className="group flex items-center gap-2 xsm:gap-3">
           <img src={Logo} alt="Logo" width={40} className="w-8 xsm:w-10" />
           <div className="text-2xl xsm:text-3xl lg:text-4xl font-bold">
-            Weblioteca
+            Frontcards
           </div>
         </a>
         <div className="flex items-center gap-2 lg:gap-4 sm:text-lg lg:text-xl font-medium">

@@ -22,7 +22,7 @@ const Filter = ({
   };
 
   const categories = [
-    "Todas",
+    "Todos",
     "Frontend",
     "Design",
     "Aprendizado",
@@ -45,7 +45,7 @@ const Filter = ({
               className={`flex items-center gap-2 px-2 lg:px-3 xl:px-4 py-1 xl:py-2 rounded-lg cursor-pointer transition-colors ${
                 selectedCategory === category ? "" : "hover:bg-neutral-800"
               } ${
-                selectedCategory === category && category === "Todas"
+                selectedCategory === category && category === "Todos"
                   ? "bg-neutral-100 text-black"
                   : ""
               } ${
@@ -115,7 +115,7 @@ const Filter = ({
             <li
               key={category}
               className={`flex items-center gap-2 p-3 rounded-lg cursor-pointer transition-colors ${
-                selectedCategory === category && selectedCategory === "Todas"
+                selectedCategory === category && selectedCategory === "Todos"
                   ? "bg-neutral-800"
                   : ""
               } ${
