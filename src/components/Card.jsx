@@ -11,7 +11,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="group w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
+      className="group relative w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
       onClick={handleClick}
     >
       <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-lg">

@@ -1,9 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
 import AccessibilityNotChecklist from "../assets/accessibility-not-checklist.png";
 import AdobeIllustrator from "../assets/adobe-illustrator.svg";
-import AugustoGalego from "../assets/Augusto Galego.png";
+import Angular from "../assets/angular.svg";
 import Awwwards from "../assets/awwwards.svg";
 import Blender from "../assets/blender.svg";
+import Bootstrap from "../assets/bootstrap.svg";
 import ByHuy from "../assets/By Huy.png";
 import CanIUse from "../assets/caniuse.png";
 import ChrisDevInDev from "../assets/Chris DevInDev.png";
@@ -50,10 +51,11 @@ import Sass from "../assets/sass.svg";
 import ShadcnUI from "../assets/shadcn-ui.png";
 import Shots from "../assets/shots-so.png";
 import Sketch from "../assets/sketch.svg";
-import SmashingMagazine from "../assets/smashing-magazine.png";
+import SmashingMagazine from "../assets/smashing-magazine.svg";
 import Spline from "../assets/spline.png";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
+import Svelte from "../assets/svelte.svg";
 import Tailwind from "../assets/tailwind.svg";
 import TheOdinProject from "../assets/the-odin-project.svg";
 import ThreeJs from "../assets/threejs.svg";
@@ -64,8 +66,10 @@ import Uncut from "../assets/uncut.svg";
 import Unlighthouse from "../assets/unlighthouse.svg";
 import Unsplash from "../assets/unsplash.svg";
 import Vite from "../assets/vitejs.svg";
+import Vue from "../assets/vue.svg";
 import W3Schools from "../assets/w3schools.svg";
 import WebDevSimplified from "../assets/Web-Dev-Simplified.png";
+import WebDev from "../assets/web.dev.svg";
 import Webflow from "../assets/webflow.svg";
 
 const ResourcesData = [
@@ -93,14 +97,14 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
-    title: "Augusto Galego",
-    image: AugustoGalego,
-    category: "Criadores",
-    tags: ["Carreira", "Engenharia de Software"],
-    slug: "augusto-galego",
+    title: "Angular",
+    image: Angular,
+    category: "Frontend",
+    tags: ["Framework", "MVC", "TypeScript"],
+    slug: "angular",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
-    source: "https://www.youtube.com/@GutoGalego",
+      "Plataforma para desenvolvimento de aplicações web dinâmicas com base em TypeScript.",
+    source: "https://angular.io/",
   },
   {
     id: uuidv4(),
@@ -123,6 +127,17 @@ const ResourcesData = [
     description:
       "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
     source: "https://www.blender.org/",
+  },
+  {
+    id: uuidv4(),
+    title: "Bootstrap",
+    image: Bootstrap,
+    category: "Frontend",
+    tags: ["Componentes", "CSS Framework"],
+    slug: "bootstrap",
+    description:
+      "Framework front-end para criar websites responsivos e com design consistente.",
+    source: "https://getbootstrap.com/",
   },
   {
     id: uuidv4(),
@@ -536,7 +551,7 @@ const ResourcesData = [
     title: "React",
     image: React,
     category: "Frontend",
-    tags: ["Biblioteca", "Frontend"],
+    tags: ["Biblioteca", "JavaScript"],
     slug: "react",
     description:
       "A JavaScript library for building user interfaces with a component-based architecture.",
@@ -676,6 +691,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Svelte",
+    image: Svelte,
+    category: "Frontend",
+    tags: ["Framework", "JavaScript"],
+    slug: "svelte",
+    description:
+      "Framework JavaScript que compila os componentes em código altamente otimizado para maior performance.",
+    source: "https://svelte.dev/",
+  },
+  {
+    id: uuidv4(),
     title: "Tailwind CSS",
     image: Tailwind,
     category: "Frontend",
@@ -786,6 +812,17 @@ const ResourcesData = [
   },
   {
     id: uuidv4(),
+    title: "Vue.js",
+    image: Vue,
+    category: "Frontend",
+    tags: ["Framework", "JavaScript"],
+    slug: "vue",
+    description:
+      "Framework JavaScript progressivo para criar interfaces de usuário dinâmicas e reativas.",
+    source: "https://vuejs.org/",
+  },
+  {
+    id: uuidv4(),
     title: "W3Schools",
     image: W3Schools,
     category: "Aprendizado",
@@ -805,6 +842,17 @@ const ResourcesData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
     source: "https://www.youtube.com/@WebDevSimplified",
+  },
+  {
+    id: uuidv4(),
+    title: "Web.dev",
+    image: WebDev,
+    category: "Aprendizado",
+    tags: ["Boas Práticas", "Referências", "Performance"],
+    slug: "web-dev",
+    description:
+      "Plataforma da Google com recursos e ferramentas para criar websites de alta performance e acessíveis.",
+    source: "https://web.dev/",
   },
   {
     id: uuidv4(),
