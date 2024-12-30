@@ -14,18 +14,19 @@ const Card = ({ tool }) => {
       className="group relative w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
       onClick={handleClick}
     >
-      <div className="aspect-square flex items-center justify-center bg-neutral-100 rounded-lg">
+      <div className="aspect-[5/4] flex items-center justify-center bg-neutral-100 rounded-lg">
         <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
-        <span className="flex-1 flex flex-wrap gap-[6px] text-sm text-neutral-400">
+        <span className="flex flex-wrap gap-[6px] text-neutral-400">
           {tool.tags.map((tag, index) => (
             <span key={index} className="shrink-0">
               #{tag}
             </span>
           ))}
         </span>
+        <p className="flex-1 text-neutral-400">{tool.description}</p>
         <div className="flex justify-between gap-2">
           <div
             className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${

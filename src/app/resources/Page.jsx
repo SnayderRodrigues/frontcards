@@ -149,14 +149,14 @@ const FeaturedTools = () => {
             </svg>
           </button>
         </div>
-        <div className="flex items-center justify-center text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl cursor-default">
-          <span className="px-1 md:px-2 lg:px-3 xl:px-4 md:py-1 xl:py-2">
-            {startIndex + 1}{" "}-{" "}
+        <div className="text-base lg:text-lg text-neutral-400 cursor-default">
+          <span className="text-white">
+            {startIndex + 1} -{" "}
             {currentPage == totalPages
               ? filteredTools.length
-              : itemsPerPage * currentPage}{" "}
-            <span className="text-neutral-400">de</span> {filteredTools.length} cards
-          </span>
+              : itemsPerPage * currentPage}
+          </span>{" "}
+          de {filteredTools.length} cards
         </div>
       </div>
     </section>

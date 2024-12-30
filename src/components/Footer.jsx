@@ -34,11 +34,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-base font-medium">
-            © 2024{" "}
+            Frontcards © 2024.{" "} <br />Desenvolvido por{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="font-semibold text-indigo-300 hover:text-white transition-colors"
+              className="text-neutral-400 hover:text-indigo-300 transition-colors"
             >
               Snayder Rodrigues
             </a>
