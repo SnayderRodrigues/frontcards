@@ -114,7 +114,7 @@ const Filter = ({
           {categories.map((category) => (
             <li
               key={category}
-              className={`flex items-center gap-2 p-3 rounded-lg cursor-pointer transition-colors ${
+              className={`flex items-center gap-2 p-3 rounded-lg cursor-pointer transition-colors duration-300 ${
                 selectedCategory === category && selectedCategory === "Todos"
                   ? "bg-neutral-800"
                   : ""

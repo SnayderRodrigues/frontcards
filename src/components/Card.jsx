@@ -24,7 +24,7 @@ const Card = ({ tool }) => {
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-start justify-between gap-2">
-          <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
+          <span className="text-xl md:text-2xl font-bold mt-[5px] md:mt-0">{tool.title}</span>
           <button
             className={`w-fit flex items-center justify-center text-sm font-semibold text-white ${
               tool.category === "Frontend"
@@ -42,7 +42,7 @@ const Card = ({ tool }) => {
               tool.category === "Criadores"
                 ? "bg-rose-900 hover:bg-rose-600"
                 : ""
-            } p-[5px] md:p-[7px] rounded-md transition-colors`}
+            } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors`}
             onClick={handleFavoriteClick}
           >
             {tool.isFavorite ? (
@@ -86,26 +86,6 @@ const Card = ({ tool }) => {
           <span className="mb-[2px]">{tool.category}</span>
         </div>
       </div>
-      {/* <div
-        className={`hidden md:flex items-center gap-1 absolute top-[18px] right-[18px] z-10 text-sm font-semibold ${
-          tool.category === "Frontend" ? "bg-indigo-700" : ""
-        } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-          tool.category === "Aprendizado" ? "bg-emerald-600" : ""
-        } ${
-          tool.category === "Criadores" ? "bg-rose-600" : ""
-        } px-3 py-2 rounded-md opacity-0 transition-opacity group-hover:opacity-100`}
-      >
-        <span className="mb-[2px]">Saiba mais</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16px"
-          height="16px"
-          viewBox="0 -960 960 960"
-          fill="#fff"
-        >
-          <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
-        </svg>
-      </div> */}
     </div>
   );
 };

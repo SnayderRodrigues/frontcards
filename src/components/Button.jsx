@@ -5,7 +5,7 @@ const Button = ({ text, href }) => {
     <a
       href={href}
       target="_blank"
-      className="w-fit flex items-center gap-1 text-base sm:text-lg lg:text-xl font-medium bg-indigo-700 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 rounded-lg hover:bg-indigo-800 transition-colors cursor-pointer"
+      className="w-fit flex items-center gap-1 text-base sm:text-lg lg:text-xl font-medium bg-indigo-700 px-3 xsm:px-4 lg:px-6 py-3 xsm:py-3 md:py-[14px] lg:py-4 rounded-lg hover:bg-indigo-800 transition-colors cursor-pointer"
     >
       <span className="shrink-0 xsm:mb-[2px]">{text}</span>
       <svg

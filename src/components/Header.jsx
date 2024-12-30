@@ -15,29 +15,37 @@ const Header = () => {
             Frontcards
           </div>
         </a>
-        <div className="flex items-center gap-2 lg:gap-4 sm:text-lg lg:text-xl font-medium">
+        <button className="aspect-square w-8 xsm:w-10 relative flex flex-col items-center justify-center gap-2 md:hidden">
+          <div className="w-full h-[2px] bg-white"></div>
+          <div className="w-full h-[2px] bg-white"></div>
+          <div className="w-full h-[2px] bg-white"></div>
+        </button>
+        <div className="hidden md:flex items-center gap-2 lg:gap-4 sm:text-lg lg:text-xl font-medium">
           <Link
             to="/"
-            className="hidden md:block px-3 py-2 rounded-lg hover:bg-neutral-800 transition-colors"
+            className="p-2 lg:px-3 lg:py-2 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/favorites"
-            className="hidden md:block px-3 py-2 rounded-lg hover:bg-neutral-800 transition-colors"
+            className="p-2 lg:px-3 lg:py-2 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Favoritos
           </Link>
           <Link
             to="/about"
-            className="hidden md:block px-3 py-2 mr-3 rounded-lg hover:bg-neutral-800 transition-colors"
+            className="p-2 lg:px-3 lg:py-2 mr-2 lg:mr-3 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
-          <Button text="Indique um Card" href="https://forms.gle/Rh2qCEwa7H3DAUQ26" />
+          <Button
+            text="Indique um Card"
+            href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
+          />
         </div>
       </nav>
     </header>
