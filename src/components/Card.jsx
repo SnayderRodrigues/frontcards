@@ -11,7 +11,7 @@ const Card = ({ tool }) => {
 
   const handleFavoriteClick = (e) => {
     e.stopPropagation();
-    onToggleFavorite(tool.id);
+    // onToggleFavorite(tool.id);
   };
 
   return (
@@ -23,23 +23,33 @@ const Card = ({ tool }) => {
         <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
       </div>
       <div className="flex-1 flex flex-col gap-4">
-        <div className="flex justify-between items-center gap-2">
+        <div className="flex items-start justify-between gap-2">
           <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
           <button
             className={`w-fit flex items-center justify-center text-sm font-semibold text-white ${
-              tool.category === "Frontend" ? "bg-indigo-900 hover:bg-indigo-700" : ""
-            } ${tool.category === "Design" ? "bg-purple-900 hover:bg-purple-600" : ""} ${
-              tool.category === "Aprendizado" ? "bg-emerald-900 hover:bg-emerald-600" : ""
+              tool.category === "Frontend"
+                ? "bg-indigo-900 hover:bg-indigo-700"
+                : ""
             } ${
-              tool.category === "Criadores" ? "bg-rose-900 hover:bg-rose-600" : ""
-            } p-2 rounded-md transition-colors`}
+              tool.category === "Design"
+                ? "bg-purple-900 hover:bg-purple-600"
+                : ""
+            } ${
+              tool.category === "Aprendizado"
+                ? "bg-emerald-900 hover:bg-emerald-600"
+                : ""
+            } ${
+              tool.category === "Criadores"
+                ? "bg-rose-900 hover:bg-rose-600"
+                : ""
+            } p-[5px] md:p-[7px] rounded-md transition-colors`}
             onClick={handleFavoriteClick}
           >
             {tool.isFavorite ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                height="20px"
+                width="18px"
+                height="18px"
                 viewBox="0 -960 960 960"
                 fill="#fff"
               >
@@ -48,8 +58,8 @@ const Card = ({ tool }) => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                height="20px"
+                width="18px"
+                height="18px"
                 viewBox="0 -960 960 960"
                 fill="#fff"
               >

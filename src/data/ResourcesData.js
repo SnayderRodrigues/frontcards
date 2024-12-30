@@ -92,7 +92,7 @@ const ResourcesData = [
     tags: ["Gráficos Vetoriais", "Ilustrações"],
     slug: "adobe-illustrator",
     description:
-      "A vector graphics editor for creating illustrations, logos, and other scalable graphics.",
+      "Software profissional para criação de designs vetoriais, ideal para logos, ícones e ilustrações.",
     source: "https://www.adobe.com/products/illustrator.html",
   },
   {
@@ -103,7 +103,7 @@ const ResourcesData = [
     tags: ["Framework", "MVC", "TypeScript"],
     slug: "angular",
     description:
-      "Plataforma para desenvolvimento de aplicações web dinâmicas com base em TypeScript.",
+      "Framework para desenvolvimento de aplicações web dinâmicas com base em TypeScript.",
     source: "https://angular.io/",
   },
   {
@@ -114,7 +114,7 @@ const ResourcesData = [
     tags: ["Inspiração", "Web Design"],
     slug: "awwwards",
     description:
-      "A platform that showcases and awards the best web design projects from around the world.",
+      "Plataforma que premia os melhores designs e inovações na web, com inspiração para designers e desenvolvedores.",
     source: "https://www.awwwards.com/",
   },
   {
@@ -125,7 +125,7 @@ const ResourcesData = [
     tags: ["Animações", "Modelagem 3D"],
     slug: "blender",
     description:
-      "An open-source 3D creation suite supporting the entirety of the 3D pipeline, including modeling, rigging, animation, simulation, and rendering.",
+      "Ferramenta gratuita e de código aberto para modelagem 3D, animações e renderizações realistas.",
     source: "https://www.blender.org/",
   },
   {
@@ -147,7 +147,7 @@ const ResourcesData = [
     tags: ["Frontend", "UI/UX", "Web Design"],
     slug: "by-huy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Huy é um desenvolvedor frontend e web designer que compartilha conteúdo e aprendizado sobre freelance.",
     source: "https://www.youtube.com/@by_huy",
   },
   {
@@ -158,7 +158,7 @@ const ResourcesData = [
     tags: ["Compatibilidade", "Ferramentas Web"],
     slug: "can-i-use",
     description:
-      "Can I use provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
+      "Recurso para verificar compatibilidade de recursos web com navegadores.",
     source: "https://caniuse.com/",
   },
   {
@@ -169,7 +169,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "Carreira", "Mentoria"],
     slug: "chris-devindev",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Dicas sobre mercado e carreira, além de fornercer material de estudo e mentoria para devs de todos os níveis.",
     source: "https://www.instagram.com/chrisdevindev/",
   },
   {
@@ -180,7 +180,7 @@ const ResourcesData = [
     tags: ["Editor de Código", "Prototipagem"],
     slug: "codepen",
     description:
-      "An online code editor and community for testing and sharing HTML, CSS, and JavaScript snippets.",
+      "Editor de código online para criar e compartilhar experimentos em HTML, CSS e JavaScript.",
     source: "https://codepen.io/",
   },
   {
@@ -191,7 +191,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "Frontend"],
     slug: "coder-coder",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Criadora de conteúdos educativos que simplificam conceitos de desenvolvimento web para iniciantes.",
     source: "https://www.youtube.com/@TheCoderCoder",
   },
   {
@@ -224,7 +224,7 @@ const ResourcesData = [
     tags: ["Comunidade", "Informações"],
     slug: "daily-dev",
     description:
-      "A personalized feed for developers that aggregates programming news and updates from across the web.",
+      "Extensão para navegadores que centraliza as melhores notícias e recursos para desenvolvedores.",
     source: "https://daily.dev/",
   },
   {
@@ -246,7 +246,7 @@ const ResourcesData = [
     tags: ["Inspiração", "UI/UX"],
     slug: "dribbble",
     description:
-      "A platform for showcasing, discovering, and connecting with designers and their work.",
+      "Comunidade criativa para designers se conectarem e exibirem seus portfólios.",
     source: "https://dribbble.com/",
   },
   {
@@ -257,7 +257,7 @@ const ResourcesData = [
     tags: ["Colaboração", "UI/UX"],
     slug: "figma",
     description:
-      "A collaborative interface design tool that allows teams to design, prototype, and gather feedback in real time.",
+      "Ferramenta colaborativa de design de interfaces e prototipação baseada na nuvem.",
     source: "https://www.figma.com/",
   },
   {
@@ -268,7 +268,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "Informação"],
     slug: "fireship",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Canal que oferece vídeos rápidos e detalhados sobre desenvolvimento de software e tecnologias modernas.",
     source: "https://www.youtube.com/@Fireship",
   },
   {
@@ -279,7 +279,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "UI/UX", "Web Design"],
     slug: "flux-academy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Academia online que ensina design web e como transformar essas habilidades em um negócio lucrativo.",
     source: "https://www.youtube.com/@FluxAcademy",
   },
   {
@@ -290,7 +290,7 @@ const ResourcesData = [
     tags: ["Recursos", "Tipografia"],
     slug: "fontshare",
     description:
-      "A free font service by Indian Type Foundry for professional-grade fonts.",
+      "Biblioteca de fontes gratuitas para projetos criativos e profissionais.",
     source: "https://www.fontshare.com/",
   },
   {
@@ -301,7 +301,7 @@ const ResourcesData = [
     tags: ["Animações", "Prototipagem"],
     slug: "framer",
     description:
-      "An interactive design tool that enables designers to create high-fidelity prototypes with animations and transitions.",
+      "Plataforma para prototipação e design interativo com animações fluidas e responsividade.",
     source: "https://www.framer.com/",
   },
   {
@@ -312,7 +312,7 @@ const ResourcesData = [
     tags: ["Certificações", "Programação"],
     slug: "freecodecamp",
     description:
-      "An open-source platform offering coding lessons, projects, and certifications for developers.",
+      "Plataforma educacional gratuita para aprender programação e desenvolvimento web.",
     source: "https://www.freecodecamp.org/",
   },
   {
@@ -323,7 +323,7 @@ const ResourcesData = [
     tags: ["Desafios", "Frontend"],
     slug: "frontend-mentor",
     description:
-      "A platform offering front-end coding challenges to help improve coding and design skills.",
+      "Site com desafios práticos para melhorar habilidades de frontend, incluindo HTML, CSS e JavaScript.",
     source: "https://www.frontendmentor.io/",
   },
   {
@@ -334,7 +334,7 @@ const ResourcesData = [
     tags: ["Assistente de Código", "IA"],
     slug: "github-copilot",
     description:
-      "An AI-powered code completion tool that suggests entire lines or functions as you type.",
+      "Assistente de código que usa inteligência artificial para sugerir e completar trechos de código.",
     source: "https://github.com/features/copilot",
   },
   {
@@ -345,7 +345,7 @@ const ResourcesData = [
     tags: ["Animações", "Frontend", "JavaScript"],
     slug: "gsap",
     description:
-      "A JavaScript library for creating high-performance animations and transitions for web applications.",
+      "Biblioteca poderosa para criar animações interativas e de alto desempenho na web.",
     source: "https://gsap.com/",
   },
   {
@@ -356,7 +356,7 @@ const ResourcesData = [
     tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "hyperplexed",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Criador de tutoriais criativos e inovadores sobre animações e interações web modernas.",
     source: "https://www.youtube.com/@Hyperplexed",
   },
   {
@@ -389,7 +389,7 @@ const ResourcesData = [
     tags: ["Frontend", "UI/UX", "Web Design"],
     slug: "juxtopposed",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Blog e repositório de ideias focado em criatividade, design e experimentação na web.",
     source: "https://www.youtube.com/@juxtopposed",
   },
   {
@@ -400,7 +400,7 @@ const ResourcesData = [
     tags: ["Inspiração", "Recursos", "Web Design"],
     slug: "kalypso",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Product Designer compartilha diariamente os mais diversos recursos e dicas sobre design.",
     source: "https://www.instagram.com/kalypsodesigns/",
   },
   {
@@ -411,7 +411,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "Frontend"],
     slug: "kevin-powell",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Educador especializado em CSS, com vídeos e artigos para criar estilos web profissionais.",
     source: "https://www.youtube.com/@KevinPowell",
   },
   {
@@ -433,7 +433,7 @@ const ResourcesData = [
     tags: ["Performance", "SEO"],
     slug: "lighthouse",
     description:
-      "An open-source tool for auditing website performance, accessibility, and SEO.",
+      "Ferramenta automatizada do Google para medir desempenho, acessibilidade e SEO de páginas web.",
     source: "https://developer.chrome.com/docs/lighthouse/overview",
   },
   {
@@ -444,7 +444,7 @@ const ResourcesData = [
     tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "lun-dev",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Criador de conteúdos para desenvolvedores, com foco em dicas práticas e tutoriais de programação.",
     source: "https://www.youtube.com/@LunDeveloper",
   },
   {
@@ -455,7 +455,7 @@ const ResourcesData = [
     tags: ["Componentes", "Design System", "UI"],
     slug: "material-ui",
     description:
-      "A popular React UI framework for building modern, responsive, and accessible web applications.",
+      "Biblioteca de componentes React baseados no design system Material Design, para interfaces modernas.",
     source: "https://mui.com/",
   },
   {
@@ -466,7 +466,7 @@ const ResourcesData = [
     tags: ["Inspiração", "Web Design"],
     slug: "maxibestof",
     description:
-      "A curated gallery of modern web design and user interfaces for inspiration.",
+      "Repositório de templates e recursos para facilitar a criação de designs criativos e interativos.",
     source: "https://maxibestof.one/",
   },
   {
@@ -477,7 +477,7 @@ const ResourcesData = [
     tags: ["Documentação", "Referências"],
     slug: "mdn",
     description:
-      "Mozilla Developer Network provides comprehensive web development documentation, tutorials, and guides.",
+      "Documentação abrangente e confiável para desenvolvedores web, com tutoriais e referências.",
     source: "https://developer.mozilla.org/en-US/",
   },
   {
@@ -488,7 +488,7 @@ const ResourcesData = [
     tags: ["Gerador de Imagens", "IA"],
     slug: "midjourney",
     description:
-      "An AI-powered platform for creating stunning artwork and designs through text prompts.",
+      "Ferramenta de inteligência artificial para criar imagens e artes conceituais inovadoras.",
     source: "https://www.midjourney.com/",
   },
   {
@@ -499,7 +499,7 @@ const ResourcesData = [
     tags: ["Framework", "React"],
     slug: "nextjs",
     description:
-      "A React-based framework for building server-rendered and static web applications with ease.",
+      "Framework React para desenvolvimento web com renderização do lado servidor e geração de sites estáticos.",
     source: "https://nextjs.org/",
   },
   {
@@ -510,7 +510,7 @@ const ResourcesData = [
     tags: ["Animações", "Aprendizado", "Frontend"],
     slug: "olivier-larose",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Desenvolvedor Frontend que compartilha recursos e insights sobre design criativo, animações e desenvolvimento web.",
     source: "https://www.youtube.com/@olivierlarose1",
   },
   {
@@ -532,7 +532,7 @@ const ResourcesData = [
     tags: ["Design Gráfico", "Edição de Imagens"],
     slug: "photoshop",
     description:
-      "A powerful graphics editor for creating, editing, and enhancing digital images and designs.",
+      "Software profissional para edição e manipulação de imagens e criação de designs gráficos.",
     source: "https://www.adobe.com/products/photoshop.html",
   },
   {
@@ -543,7 +543,7 @@ const ResourcesData = [
     tags: ["Extensão", "Formatação de Código"],
     slug: "prettier",
     description:
-      "An opinionated code formatter that enforces a consistent style across your codebase.",
+      "Formatador de código opinativo que mantém consistência em projetos de desenvolvimento.",
     source: "https://prettier.io/",
   },
   {
@@ -554,7 +554,7 @@ const ResourcesData = [
     tags: ["Biblioteca", "JavaScript"],
     slug: "react",
     description:
-      "A JavaScript library for building user interfaces with a component-based architecture.",
+      "Biblioteca JavaScript para criação de interfaces de usuário com foco em componentes reutilizáveis.",
     source: "https://react.dev/",
   },
   {
@@ -587,7 +587,7 @@ const ResourcesData = [
     tags: ["IA", "UI Design"],
     slug: "relume",
     description:
-      "A tool to help designers and developers build Webflow sites faster with pre-designed components and style guides.",
+      "Plataforma que fornece templates e kits para criar sites rapidamente com Webflow.",
     source: "https://www.relume.io/",
   },
   {
@@ -598,7 +598,7 @@ const ResourcesData = [
     tags: ["Carreira", "Recursos"],
     slug: "roadmap-sh",
     description:
-      "Interactive roadmaps, guides, and resources to help developers navigate their careers.",
+      "Guia visual para aprender desenvolvimento de software, com caminhos claros para várias carreiras.",
     source: "https://roadmap.sh/",
   },
   {
@@ -609,7 +609,7 @@ const ResourcesData = [
     tags: ["CSS", "Estilização"],
     slug: "sass",
     description:
-      "A preprocessor scripting language that is interpreted into CSS, adding features like variables and nesting.",
+      "Extensão de CSS que adiciona recursos avançados como variáveis, mixins e nesting.",
     source: "https://sass-lang.com/",
   },
   {
@@ -642,7 +642,7 @@ const ResourcesData = [
     tags: ["Prototipagem", "UI Design"],
     slug: "sketch",
     description:
-      "A vector graphics editor for designing user interfaces, prototypes, and digital products.",
+      "Software de design de interfaces focado em UI/UX, com recursos para colaboração e prototipação.",
     source: "https://www.sketch.com/",
   },
   {
@@ -664,7 +664,7 @@ const ResourcesData = [
     tags: ["3D Design", "Modelagem"],
     slug: "spline",
     description:
-      "A 3D design tool to create interactive experiences directly in the browser.",
+      "Ferramenta para criar e editar gráficos 3D interativos diretamente no navegador.",
     source: "https://spline.design/",
   },
   {
@@ -675,7 +675,7 @@ const ResourcesData = [
     tags: ["Comunidade", "Programação"],
     slug: "stack-overflow",
     description:
-      "A community-driven platform where developers ask questions and share knowledge.",
+      "Comunidade online para desenvolvedores compartilharem conhecimento e resolverem dúvidas técnicas.",
     source: "https://stackoverflow.com/",
   },
   {
@@ -686,7 +686,7 @@ const ResourcesData = [
     tags: ["Componentes", "Documentação", "UI"],
     slug: "storybook",
     description:
-      "An open-source tool for building and documenting isolated UI components.",
+      "Ferramenta para desenvolver, documentar e testar componentes de UI de forma isolada.",
     source: "https://storybook.js.org/",
   },
   {
@@ -708,7 +708,7 @@ const ResourcesData = [
     tags: ["Estilização", "Framework CSS"],
     slug: "tailwindcss",
     description:
-      "A utility-first CSS framework for creating custom designs directly in your HTML.",
+      "Framework CSS utilitário que permite criar interfaces modernas com classes pré-definidas.",
     source: "https://tailwindcss.com/",
   },
   {
@@ -716,7 +716,7 @@ const ResourcesData = [
     title: "The Odin Project",
     image: TheOdinProject,
     category: "Aprendizado",
-    tags: ["Cursos Gratuitos", "Desenvolvimento Web"],
+    tags: ["Certificações", "Desenvolvimento Web"],
     slug: "the-odin-project",
     description:
       "Plataforma gratuita que oferece currículos completos para aprender desenvolvimento web.",
@@ -730,7 +730,7 @@ const ResourcesData = [
     tags: ["Biblioteca 3D", "WebGL"],
     slug: "threejs",
     description:
-      "A JavaScript library for creating 3D content in web applications using WebGL.",
+      "Biblioteca JavaScript para renderização 3D interativa em navegadores usando WebGL.",
     source: "https://threejs.org/",
   },
   {
@@ -741,7 +741,7 @@ const ResourcesData = [
     tags: ["Otimização de Imagem"],
     slug: "tinypng",
     description:
-      "A tool for optimizing PNG and JPEG images while maintaining quality.",
+      "Ferramenta online para compactação de imagens PNG e JPEG sem perda significativa de qualidade.",
     source: "https://tinypng.com/",
   },
   {
@@ -752,7 +752,7 @@ const ResourcesData = [
     tags: ["Certificações", "Educação"],
     slug: "udemy",
     description:
-      "A global Aprendizado platform offering a wide range of courses in various fields, taught by industry experts.",
+      "Plataforma de cursos online com uma vasta variedade de conteúdos para desenvolvedores e designers.",
     source: "https://www.udemy.com/",
   },
   {
@@ -763,7 +763,7 @@ const ResourcesData = [
     tags: ["Componentes", "Inspiração", "Web Design"],
     slug: "uiverse",
     description:
-      "A collection of open-source and customizable UI components for modern web projects.",
+      "Coleção de componentes de interface gratuitos e personalizáveis para projetos web.",
     source: "https://uiverse.io/",
   },
   {
@@ -774,7 +774,7 @@ const ResourcesData = [
     tags: ["Recursos", "Tipografia"],
     slug: "uncut",
     description:
-      "A curated platform showcasing fresh and modern fonts for inspiration.",
+      "Uma plataforma com curadoria que apresenta fontes novas e modernas como inspiração.",
     source: "https://www.uncut.wtf/",
   },
   {
@@ -796,7 +796,7 @@ const ResourcesData = [
     tags: ["Fotografia", "Recursos"],
     slug: "unsplash",
     description:
-      "A platform providing high-quality, freely usable images shared by photographers around the world.",
+      "Banco de imagens de alta qualidade e uso gratuito para projetos criativos e comerciais.",
     source: "https://unsplash.com/",
   },
   {
@@ -807,7 +807,7 @@ const ResourcesData = [
     tags: ["Ferramenta de Build", "Frontend"],
     slug: "vite",
     description:
-      "A fast and modern frontend build tool that leverages native ES modules and offers lightning-fast hot module replacement.",
+      "Ferramenta de build rápida para projetos web modernos, com suporte nativo a ES Modules.",
     source: "https://vite.dev/",
   },
   {
@@ -829,7 +829,7 @@ const ResourcesData = [
     tags: ["Programação", "Referências", "Tutoriais"],
     slug: "w3schools",
     description:
-      "An educational website offering tutorials and references for web development and programming.",
+      "Plataforma de aprendizado online com tutoriais práticos sobre desenvolvimento web.",
     source: "https://www.w3schools.com/",
   },
   {
@@ -840,7 +840,7 @@ const ResourcesData = [
     tags: ["Aprendizado", "Fullstack"],
     slug: "web-dev-simplified",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corporis iure magni. Perspiciatis, expedita quos! Ullam soluta libero impedit odit, sapiente nesciunt voluptas nostrum, officiis qui laudantium voluptates! At, autem.",
+      "Canal que aborda conceitos de desenvolvimento web de forma clara e objetiva para todos os níveis.",
     source: "https://www.youtube.com/@WebDevSimplified",
   },
   {
@@ -862,7 +862,7 @@ const ResourcesData = [
     tags: ["No-Code", "Web Design"],
     slug: "webflow",
     description:
-      "A no-code platform for designing, building, and launching responsive websites visually, without writing code.",
+      "Ferramenta de design e desenvolvimento visual para criar sites responsivos sem codificação manual.",
     source: "https://www.webflow.com/",
   },
 ];
