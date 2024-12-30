@@ -1,6 +1,7 @@
-<svg width="400" height="401" viewBox="0 0 400 401" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="157.052" y="121.61" width="171.79" height="171.79" rx="32" transform="rotate(-45 157.052 121.61)" fill="#3732C2"/>
-<rect x="157.052" y="278.662" width="171.79" height="171.79" rx="32" transform="rotate(-45 157.052 278.662)" fill="#C071E4"/>
-<rect y="278.662" width="171.79" height="171.79" rx="32" transform="rotate(-45 0 278.662)" fill="#E3E2FF"/>
-<rect y="121.61" width="171.79" height="171.79" rx="32" transform="rotate(-45 0 121.61)" fill="#6885FA"/>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="157" y="121.474" width="171.79" height="171.79" rx="32" transform="rotate(-45 157 121.474)" fill="#3732C2"/>
+<rect x="157.052" y="278.526" width="171.79" height="171.79" rx="32" transform="rotate(-45 157.052 278.526)" fill="#C071E4"/>
+<rect y="278.526" width="171.79" height="171.79" rx="32" transform="rotate(-45 0 278.526)" fill="#E3E2FF"/>
+<rect y="121.474" width="171.79" height="171.79" rx="32" transform="rotate(-45 0 121.474)" fill="#6885FA"/>
+<path d="M179.617 144.102C167.126 131.604 167.128 111.347 179.623 98.852L255.847 22.6276C268.344 10.1308 288.605 10.1308 301.102 22.6276L362.19 83.7157C379.283 100.808 371.98 129.953 348.847 136.967L231.857 172.435C220.556 175.861 208.287 172.785 199.94 164.433L179.617 144.102Z" fill="#3732C2"/>
 </svg>

@@ -53,6 +53,13 @@ const Footer = () => {
             Início
           </Link>
           <Link
+            to="/favorites"
+            className="w-fit md:hover:text-indigo-300 transition-colors"
+            onClick={scrollToTop}
+          >
+            Favoritos
+          </Link>
+          <Link
             to="/about"
             className="w-fit md:hover:text-indigo-300 transition-colors"
             onClick={scrollToTop}
@@ -71,7 +78,7 @@ const Footer = () => {
             target="_blank"
             className="w-fit md:hover:text-indigo-300 transition-colors"
           >
-            Indique uma Ferramenta
+            Indique um Card
           </a>
         </div>
         <button

@@ -24,13 +24,20 @@ const Header = () => {
             Início
           </Link>
           <Link
+            to="/favorites"
+            className="hidden md:block px-3 py-2 rounded-lg hover:bg-neutral-800 transition-colors"
+            onClick={scrollToTop}
+          >
+            Favoritos
+          </Link>
+          <Link
             to="/about"
             className="hidden md:block px-3 py-2 mr-3 rounded-lg hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
-          <Button text="Indique" href="https://forms.gle/Rh2qCEwa7H3DAUQ26" />
+          <Button text="Indique um Card" href="https://forms.gle/Rh2qCEwa7H3DAUQ26" />
         </div>
       </nav>
     </header>
