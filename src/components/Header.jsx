@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import Logo from "/public/logotest.svg";
+import Logo from "/public/logo.svg";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);

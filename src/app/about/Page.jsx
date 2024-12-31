@@ -1,5 +1,4 @@
 import React from "react";
-import AuthorImage from "../../../public/author-photo.webp";
 
 const AboutPage = () => {
   return (
@@ -29,18 +28,9 @@ const AboutPage = () => {
                 dignissimos in alias debitis non officia, necessitatibus sequi,
                 eaque beatae consectetur! Facilis, incidunt aperiam!
               </p>
-              <div className="flex items-center gap-4">
-                <img
-                  src={AuthorImage}
-                  alt=""
-                  className="w-12 aspect-square rounded-full"
-                />
-                <div className="flex flex-col">
-                  <span>Snayder Rodrigues</span>
-                  <span className="text-neutral-400">
-                    Desenvolvedor Frontend
-                  </span>
-                </div>
+              <div className="flex flex-col">
+                <span>Snayder Rodrigues</span>
+                <span className="text-neutral-400">Desenvolvedor Frontend</span>
               </div>
             </div>
           </div>

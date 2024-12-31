@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import resourcesData from "../../data/resourcesData.js";
+import resourcesData from "../../data/ResourcesData.js";
 import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
 
