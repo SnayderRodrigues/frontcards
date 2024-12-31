@@ -58,7 +58,7 @@ const Filter = ({
                   : ""
               } ${
                 selectedCategory === category && category === "Aprendizado"
-                  ? "bg-emerald-600"
+                  ? "bg-emerald-700"
                   : ""
               } ${
                 selectedCategory === category && category === "Criadores"
@@ -103,7 +103,7 @@ const Filter = ({
               : ""
           } ${
              selectedCategory === "Aprendizado"
-              ? "bg-emerald-600"
+              ? "bg-emerald-700"
               : ""
           } ${
              selectedCategory === "Criadores"
@@ -149,7 +149,7 @@ const Filter = ({
               } ${
                 selectedCategory === category &&
                 selectedCategory === "Aprendizado"
-                  ? "bg-emerald-600"
+                  ? "bg-emerald-700"
                   : ""
               } ${
                 selectedCategory === category &&

@@ -16,17 +16,20 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="group relative w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
+      className="relative w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
       onClick={handleCardClick}
     >
       <div className="aspect-[5/4] flex items-center justify-center bg-neutral-100 rounded-lg">
-        <img src={tool.image} alt={tool.title} className="w-2/3 p-6" />
+        <img src={tool.image} alt={tool.title} width={256} height={256} className="w-2/3 p-6" />
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-start justify-between gap-2">
-          <span className="text-xl md:text-2xl font-bold mt-[5px] md:mt-0">{tool.title}</span>
+          <span className="text-xl md:text-2xl font-bold mt-[5px] md:mt-0">
+            {tool.title}
+          </span>
           <button
-            className={`w-fit flex items-center justify-center text-sm font-semibold text-white ${
+            aria-label="Favorito"
+            className={`group w-fit relative flex items-center justify-center text-sm font-semibold text-white ${
               tool.category === "Frontend"
                 ? "bg-indigo-900 hover:bg-indigo-700"
                 : ""
@@ -36,13 +39,13 @@ const Card = ({ tool }) => {
                 : ""
             } ${
               tool.category === "Aprendizado"
-                ? "bg-emerald-900 hover:bg-emerald-600"
+                ? "bg-emerald-900 hover:bg-emerald-700"
                 : ""
             } ${
               tool.category === "Criadores"
                 ? "bg-rose-900 hover:bg-rose-600"
                 : ""
-            } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors`}
+            } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors duration-300`}
             onClick={handleFavoriteClick}
           >
             {tool.isFavorite ? (
@@ -80,7 +83,7 @@ const Card = ({ tool }) => {
           className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-3 py-2 rounded-md ${
             tool.category === "Frontend" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-            tool.category === "Aprendizado" ? "bg-emerald-600" : ""
+            tool.category === "Aprendizado" ? "bg-emerald-700" : ""
           } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
         >
           <span className="mb-[2px]">{tool.category}</span>

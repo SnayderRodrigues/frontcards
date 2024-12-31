@@ -33,7 +33,6 @@ const FeaturedTools = () => {
     setSearchParams(params);
   }, [selectedCategory, currentPage, setSearchParams]);
 
-
   return (
     <section className="wrapper">
       <Filter

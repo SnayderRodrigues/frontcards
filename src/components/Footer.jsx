@@ -17,16 +17,9 @@ const Footer = () => {
       >
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
-            <a href="/" className="group w-fit flex items-center gap-4 mb-4">
-              <img
-                src={Logo}
-                alt="Logo"
-                width={60}
-                className="w-12 md:w-16"
-              />
-              <div className="text-4xl md:text-5xl font-bold">
-                Frontcards
-              </div>
+            <a href="/" className="w-fit flex items-center gap-4 mb-4">
+              <img src={Logo} alt="Logo" width={60} className="w-12 md:w-16" />
+              <div className="text-4xl md:text-5xl font-bold">Frontcards</div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
               Uma coleção selecionada de recursos de desenvolvimento e design,
@@ -34,11 +27,12 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-base font-medium">
-            Frontcards © 2024.{" "} <br />Desenvolvido por{" "}
+            Frontcards © 2024. <br />
+            Desenvolvido por{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="text-neutral-400 hover:text-indigo-300 transition-colors"
+              className="text-neutral-400 hover:text-white transition-colors duration-300"
             >
               Snayder Rodrigues
             </a>
@@ -47,28 +41,28 @@ const Footer = () => {
         <div className="shrink-0 flex flex-col gap-4 text-lg lg:text-xl font-medium">
           <Link
             to="/"
-            className="w-fit md:hover:text-indigo-300 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/favorites"
-            className="w-fit md:hover:text-indigo-300 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Favoritos
           </Link>
           <Link
             to="/about"
-            className="w-fit md:hover:text-indigo-300 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
           <Link
             to="/legal"
-            className="w-fit md:hover:text-indigo-300 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
             onClick={scrollToTop}
           >
             Termos Legais
@@ -76,7 +70,7 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit md:hover:text-indigo-300 transition-colors"
+            className="w-fit md:hover:text-neutral-400 transition-colors"
           >
             Indique um Card
           </a>

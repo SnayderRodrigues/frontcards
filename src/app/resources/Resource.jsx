@@ -24,7 +24,7 @@ const Resource = () => {
               className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${
                 tool.category === "Frontend" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
-                tool.category === "Aprendizado" ? "bg-emerald-600" : ""
+                tool.category === "Aprendizado" ? "bg-emerald-700" : ""
               } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
             >
               <span className="mb-[2px]">{tool.category}</span>
