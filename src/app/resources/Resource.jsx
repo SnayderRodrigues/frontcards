@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import resourcesData from "../../data/ResourcesData.js";
+import resourcesData from "../../data/resourcesData.js";
 import Button from "../../components/Button.jsx";
 
 const Resource = () => {

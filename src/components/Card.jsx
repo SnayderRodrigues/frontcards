@@ -1,8 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import useFavoritesStore from "../store/favoritesStore.js";
 
 const Card = ({ tool }) => {
   const navigate = useNavigate();
+  const { favorites, toggleFavorite } = useFavoritesStore();
+
+  const isFavorite = favorites.some((fav) => fav.id === tool.id);
 
   const handleCardClick = () => {
     navigate(`/resources/${tool.slug}`);
@@ -11,7 +15,7 @@ const Card = ({ tool }) => {
 
   const handleFavoriteClick = (e) => {
     e.stopPropagation();
-    // onToggleFavorite(tool.id);
+    toggleFavorite(tool);
   };
 
   return (
@@ -20,7 +24,13 @@ const Card = ({ tool }) => {
       onClick={handleCardClick}
     >
       <div className="aspect-[5/4] flex items-center justify-center bg-neutral-100 rounded-lg">
-        <img src={tool.image} alt={tool.title} width={256} height={256} className="w-2/3 p-6" />
+        <img
+          src={tool.image}
+          alt={tool.title}
+          width={256}
+          height={256}
+          className="w-2/3 p-6"
+        />
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-start justify-between gap-2">
@@ -29,26 +39,38 @@ const Card = ({ tool }) => {
           </span>
           <button
             aria-label="Favorito"
-            className={`group w-fit relative flex items-center justify-center text-sm font-semibold text-white ${
-              tool.category === "Frontend"
+            className={`group w-fit relative flex items-center justify-center text-sm font-semibold text-white
+            ${
+              tool.category === "Frontend" && isFavorite
+                ? "bg-indigo-700"
+                : tool.category === "Frontend"
                 ? "bg-indigo-900 hover:bg-indigo-700"
                 : ""
-            } ${
-              tool.category === "Design"
+            }
+            ${
+              tool.category === "Design" && isFavorite
+                ? "bg-purple-600"
+                : tool.category === "Design"
                 ? "bg-purple-900 hover:bg-purple-600"
                 : ""
-            } ${
-              tool.category === "Aprendizado"
+            }
+            ${
+              tool.category === "Aprendizado" && isFavorite
+                ? "bg-emerald-700"
+                : tool.category === "Aprendizado"
                 ? "bg-emerald-900 hover:bg-emerald-700"
                 : ""
-            } ${
-              tool.category === "Criadores"
+            }
+            ${
+              tool.category === "Criadores" && isFavorite
+                ? "bg-rose-600"
+                : tool.category === "Criadores"
                 ? "bg-rose-900 hover:bg-rose-600"
                 : ""
-            } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors duration-300`}
+            } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors`}
             onClick={handleFavoriteClick}
           >
-            {tool.isFavorite ? (
+            {isFavorite ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18px"

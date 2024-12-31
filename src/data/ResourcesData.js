@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 import AccessibilityNotChecklist from "../assets/accessibility-not-checklist.png";
 import AdobeIllustrator from "../assets/adobe-illustrator.svg";
 import Angular from "../assets/angular.svg";
@@ -74,7 +74,7 @@ import Webflow from "../assets/webflow.svg";
 
 const ResourcesData = [
   {
-    id: uuidv4(),
+    id: "1",
     title: "Accessibility Not-Checklist",
     image: AccessibilityNotChecklist,
     category: "Aprendizado",
@@ -85,7 +85,7 @@ const ResourcesData = [
     source: "https://not-checklist.intopia.digital/",
   },
   {
-    id: uuidv4(),
+    id: "2",
     title: "Adobe Illustrator",
     image: AdobeIllustrator,
     category: "Design",
@@ -96,7 +96,7 @@ const ResourcesData = [
     source: "https://www.adobe.com/products/illustrator.html",
   },
   {
-    id: uuidv4(),
+    id: "3",
     title: "Angular",
     image: Angular,
     category: "Frontend",
@@ -107,7 +107,7 @@ const ResourcesData = [
     source: "https://angular.io/",
   },
   {
-    id: uuidv4(),
+    id: "4",
     title: "Awwwards",
     image: Awwwards,
     category: "Design",
@@ -118,7 +118,7 @@ const ResourcesData = [
     source: "https://www.awwwards.com/",
   },
   {
-    id: uuidv4(),
+    id: "5",
     title: "Blender",
     image: Blender,
     category: "Design",
@@ -129,7 +129,7 @@ const ResourcesData = [
     source: "https://www.blender.org/",
   },
   {
-    id: uuidv4(),
+    id: "6",
     title: "Bootstrap",
     image: Bootstrap,
     category: "Frontend",
@@ -140,7 +140,7 @@ const ResourcesData = [
     source: "https://getbootstrap.com/",
   },
   {
-    id: uuidv4(),
+    id: "7",
     title: "By Huy",
     image: ByHuy,
     category: "Criadores",
@@ -151,7 +151,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@by_huy",
   },
   {
-    id: uuidv4(),
+    id: "8",
     title: "Can I Use",
     image: CanIUse,
     category: "Frontend",
@@ -162,8 +162,8 @@ const ResourcesData = [
     source: "https://caniuse.com/",
   },
   {
-    id: uuidv4(),
-    title: "Chris DevInDev",
+    id: "9",
+    title: "Christian Castro",
     image: ChrisDevInDev,
     category: "Criadores",
     tags: ["Aprendizado", "Carreira", "Mentoria"],
@@ -173,7 +173,7 @@ const ResourcesData = [
     source: "https://www.instagram.com/chrisdevindev/",
   },
   {
-    id: uuidv4(),
+    id: "10",
     title: "CodePen",
     image: CodePen,
     category: "Frontend",
@@ -184,7 +184,7 @@ const ResourcesData = [
     source: "https://codepen.io/",
   },
   {
-    id: uuidv4(),
+    id: "11",
     title: "Coder Coder",
     image: CoderCoder,
     category: "Criadores",
@@ -195,7 +195,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@TheCoderCoder",
   },
   {
-    id: uuidv4(),
+    id: "12",
     title: "Color Hunt",
     image: ColorHunt,
     category: "Design",
@@ -206,7 +206,7 @@ const ResourcesData = [
     source: "https://colorhunt.co/",
   },
   {
-    id: uuidv4(),
+    id: "13",
     title: "CSS Battle",
     image: CssBattle,
     category: "Frontend",
@@ -217,7 +217,7 @@ const ResourcesData = [
     source: "https://cssbattle.dev/",
   },
   {
-    id: uuidv4(),
+    id: "14",
     title: "Daily.dev",
     image: DailyDev,
     category: "Aprendizado",
@@ -228,7 +228,7 @@ const ResourcesData = [
     source: "https://daily.dev/",
   },
   {
-    id: uuidv4(),
+    id: "15",
     title: "Design Systems",
     image: DesignSystems,
     category: "Aprendizado",
@@ -239,7 +239,7 @@ const ResourcesData = [
     source: "https://designsystems.surf/design-systems",
   },
   {
-    id: uuidv4(),
+    id: "16",
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
@@ -250,7 +250,7 @@ const ResourcesData = [
     source: "https://dribbble.com/",
   },
   {
-    id: uuidv4(),
+    id: "17",
     title: "Figma",
     image: Figma,
     category: "Design",
@@ -261,7 +261,7 @@ const ResourcesData = [
     source: "https://www.figma.com/",
   },
   {
-    id: uuidv4(),
+    id: "18",
     title: "Fireship",
     image: Fireship,
     category: "Criadores",
@@ -272,7 +272,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@Fireship",
   },
   {
-    id: uuidv4(),
+    id: "19",
     title: "Flux Academy",
     image: FluxAcademy,
     category: "Criadores",
@@ -283,7 +283,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@FluxAcademy",
   },
   {
-    id: uuidv4(),
+    id: "20",
     title: "Fontshare",
     image: Fontshare,
     category: "Design",
@@ -294,7 +294,7 @@ const ResourcesData = [
     source: "https://www.fontshare.com/",
   },
   {
-    id: uuidv4(),
+    id: "21",
     title: "Framer",
     image: Framer,
     category: "Design",
@@ -305,7 +305,7 @@ const ResourcesData = [
     source: "https://www.framer.com/",
   },
   {
-    id: uuidv4(),
+    id: "22",
     title: "freeCodeCamp",
     image: FreeCodeCamp,
     category: "Aprendizado",
@@ -316,7 +316,7 @@ const ResourcesData = [
     source: "https://www.freecodecamp.org/",
   },
   {
-    id: uuidv4(),
+    id: "23",
     title: "Frontend Mentor",
     image: FrontendMentor,
     category: "Aprendizado",
@@ -327,7 +327,7 @@ const ResourcesData = [
     source: "https://www.frontendmentor.io/",
   },
   {
-    id: uuidv4(),
+    id: "24",
     title: "GitHub Copilot",
     image: GithubCopilot,
     category: "Frontend",
@@ -338,7 +338,7 @@ const ResourcesData = [
     source: "https://github.com/features/copilot",
   },
   {
-    id: uuidv4(),
+    id: "25",
     title: "GSAP",
     image: Gsap,
     category: "Frontend",
@@ -349,7 +349,7 @@ const ResourcesData = [
     source: "https://gsap.com/",
   },
   {
-    id: uuidv4(),
+    id: "26",
     title: "Hyperplexed",
     image: Hyperplexed,
     category: "Criadores",
@@ -360,7 +360,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@Hyperplexed",
   },
   {
-    id: uuidv4(),
+    id: "27",
     title: "Inkscape",
     image: Inkscape,
     category: "Design",
@@ -371,7 +371,7 @@ const ResourcesData = [
     source: "https://inkscape.org/",
   },
   {
-    id: uuidv4(),
+    id: "28",
     title: "Josh W Comeau",
     image: JoshWComeau,
     category: "Criadores",
@@ -382,7 +382,7 @@ const ResourcesData = [
     source: "https://www.joshwcomeau.com/",
   },
   {
-    id: uuidv4(),
+    id: "29",
     title: "Juxtopposed",
     image: Juxtopposed,
     category: "Criadores",
@@ -393,7 +393,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@juxtopposed",
   },
   {
-    id: uuidv4(),
+    id: "30",
     title: "Kalypso",
     image: Kalypso,
     category: "Criadores",
@@ -404,7 +404,7 @@ const ResourcesData = [
     source: "https://www.instagram.com/kalypsodesigns/",
   },
   {
-    id: uuidv4(),
+    id: "31",
     title: "Kevin Powell",
     image: KevinPowell,
     category: "Criadores",
@@ -415,7 +415,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@KevinPowell",
   },
   {
-    id: uuidv4(),
+    id: "32",
     title: "Lenis Scroll",
     image: LenisScroll,
     category: "Frontend",
@@ -426,7 +426,7 @@ const ResourcesData = [
     source: "https://lenis.darkroom.engineering/",
   },
   {
-    id: uuidv4(),
+    id: "33",
     title: "Lighthouse",
     image: Lighthouse,
     category: "Frontend",
@@ -437,7 +437,7 @@ const ResourcesData = [
     source: "https://developer.chrome.com/docs/lighthouse/overview",
   },
   {
-    id: uuidv4(),
+    id: "34",
     title: "Lun Dev",
     image: LunDev,
     category: "Criadores",
@@ -448,7 +448,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@LunDeveloper",
   },
   {
-    id: uuidv4(),
+    id: "35",
     title: "Material UI",
     image: MaterialUI,
     category: "Frontend",
@@ -459,7 +459,7 @@ const ResourcesData = [
     source: "https://mui.com/",
   },
   {
-    id: uuidv4(),
+    id: "36",
     title: "MaxiBestOf",
     image: MaxiBestOf,
     category: "Design",
@@ -470,7 +470,7 @@ const ResourcesData = [
     source: "https://maxibestof.one/",
   },
   {
-    id: uuidv4(),
+    id: "37",
     title: "MDN",
     image: Mdn,
     category: "Aprendizado",
@@ -481,7 +481,7 @@ const ResourcesData = [
     source: "https://developer.mozilla.org/en-US/",
   },
   {
-    id: uuidv4(),
+    id: "38",
     title: "Midjourney",
     image: Midjourney,
     category: "Design",
@@ -492,7 +492,7 @@ const ResourcesData = [
     source: "https://www.midjourney.com/",
   },
   {
-    id: uuidv4(),
+    id: "39",
     title: "Next.JS",
     image: Next,
     category: "Frontend",
@@ -503,7 +503,7 @@ const ResourcesData = [
     source: "https://nextjs.org/",
   },
   {
-    id: uuidv4(),
+    id: "40",
     title: "Olivier Larose",
     image: OlivierLarose,
     category: "Criadores",
@@ -514,7 +514,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@olivierlarose1",
   },
   {
-    id: uuidv4(),
+    id: "41",
     title: "Photopea",
     image: Photopea,
     category: "Design",
@@ -525,7 +525,7 @@ const ResourcesData = [
     source: "https://www.photopea.com/",
   },
   {
-    id: uuidv4(),
+    id: "42",
     title: "Photoshop",
     image: Photoshop,
     category: "Design",
@@ -536,7 +536,7 @@ const ResourcesData = [
     source: "https://www.adobe.com/products/photoshop.html",
   },
   {
-    id: uuidv4(),
+    id: "43",
     title: "Prettier",
     image: Prettier,
     category: "Frontend",
@@ -547,7 +547,7 @@ const ResourcesData = [
     source: "https://prettier.io/",
   },
   {
-    id: uuidv4(),
+    id: "44",
     title: "React",
     image: React,
     category: "Frontend",
@@ -558,7 +558,7 @@ const ResourcesData = [
     source: "https://react.dev/",
   },
   {
-    id: uuidv4(),
+    id: "45",
     title: "React Hook Form",
     image: ReactHookForm,
     category: "Frontend",
@@ -569,7 +569,7 @@ const ResourcesData = [
     source: "https://react-hook-form.com/",
   },
   {
-    id: uuidv4(),
+    id: "46",
     title: "Realtime Colors",
     image: RealtimeColors,
     category: "Design",
@@ -580,7 +580,7 @@ const ResourcesData = [
     source: "https://realtimecolors.com/",
   },
   {
-    id: uuidv4(),
+    id: "47",
     title: "Relume",
     image: Relume,
     category: "Design",
@@ -591,7 +591,7 @@ const ResourcesData = [
     source: "https://www.relume.io/",
   },
   {
-    id: uuidv4(),
+    id: "48",
     title: "Roadmap.sh",
     image: Roadmap,
     category: "Aprendizado",
@@ -602,7 +602,7 @@ const ResourcesData = [
     source: "https://roadmap.sh/",
   },
   {
-    id: uuidv4(),
+    id: "49",
     title: "Sass",
     image: Sass,
     category: "Frontend",
@@ -613,7 +613,7 @@ const ResourcesData = [
     source: "https://sass-lang.com/",
   },
   {
-    id: uuidv4(),
+    id: "50",
     title: "Shadcn UI",
     image: ShadcnUI,
     category: "Frontend",
@@ -624,7 +624,7 @@ const ResourcesData = [
     source: "https://ui.shadcn.dev/",
   },
   {
-    id: uuidv4(),
+    id: "51",
     title: "Shots.so",
     image: Shots,
     category: "Design",
@@ -635,7 +635,7 @@ const ResourcesData = [
     source: "https://shots.so/",
   },
   {
-    id: uuidv4(),
+    id: "52",
     title: "Sketch",
     image: Sketch,
     category: "Design",
@@ -646,7 +646,7 @@ const ResourcesData = [
     source: "https://www.sketch.com/",
   },
   {
-    id: uuidv4(),
+    id: "53",
     title: "Smashing Magazine",
     image: SmashingMagazine,
     category: "Aprendizado",
@@ -657,7 +657,7 @@ const ResourcesData = [
     source: "https://www.smashingmagazine.com/",
   },
   {
-    id: uuidv4(),
+    id: "54",
     title: "Spline",
     image: Spline,
     category: "Design",
@@ -668,7 +668,7 @@ const ResourcesData = [
     source: "https://spline.design/",
   },
   {
-    id: uuidv4(),
+    id: "55",
     title: "Stack Overflow",
     image: StackOverflow,
     category: "Aprendizado",
@@ -679,7 +679,7 @@ const ResourcesData = [
     source: "https://stackoverflow.com/",
   },
   {
-    id: uuidv4(),
+    id: "56",
     title: "Storybook",
     image: Storybook,
     category: "Frontend",
@@ -690,7 +690,7 @@ const ResourcesData = [
     source: "https://storybook.js.org/",
   },
   {
-    id: uuidv4(),
+    id: "57",
     title: "Svelte",
     image: Svelte,
     category: "Frontend",
@@ -701,7 +701,7 @@ const ResourcesData = [
     source: "https://svelte.dev/",
   },
   {
-    id: uuidv4(),
+    id: "58",
     title: "Tailwind CSS",
     image: Tailwind,
     category: "Frontend",
@@ -712,7 +712,7 @@ const ResourcesData = [
     source: "https://tailwindcss.com/",
   },
   {
-    id: uuidv4(),
+    id: "59",
     title: "The Odin Project",
     image: TheOdinProject,
     category: "Aprendizado",
@@ -723,7 +723,7 @@ const ResourcesData = [
     source: "https://www.theodinproject.com/",
   },
   {
-    id: uuidv4(),
+    id: "60",
     title: "Three.JS",
     image: ThreeJs,
     category: "Frontend",
@@ -734,7 +734,7 @@ const ResourcesData = [
     source: "https://threejs.org/",
   },
   {
-    id: uuidv4(),
+    id: "61",
     title: "TinyPNG",
     image: TinyPNG,
     category: "Frontend",
@@ -745,7 +745,7 @@ const ResourcesData = [
     source: "https://tinypng.com/",
   },
   {
-    id: uuidv4(),
+    id: "62",
     title: "Udemy",
     image: Udemy,
     category: "Aprendizado",
@@ -756,7 +756,7 @@ const ResourcesData = [
     source: "https://www.udemy.com/",
   },
   {
-    id: uuidv4(),
+    id: "63",
     title: "Uiverse",
     image: Uiverse,
     category: "Design",
@@ -767,7 +767,7 @@ const ResourcesData = [
     source: "https://uiverse.io/",
   },
   {
-    id: uuidv4(),
+    id: "64",
     title: "Uncut",
     image: Uncut,
     category: "Design",
@@ -778,7 +778,7 @@ const ResourcesData = [
     source: "https://www.uncut.wtf/",
   },
   {
-    id: uuidv4(),
+    id: "65",
     title: "Unlighthouse",
     image: Unlighthouse,
     category: "Frontend",
@@ -789,7 +789,7 @@ const ResourcesData = [
     source: "https://unlighthouse.dev/",
   },
   {
-    id: uuidv4(),
+    id: "66",
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
@@ -800,7 +800,7 @@ const ResourcesData = [
     source: "https://unsplash.com/",
   },
   {
-    id: uuidv4(),
+    id: "67",
     title: "Vite",
     image: Vite,
     category: "Frontend",
@@ -811,7 +811,7 @@ const ResourcesData = [
     source: "https://vite.dev/",
   },
   {
-    id: uuidv4(),
+    id: "68",
     title: "Vue.js",
     image: Vue,
     category: "Frontend",
@@ -822,7 +822,7 @@ const ResourcesData = [
     source: "https://vuejs.org/",
   },
   {
-    id: uuidv4(),
+    id: "69",
     title: "W3Schools",
     image: W3Schools,
     category: "Aprendizado",
@@ -833,7 +833,7 @@ const ResourcesData = [
     source: "https://www.w3schools.com/",
   },
   {
-    id: uuidv4(),
+    id: "70",
     title: "Web Dev Simplified",
     image: WebDevSimplified,
     category: "Criadores",
@@ -844,7 +844,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@WebDevSimplified",
   },
   {
-    id: uuidv4(),
+    id: "71",
     title: "Web.dev",
     image: WebDev,
     category: "Aprendizado",
@@ -855,7 +855,7 @@ const ResourcesData = [
     source: "https://web.dev/",
   },
   {
-    id: uuidv4(),
+    id: "72",
     title: "Webflow",
     image: Webflow,
     category: "Design",

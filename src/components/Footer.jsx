@@ -32,7 +32,7 @@ const Footer = () => {
             <a
               href="https://snayderrodrigues.vercel.app/"
               target="_blank"
-              className="text-neutral-400 hover:text-white transition-colors duration-300"
+              className="text-neutral-400 hover:text-white transition-colors"
             >
               Snayder Rodrigues
             </a>
