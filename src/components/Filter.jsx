@@ -89,7 +89,27 @@ const Filter = ({
       </div>
       <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
         <button
-          className={`w-full md:hidden flex items-center gap-2 font-semibold bg-neutral-800 p-3 rounded-lg`}
+          className={`w-full md:hidden flex items-center gap-2 font-semibold ${
+             selectedCategory === "Todos"
+              ? "bg-neutral-800"
+              : ""
+          } ${
+             selectedCategory === "Frontend"
+              ? "bg-indigo-700"
+              : ""
+          } ${
+             selectedCategory === "Design"
+              ? "bg-purple-600"
+              : ""
+          } ${
+             selectedCategory === "Aprendizado"
+              ? "bg-emerald-600"
+              : ""
+          } ${
+             selectedCategory === "Criadores"
+              ? "bg-rose-600"
+              : ""
+          } p-3 rounded-lg`}
           onClick={handleCategoryIsOpen}
         >
           <svg
