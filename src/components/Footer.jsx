@@ -6,13 +6,17 @@ const Footer = () => {
   const { pathname } = useLocation();
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
-  const isResourcePath = pathname.startsWith("/resources/");
+  const smallMarginPaths = ["/resources/", "/favorites", "/about", "/legal"];
+
+  const isSmallMarginPath = smallMarginPaths.some((path) =>
+    pathname.startsWith(path)
+  );
 
   return (
     <footer className="border-t-2 border-t-neutral-800">
       <div
         className={`wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 ${
-          isResourcePath ? "pb-8" : "pb-28"
+          isSmallMarginPath ? "pb-8" : "pb-28"
         } md:pb-8`}
       >
         <div className="flex flex-col justify-between gap-4 md:gap-12">
@@ -77,7 +81,7 @@ const Footer = () => {
         </div>
         <button
           className={`w-fit absolute ${
-            isResourcePath ? "bottom-8" : "bottom-28"
+            isSmallMarginPath ? "bottom-8" : "bottom-28"
           } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl`}
           onClick={scrollToTop}
         >
