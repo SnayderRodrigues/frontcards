@@ -33,7 +33,7 @@ const Card = ({ tool }) => {
         />
       </div>
       <div className="flex-1 flex flex-col gap-4">
-        <div className="flex items-start justify-between gap-2">
+        <div className="flex items-start justify-between gap-3">
           <span className="text-xl md:text-2xl font-bold mt-[5px] md:mt-0">
             {tool.title}
           </span>
@@ -44,28 +44,28 @@ const Card = ({ tool }) => {
               tool.category === "Frontend" && isFavorite
                 ? "bg-indigo-700"
                 : tool.category === "Frontend"
-                ? "bg-indigo-900 hover:bg-indigo-700"
+                ? "bg-indigo-900 md:hover:bg-indigo-700"
                 : ""
             }
             ${
               tool.category === "Design" && isFavorite
                 ? "bg-purple-600"
                 : tool.category === "Design"
-                ? "bg-purple-900 hover:bg-purple-600"
+                ? "bg-purple-900 md:hover:bg-purple-600"
                 : ""
             }
             ${
               tool.category === "Aprendizado" && isFavorite
                 ? "bg-emerald-700"
                 : tool.category === "Aprendizado"
-                ? "bg-emerald-900 hover:bg-emerald-700"
+                ? "bg-emerald-900 md:hover:bg-emerald-700"
                 : ""
             }
             ${
               tool.category === "Criadores" && isFavorite
                 ? "bg-rose-600"
                 : tool.category === "Criadores"
-                ? "bg-rose-900 hover:bg-rose-600"
+                ? "bg-rose-900 md:hover:bg-rose-600"
                 : ""
             } p-[10px] md:px-2 md:py-[7px] rounded-md transition-colors`}
             onClick={handleFavoriteClick}

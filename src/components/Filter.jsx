@@ -87,7 +87,7 @@ const Filter = ({
           ))}
         </div>
       </div>
-      <div className="fixed bottom-4 left-0 right-0 z-50 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
+      <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
         <button
           className={`w-full md:hidden flex items-center gap-2 font-semibold ${
              selectedCategory === "Todos"

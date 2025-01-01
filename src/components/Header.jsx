@@ -20,10 +20,7 @@ const Header = () => {
   return (
     <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b-2 border-b-neutral-800">
       <nav className="wrapper flex items-center justify-between gap-4 py-4">
-        <a
-          href="/"
-          className="relative z-50 flex items-center gap-2 xsm:gap-3"
-        >
+        <a href="/" className="relative z-50 flex items-center gap-2 xsm:gap-3">
           <img src={Logo} alt="Logo" width={40} className="w-[36px] xsm:w-10" />
           <div className="text-[28px] xsm:text-3xl lg:text-4xl font-bold">
             Frontcards
@@ -83,24 +80,67 @@ const Header = () => {
         >
           <Link
             to="/"
-            className="w-fit text-lg font-medium"
+            className="w-fit flex items-center gap-2 text-lg font-medium"
             onClick={handleMenuAction}
           >
-            Início
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+            >
+              <path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z" />
+            </svg>
+            <span>Início</span>
           </Link>
           <Link
             to="/favorites"
-            className="w-fit text-lg font-medium"
+            className="w-fit flex items-center gap-2 text-lg font-medium"
             onClick={handleMenuAction}
           >
-            Favoritos
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+            >
+              <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z" />
+            </svg>
+            <span>Favoritos</span>
           </Link>
           <Link
             to="/about"
-            className="w-fit text-lg font-medium"
+            className="w-fit flex items-center gap-2 text-lg font-medium"
             onClick={handleMenuAction}
           >
-            Sobre
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+            >
+              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm80-160h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Z" />
+            </svg>
+            <span>Sobre</span>
+          </Link>
+          <Link
+            to="/legal"
+            className="w-fit flex items-center gap-2 text-lg font-medium"
+            onClick={handleMenuAction}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+            >
+              <path d="M444-288h72v-240h-72v240Zm35.79-312q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm.49 504Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Z" />
+            </svg>
+            <span>Termos Legais</span>
           </Link>
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
@@ -118,6 +158,16 @@ const Header = () => {
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
             </svg>
           </a>
+          <div className="flex-1 flex flex-col justify-end">
+            <span className="text-neutral-200">Dúvidas ou sugestões:</span>
+            <a
+              target="_blank"
+              href="mailto:snayderrodrigues@gmail.com"
+              className="underline"
+            >
+              snayderrodrigues@gmail.com
+            </a>
+          </div>
         </div>
       </nav>
     </header>

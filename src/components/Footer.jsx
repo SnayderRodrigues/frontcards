@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-base font-medium">
-            Frontcards © 2024. <br />
+            Frontcards © 2025. <br />
             Desenvolvido por{" "}
             <a
               href="https://snayderrodrigues.vercel.app/"
