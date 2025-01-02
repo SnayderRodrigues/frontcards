@@ -12,13 +12,13 @@ const Resource = () => {
   return (
     <div className="wrapper pt-32 pb-12 md:pb-16 lg:pb-32">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-8 lg:gap-16 xl:gap-32 md:mt-8">
-        <div className="w-full md:w-1/2 aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
-          <div className="w-2/3 sm:p-6 md:p-8 xl:p-16">
+        <div className="w-full md:w-1/2 aspect-[3/2] md:aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
+          <div className="w-1/2 md:w-2/3 sm:p-6 md:p-8 xl:p-16">
             <img src={tool.image} alt={tool.title} className="w-full h-full" />
           </div>
         </div>
-        <div className="-order-1 md:order-1 w-full md:w-1/2 flex flex-col gap-4">
-          <h1 className="text-4xl font-bold">{tool.title}</h1>
+        <div className="w-full md:w-1/2 flex flex-col gap-4">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold">{tool.title}</h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
               className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${
