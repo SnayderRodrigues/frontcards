@@ -32,6 +32,10 @@ const Header = () => {
   useEffect(() => {
     const html = document.querySelector("html");
     html.style.overflow = openMenu ? "hidden" : "auto";
+
+    return () => {
+      html.style.overflow = "auto";
+    };
   }, [openMenu]);
 
   return (
