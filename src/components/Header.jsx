@@ -42,7 +42,7 @@ const Header = () => {
     <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b-2 border-b-neutral-800">
       <nav className="wrapper overfl flex items-center justify-between gap-4 py-4">
         <a href="/" className="relative z-50 flex items-center gap-2 xsm:gap-3">
-          <img src={Logo} alt="Logo" width={40} className="w-[36px] xsm:w-10" />
+          <img src={Logo} alt="Logo" width={40} height={40} className="w-[36px] xsm:w-10" />
           <div className="text-[28px] xsm:text-3xl lg:text-4xl font-bold">
             Frontcards
           </div>

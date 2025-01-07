@@ -29,6 +29,7 @@ const Card = ({ tool }) => {
           alt={tool.title}
           width={256}
           height={256}
+          loading="lazy"
           className="w-2/3 p-6"
         />
       </div>

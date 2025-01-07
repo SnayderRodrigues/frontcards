@@ -1,6 +1,10 @@
 {
   "rewrites": [
     { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/", "destination": "/" },
+    { "source": "/favorites", "destination": "/" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/legal", "destination": "/" },
+    { "source": "/resources/:slug", "destination": "/" }
   ]
 }
