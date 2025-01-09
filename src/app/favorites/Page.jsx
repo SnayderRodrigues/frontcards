@@ -50,7 +50,7 @@ const FavoritesPage = () => {
               </svg>
               <span className="xsm:mb-[2px]">Voltar</span>
             </Link>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-6">
               {favorites.map((tool) => (
                 <Card key={tool.id} tool={tool} />
               ))}

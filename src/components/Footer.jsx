@@ -22,7 +22,13 @@ const Footer = () => {
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
             <a href="/" className="w-fit flex items-center gap-4 mb-4">
-              <img src={Logo} alt="Logo" width={60} height={60} className="w-12 md:w-16" />
+              <img
+                src={Logo}
+                alt="Logo"
+                width={60}
+                height={60}
+                className="w-12 md:w-16"
+              />
               <div className="text-4xl md:text-5xl font-bold">Frontcards</div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
@@ -84,6 +90,7 @@ const Footer = () => {
             isSmallMarginPath ? "bottom-8" : "bottom-28"
           } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl`}
           onClick={scrollToTop}
+          aria-label="Voltar para o topo da página"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

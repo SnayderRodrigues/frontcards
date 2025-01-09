@@ -1,130 +1,68 @@
-import React, { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import React from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import resourcesData from "../../data/ResourcesData.js";
-import Filter from "../../components/Filter.jsx";
-import Card from "../../components/Card.jsx";
+import Button from "../../components/Button.jsx";
 
-const FeaturedTools = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [currentPage, setCurrentPage] = useState(
-    Number(searchParams.get("page")) || 1
-  );
-  const [selectedCategory, setSelectedCategory] = useState(
-    searchParams.get("category") || "Todos"
-  );
+const ResourcePage = () => {
+  const { slug } = useParams();
+  const navigate = useNavigate();
 
-  const itemsPerPage = 12;
-
-  const filteredTools = resourcesData.filter((tool) =>
-    selectedCategory === "Todos"
-      ? true
-      : tool.category.includes(selectedCategory)
-  );
-  const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentTools = filteredTools.slice(startIndex, endIndex);
-
-  useEffect(() => {
-    const params = {};
-    if (selectedCategory !== "Todos") params.category = selectedCategory;
-    if (currentPage > 1) params.page = currentPage;
-    setSearchParams(params);
-  }, [selectedCategory, currentPage, setSearchParams]);
+  const tool = resourcesData.find((tool) => tool.slug === slug);
 
   return (
-    <section className="wrapper">
-      <Filter
-        totalPages={totalPages}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-6">
-        {currentTools.map((tool) => (
-          <Card key={tool.id} tool={tool} />
-        ))}
-      </div>
-      <div className="flex items-center gap-6 mb-12 md:mb-16">
-        <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index + 1}
-              onClick={() => {
-                setCurrentPage(index + 1);
-                window.scrollTo({ top: 0 });
-              }}
-              className={`w-[32px] lg:w-[36px] xl:w-[44px] aspect-square flex items-center justify-center rounded-lg transition-colors ${
-                currentPage === index + 1
-                  ? "bg-neutral-100 text-black"
-                  : "hover:bg-neutral-800"
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
+    <div className="wrapper pt-32 pb-12 md:pb-16 lg:pb-32">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-8 lg:gap-16 xl:gap-32 md:mt-8">
+        <div className="w-full md:w-1/2 aspect-[3/2] md:aspect-square flex items-center justify-center bg-neutral-100 border-[4px] border-neutral-700 rounded-2xl">
+          <div className="w-1/2 md:w-2/3 sm:p-6 md:p-8 xl:p-16">
+            <img src={tool.image} alt={tool.title} className="w-full h-full" />
+          </div>
         </div>
-
-        <div className="flex md:hidden items-center gap-2">
-          <button
-            className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
-            onClick={() => {
-              if (currentPage > 1) {
-                setCurrentPage(currentPage - 1);
-                window.scrollTo({ top: 0 });
-              }
-            }}
-            disabled={currentPage === 1}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
-              viewBox="0 -960 960 960"
-              fill="#fff"
-              className={`${currentPage === 1 ? "fill-neutral-800" : ""}`}
+        <div className="w-full md:w-1/2 flex flex-col gap-4">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold">{tool.title}</h1>
+          <div className="flex flex-wrap items-center gap-4 mb-4">
+            <div
+              className={`w-fit flex items-center justify-center text-sm font-medium text-white px-4 py-2 rounded-lg ${
+                tool.category === "Frontend" ? "bg-indigo-700" : ""
+              } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
+                tool.category === "Aprendizado" ? "bg-emerald-700" : ""
+              } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
             >
-              <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
-            </svg>
-          </button>
-          <button
-            className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
-            onClick={() => {
-              if (currentPage < totalPages) {
-                setCurrentPage(currentPage + 1);
-                window.scrollTo({ top: 0 });
-              }
-            }}
-            disabled={currentPage === totalPages}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
-              viewBox="0 -960 960 960"
-              fill="#fff"
-              className={`${
-                currentPage === totalPages ? "fill-neutral-800" : ""
-              }`}
+              <span className="mb-[2px]">{tool.category}</span>
+            </div>
+            <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-medium">
+              {tool.tags.map((tag, index) => (
+                <span key={index} className="shrink-0">
+                  #{tag}
+                </span>
+              ))}
+            </span>
+          </div>
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-neutral-200 mb-4">
+            {tool.description}
+          </p>
+          <div className="flex gap-4">
+            <Link
+              onClick={() => navigate(-1)}
+              className="flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 border-2 border-neutral-800 rounded-lg transition-colors hover:bg-neutral-950"
             >
-              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
-            </svg>
-          </button>
-        </div>
-        <div className="text-base lg:text-lg text-neutral-400 cursor-default">
-          <span className="text-white">
-            {startIndex + 1} -{" "}
-            {currentPage == totalPages
-              ? filteredTools.length
-              : itemsPerPage * currentPage}
-          </span>{" "}
-          de {filteredTools.length} cards
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                viewBox="0 -960 960 960"
+                fill="#fff"
+                className="w-3 md:w-4 ml-[-4px]"
+              >
+                <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+              </svg>
+              <span className="xsm:mb-[2px]">Voltar</span>
+            </Link>
+            <Button text="Explorar" href={tool.source} />
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default FeaturedTools;
+export default ResourcePage;

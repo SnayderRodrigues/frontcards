@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
+import MainPage from "./app/main/Page.jsx";
 import ErrorPage from "./app/error/Page.jsx";
 import FavoritesPage from "./app/favorites/Page.jsx";
 import AboutPage from "./app/about/Page.jsx";
 import LegalPage from "./app/legal/Page.jsx";
-import ResourcesPage from "./app/resources/Page.jsx";
-import ResourceItem from "./app/resources/Resource.jsx";
+import ResourcePage from "./app/resources/Page.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <ResourcesPage />,
+        element: <MainPage />,
       },
       {
         path: "/favorites",
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/resources/:slug",
-        element: <ResourceItem />,
+        element: <ResourcePage />,
       },
     ],
   },
