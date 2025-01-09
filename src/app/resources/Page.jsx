@@ -48,7 +48,7 @@ const FeaturedTools = () => {
         ))}
       </div>
       <div className="flex items-center gap-6 mb-12 md:mb-16">
-        <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-semibold bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
+        <div className="w-fit hidden md:flex items-center gap-2 text-base lg:text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}

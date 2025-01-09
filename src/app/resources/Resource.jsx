@@ -21,7 +21,7 @@ const Resource = () => {
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold">{tool.title}</h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
-              className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-4 py-2 rounded-lg ${
+              className={`w-fit flex items-center justify-center text-sm font-medium text-white px-4 py-2 rounded-lg ${
                 tool.category === "Frontend" ? "bg-indigo-700" : ""
               } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
                 tool.category === "Aprendizado" ? "bg-emerald-700" : ""
@@ -29,7 +29,7 @@ const Resource = () => {
             >
               <span className="mb-[2px]">{tool.category}</span>
             </div>
-            <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-semibold">
+            <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-medium">
               {tool.tags.map((tag, index) => (
                 <span key={index} className="shrink-0">
                   #{tag}

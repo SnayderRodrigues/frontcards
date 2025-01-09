@@ -20,18 +20,19 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="relative w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
+      className="w-full flex flex-col justify-between gap-4 p-4 bg-neutral-900 border-2 border-neutral-800 rounded-xl overflow-hidden transition-colors ease-in cursor-pointer md:hover:border-neutral-600"
       onClick={handleCardClick}
     >
-      <div className="aspect-[5/4] flex items-center justify-center bg-neutral-100 rounded-lg">
-        <img
-          src={tool.image}
-          alt={tool.title}
-          width={256}
-          height={256}
-          loading="lazy"
-          className="w-2/3 p-6"
-        />
+      <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">
+        <div className="absolute w-2/3 overflow-hidden">
+          <img
+            src={tool.image}
+            alt={tool.title}
+            width={256}
+            height={256}
+            className="w-full object-cover p-6 md:p-4"
+          />
+        </div>
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-start justify-between gap-3">
@@ -40,7 +41,7 @@ const Card = ({ tool }) => {
           </span>
           <button
             aria-label="Favorito"
-            className={`group w-fit relative flex items-center justify-center text-sm font-semibold text-white
+            className={`group w-fit relative flex items-center justify-center text-sm font-medium text-white
             ${
               tool.category === "Frontend" && isFavorite
                 ? "bg-indigo-700"
@@ -103,7 +104,7 @@ const Card = ({ tool }) => {
         </span>
         <p className="flex-1 text-neutral-400">{tool.description}</p>
         <div
-          className={`w-fit flex items-center justify-center text-sm font-semibold text-white px-3 py-2 rounded-md ${
+          className={`w-fit flex items-center justify-center text-sm font-medium text-white px-3 py-2 rounded-md ${
             tool.category === "Frontend" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
             tool.category === "Aprendizado" ? "bg-emerald-700" : ""
