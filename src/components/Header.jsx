@@ -53,7 +53,7 @@ const Header = () => {
             Frontcards
           </div>
         </a>
-        <div className="hidden md:flex items-center gap-2 lg:gap-4 sm:text-lg lg:text-xl font-medium">
+        <div className="hidden md:flex items-center gap-2 lg:gap-4 sm:text-lg font-medium">
           <Link
             to="/"
             className="p-2 lg:px-3 lg:py-2 rounded-lg hover:bg-neutral-800 transition-colors"

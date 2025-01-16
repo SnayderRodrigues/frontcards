@@ -37,12 +37,12 @@ const Filter = ({
 
   return (
     <div className="md:mb-6">
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <ul className="hidden md:flex items-center gap-2 text-base lg:text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl">
+      <div className="flex flex-wrap items-center justify-center gap-2">
+        <ul className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl">
           {categories.map((category) => (
             <li
               key={category}
-              className={`flex items-center gap-2 px-2 lg:px-3 xl:px-4 py-1 xl:py-2 rounded-lg cursor-pointer transition-colors ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer transition-colors ${
                 selectedCategory === category ? "" : "hover:bg-neutral-800"
               } ${
                 selectedCategory === category && category === "Todos"
@@ -71,7 +71,7 @@ const Filter = ({
             </li>
           ))}
         </ul>
-        <div className="shrink-0 hidden md:flex items-center gap-2 text-base lg:text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
+        {/* <div className="shrink-0 hidden md:flex items-center gap-2 text-base lg:text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index + 1}
@@ -85,9 +85,9 @@ const Filter = ({
               {index + 1}
             </button>
           ))}
-        </div>
+        </div> */}
       </div>
-      <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8 shadow-4xl">
+      <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl mx-5 sm:mx-8">
         <button
           className={`w-full md:hidden flex items-center gap-2 font-medium ${
              selectedCategory === "Todos"
