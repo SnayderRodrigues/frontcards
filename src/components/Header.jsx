@@ -39,7 +39,7 @@ const Header = () => {
   }, [openMenu]);
 
   return (
-    <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b-2 border-b-neutral-800">
+    <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b border-b-neutral-900">
       <nav className="wrapper overfl flex items-center justify-between gap-4 py-4">
         <a href="/" className="relative z-50 flex items-center gap-2 xsm:gap-3">
           <img
@@ -81,7 +81,7 @@ const Header = () => {
           />
         </div>
         <button
-          className="aspect-square w-12 relative z-50 md:hidden flex flex-col items-center justify-center gap-[6px] bg-neutral-900 p-[10px] border-2 border-neutral-800 rounded-lg"
+          className="aspect-square w-12 relative z-50 md:hidden flex flex-col items-center justify-center gap-[6px] bg-neutral-900 p-3 rounded-lg"
           onClick={handleOpenMenu}
           aria-label="Menu"
         >

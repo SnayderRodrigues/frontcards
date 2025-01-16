@@ -13,7 +13,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="border-t-2 border-t-neutral-800">
+    <footer className="bg-neutral-950 border-t border-t-neutral-900">
       <div
         className={`wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 ${
           isSmallMarginPath ? "pb-8" : "pb-28"
@@ -88,7 +88,7 @@ const Footer = () => {
         <button
           className={`w-fit absolute ${
             isSmallMarginPath ? "bottom-8" : "bottom-28"
-          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 border-2 border-neutral-800 rounded-xl`}
+          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 rounded-xl`}
           onClick={scrollToTop}
           aria-label="Voltar para o topo da página"
         >

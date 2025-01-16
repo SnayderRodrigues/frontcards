@@ -12,7 +12,9 @@ const Pagination = ({
     <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
       <div className="flex items-center gap-2">
         <button
-          className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
+          className={`bg-neutral-900 p-2 rounded-xl transition-colors ${
+            currentPage === 1 ? "" : "hover:bg-neutral-800"
+          }`}
           onClick={() => {
             if (currentPage > 1) {
               setCurrentPage(currentPage - 1);
@@ -22,11 +24,7 @@ const Pagination = ({
           disabled={currentPage === 1}
           aria-label="Página anterior"
         >
-          <div
-            className={`flex items-center justify-center p-1 xsm:p-2 md:p-[10px] rounded-lg transition-colors ${
-              currentPage === 1 ? "" : "hover:bg-neutral-800"
-            }`}
-          >
+          <div className="flex items-center justify-center p-1 xsm:p-2 md:p-[10px] rounded-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
@@ -40,7 +38,9 @@ const Pagination = ({
           </div>
         </button>
         <button
-          className="bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl"
+          className={`bg-neutral-900 p-2 rounded-xl transition-colors ${
+            currentPage === totalPages ? "" : "hover:bg-neutral-800"
+          }`}
           onClick={() => {
             if (currentPage < totalPages) {
               setCurrentPage(currentPage + 1);
@@ -50,11 +50,7 @@ const Pagination = ({
           disabled={currentPage === totalPages}
           aria-label="Próxima página"
         >
-          <div
-            className={`flex items-center justify-center p-1 xsm:p-2 md:p-[10px] rounded-lg transition-colors ${
-              currentPage === totalPages ? "" : "hover:bg-neutral-800"
-            }`}
-          >
+          <div className="flex items-center justify-center p-1 xsm:p-2 md:p-[10px] rounded-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
@@ -70,7 +66,7 @@ const Pagination = ({
           </div>
         </button>
       </div>
-      <div className="w-fit hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border-2 border-neutral-800 rounded-xl overflow-hidden">
+      <div className="w-fit hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 rounded-xl overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}
