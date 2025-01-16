@@ -36,7 +36,7 @@ const Filter = ({
   };
 
   return (
-    <div className="md:mb-6">
+    <div className="md:mb-8">
       <div className="flex flex-wrap items-center justify-center gap-2">
         <ul className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 rounded-xl">
           {categories.map((category) => (

@@ -48,7 +48,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="shrink-0 flex flex-col gap-4 text-lg lg:text-xl font-medium">
+        <div className="shrink-0 flex flex-col gap-4 text-lg font-medium">
           <Link
             to="/"
             className="w-fit md:hover:text-neutral-400 transition-colors"
