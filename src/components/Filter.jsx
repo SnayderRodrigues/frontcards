@@ -54,7 +54,7 @@ const Filter = ({
                   : ""
               } ${
                 selectedCategory === category && category === "Design"
-                  ? "bg-purple-600"
+                  ? "bg-violet-600"
                   : ""
               } ${
                 selectedCategory === category && category === "Aprendizado"
@@ -62,7 +62,7 @@ const Filter = ({
                   : ""
               } ${
                 selectedCategory === category && category === "Criadores"
-                  ? "bg-rose-600"
+                  ? "bg-pink-600"
                   : ""
               }`}
               onClick={() => handleCategoryClick(category)}
@@ -109,7 +109,7 @@ const Filter = ({
                   : ""
               } ${
                 selectedCategory === category && selectedCategory === "Design"
-                  ? "bg-purple-600"
+                  ? "bg-violet-600"
                   : ""
               } ${
                 selectedCategory === category &&
@@ -119,7 +119,7 @@ const Filter = ({
               } ${
                 selectedCategory === category &&
                 selectedCategory === "Criadores"
-                  ? "bg-rose-600"
+                  ? "bg-pink-600"
                   : ""
               }`}
               onClick={() => handleCategoryClick(category)}

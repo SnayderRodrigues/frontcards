@@ -45,9 +45,9 @@ const Card = ({ tool }) => {
             }
             ${
               tool.category === "Design" && isFavorite
-                ? "bg-purple-600"
+                ? "bg-violet-600"
                 : tool.category === "Design"
-                ? "bg-purple-900 md:hover:bg-purple-600"
+                ? "bg-violet-900 md:hover:bg-violet-600"
                 : ""
             }
             ${
@@ -59,9 +59,9 @@ const Card = ({ tool }) => {
             }
             ${
               tool.category === "Criadores" && isFavorite
-                ? "bg-rose-600"
+                ? "bg-pink-600"
                 : tool.category === "Criadores"
-                ? "bg-rose-900 md:hover:bg-rose-600"
+                ? "bg-pink-900 md:hover:bg-pink-600"
                 : ""
             } rounded-md transition-colors`}
           onClick={handleFavoriteClick}
@@ -109,9 +109,9 @@ const Card = ({ tool }) => {
         <div
           className={`w-fit flex items-center justify-center text-sm font-medium text-white px-3 py-2 rounded-md ${
             tool.category === "Frontend" ? "bg-indigo-700" : ""
-          } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
+          } ${tool.category === "Design" ? "bg-violet-600" : ""} ${
             tool.category === "Aprendizado" ? "bg-emerald-700" : ""
-          } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
+          } ${tool.category === "Criadores" ? "bg-pink-600" : ""}`}
         >
           <span className="mb-[2px]">{tool.category}</span>
         </div>

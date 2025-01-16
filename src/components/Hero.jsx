@@ -8,8 +8,8 @@ const Hero = () => {
         id="hero-section"
       >
         <div className="wrapper flex flex-col md:items-center md:text-center pt-32 sm:pt-36 lg:pt-36 xl:pt-40 pb-12 xsm:pb-16 md:pb-20 lg:pb-28">
-          <h1 className="max-w-[19ch] mb-8 lg:mb-12">
-            Sua biblioteca de ferramentas para{" "}
+          <h1 className="max-w-[23ch] mb-8 lg:mb-12">
+            Sua coleção de ferramentas para{" "}
             <span className="text-indigo-400">Devs Frontend</span> e{" "}
             <span className="text-purple-400">Web Designers</span>.
           </h1>

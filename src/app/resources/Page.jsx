@@ -25,9 +25,9 @@ const ResourcePage = () => {
             <div
               className={`w-fit flex items-center justify-center text-sm font-medium text-white px-4 py-2 rounded-lg ${
                 tool.category === "Frontend" ? "bg-indigo-700" : ""
-              } ${tool.category === "Design" ? "bg-purple-600" : ""} ${
+              } ${tool.category === "Design" ? "bg-violet-600" : ""} ${
                 tool.category === "Aprendizado" ? "bg-emerald-700" : ""
-              } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
+              } ${tool.category === "Criadores" ? "bg-pink-600" : ""}`}
             >
               <span className="mb-[2px]">{tool.category}</span>
             </div>
