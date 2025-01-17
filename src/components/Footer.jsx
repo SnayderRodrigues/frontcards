@@ -37,42 +37,34 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-base font-medium">
-            Frontcards © 2025. <br />
-            Desenvolvido por{" "}
-            <a
-              href="https://snayderrodrigues.vercel.app/"
-              target="_blank"
-              className="text-neutral-400 hover:text-white transition-colors"
-            >
-              Snayder Rodrigues
-            </a>
+            <span>Frontcards © 2025.</span>
           </div>
         </div>
-        <div className="shrink-0 flex flex-col gap-4 text-lg font-medium">
+        <div className="shrink-0 flex flex-col gap-4 md:gap-1 text-lg font-medium">
           <Link
             to="/"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Início
           </Link>
           <Link
             to="/favorites"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Favoritos
           </Link>
           <Link
             to="/about"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Sobre
           </Link>
           <Link
             to="/legal"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
             onClick={scrollToTop}
           >
             Termos Legais
@@ -80,7 +72,7 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit md:hover:text-neutral-400 transition-colors"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
           >
             Indique um Card
           </a>

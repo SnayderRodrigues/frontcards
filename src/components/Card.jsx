@@ -40,30 +40,30 @@ const Card = ({ tool }) => {
               tool.category === "Frontend" && isFavorite
                 ? "bg-indigo-700"
                 : tool.category === "Frontend"
-                ? "bg-indigo-900 md:hover:bg-indigo-700"
+                ? "bg-indigo-400 md:hover:bg-indigo-700"
                 : ""
             }
             ${
               tool.category === "Design" && isFavorite
                 ? "bg-violet-600"
                 : tool.category === "Design"
-                ? "bg-violet-900 md:hover:bg-violet-600"
+                ? "bg-violet-400 md:hover:bg-violet-600"
                 : ""
             }
             ${
               tool.category === "Aprendizado" && isFavorite
-                ? "bg-emerald-700"
+                ? "bg-teal-700"
                 : tool.category === "Aprendizado"
-                ? "bg-emerald-900 md:hover:bg-emerald-700"
+                ? "bg-[#55aaa3] md:hover:bg-teal-700"
                 : ""
             }
             ${
               tool.category === "Criadores" && isFavorite
-                ? "bg-pink-600"
+                ? "bg-rose-600"
                 : tool.category === "Criadores"
-                ? "bg-pink-900 md:hover:bg-pink-600"
+                ? "bg-rose-400 md:hover:bg-rose-600"
                 : ""
-            } rounded-md transition-colors`}
+            } rounded-md transition-colors duration-300`}
           onClick={handleFavoriteClick}
         >
           <svg
@@ -72,8 +72,8 @@ const Card = ({ tool }) => {
             height="20px"
             viewBox="0 -960 960 960"
             fill="#fff"
-            className={`absolute transition-opacity ${
-              isFavorite ? "opacity-100" : "opacity-0"
+            className={`absolute transition-all duration-300 ${
+              isFavorite ? "opacity-100 scale-110" : "opacity-0"
             }`}
           >
             <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z" />
@@ -84,7 +84,7 @@ const Card = ({ tool }) => {
             height="20px"
             viewBox="0 -960 960 960"
             fill="#fff"
-            className={`absolute transition-opacity ${
+            className={`absolute transition-opacity duration-300 ${
               isFavorite ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -94,24 +94,22 @@ const Card = ({ tool }) => {
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-start justify-between gap-3">
-          <span className="text-xl md:text-2xl font-bold">
-            {tool.title}
-          </span>
+          <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
         </div>
-        <span className="flex flex-wrap gap-[6px] text-neutral-400">
+        <div className="flex-1 flex flex-wrap gap-[6px] text-neutral-400">
           {tool.tags.map((tag, index) => (
             <span key={index} className="shrink-0">
               #{tag}
             </span>
           ))}
-        </span>
-        <p className="flex-1 text-neutral-400">{tool.description}</p>
+        </div>
+        {/* <p className="flex-1 text-neutral-400">{tool.description}</p> */}
         <div
           className={`w-fit flex items-center justify-center text-sm font-medium text-white px-3 py-2 rounded-md ${
             tool.category === "Frontend" ? "bg-indigo-700" : ""
           } ${tool.category === "Design" ? "bg-violet-600" : ""} ${
-            tool.category === "Aprendizado" ? "bg-emerald-700" : ""
-          } ${tool.category === "Criadores" ? "bg-pink-600" : ""}`}
+            tool.category === "Aprendizado" ? "bg-teal-700" : ""
+          } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
         >
           <span className="mb-[2px]">{tool.category}</span>
         </div>

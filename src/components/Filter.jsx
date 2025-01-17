@@ -58,11 +58,11 @@ const Filter = ({
                   : ""
               } ${
                 selectedCategory === category && category === "Aprendizado"
-                  ? "bg-emerald-700"
+                  ? "bg-teal-700"
                   : ""
               } ${
                 selectedCategory === category && category === "Criadores"
-                  ? "bg-pink-600"
+                  ? "bg-rose-600"
                   : ""
               }`}
               onClick={() => handleCategoryClick(category)}
@@ -114,12 +114,12 @@ const Filter = ({
               } ${
                 selectedCategory === category &&
                 selectedCategory === "Aprendizado"
-                  ? "bg-emerald-700"
+                  ? "bg-teal-700"
                   : ""
               } ${
                 selectedCategory === category &&
                 selectedCategory === "Criadores"
-                  ? "bg-pink-600"
+                  ? "bg-rose-600"
                   : ""
               }`}
               onClick={() => handleCategoryClick(category)}
