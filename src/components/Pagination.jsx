@@ -12,7 +12,7 @@ const Pagination = ({
     <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
       <div className="flex items-center gap-2">
         <button
-          className={`bg-neutral-900 p-2 rounded-xl transition-colors ${
+          className={`bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
             currentPage === 1 ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {
@@ -38,7 +38,7 @@ const Pagination = ({
           </div>
         </button>
         <button
-          className={`bg-neutral-900 p-2 rounded-xl transition-colors ${
+          className={`bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
             currentPage === totalPages ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {

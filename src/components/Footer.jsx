@@ -80,7 +80,7 @@ const Footer = () => {
         <button
           className={`w-fit absolute ${
             isSmallMarginPath ? "bottom-8" : "bottom-28"
-          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 rounded-xl`}
+          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 rounded-lg`}
           onClick={scrollToTop}
           aria-label="Voltar para o topo da página"
         >

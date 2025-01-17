@@ -186,14 +186,25 @@ const Header = () => {
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
             </svg>
           </a>
-          <div className="flex-1 flex flex-col justify-end">
-            <span className="text-neutral-200">Dúvidas ou sugestões:</span>
+          <div className="flex-1 flex flex-col justify-end gap-3 text-sm">
+            <div className="text-neutral-400">
+              Projetado e desenvolvido por:
+            </div>
             <a
               target="_blank"
-              href="mailto:snayderrodrigues@gmail.com"
-              className="underline"
+              href="https://snayderrodrigues.vercel.app/"
+              className="w-full flex items-center justify-between gap-1 bg-neutral-900 px-3 py-3 rounded-lg"
             >
-              snayderrodrigues@gmail.com
+              <span className="mb-[3px]">Snayder Rodrigues</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                viewBox="0 -960 960 960"
+                fill="#fff"
+              >
+                <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+              </svg>
             </a>
           </div>
         </div>
