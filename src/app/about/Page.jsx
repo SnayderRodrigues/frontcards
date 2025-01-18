@@ -5,32 +5,33 @@ const AboutPage = () => {
     <>
       <section className="font-medium">
         <div className="wrapper pt-32 sm:pt-36 lg:pt-36 xl:pt-40 pb-12 md:pb-16 lg:pb-24">
-          <h1 className="mb-8 lg:mb-12">
-            Sobre Frontcards
-          </h1>
+          <h1 className="mb-8 lg:mb-12">Sobre Frontcards</h1>
           <div className="flex items-center gap-16">
             <div className="flex flex-col gap-8 text-base sm:text-lg lg:text-xl xl:text-2xl text-neutral-200 max-w-[60ch]">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                voluptatibus minima fuga ipsa harum consectetur iste sunt.
-                Officia ab explicabo, facilis ut ad dolore error quo quas
-                commodi eaque quidem.
+                O Frontcards nasceu com um propósito simples e significativo:
+                ajudar desenvolvedores frontend e web designers, principalmente
+                aqueles que estão começando suas jornadas, a encontrarem as
+                melhores ferramentas, criadores de conteúdo, recursos de
+                aprendizagem e muito mais.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                minima et ipsum architecto cupiditate blanditiis sint,
-                voluptates similique pariatur, ducimus deleniti doloremque!
-                Asperiores, ex aliquam rerum id a consectetur saepe?
+                Inspirada no incrível projeto Pillarstack, criado por Huy
+                Nguyen, o Frontcards segue a mesma filosofia de ser uma ponte
+                entre a comunidade e os recursos mais úteis para o
+                desenvolvimento e design. Aqui, você encontrará uma seleção
+                cuidadosamente curada e frequentemente atualizada de ferramentas
+                e conteúdos para potencializar suas habilidades.
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptates laborum possimus eveniet vel amet inventore magni
-                dignissimos in alias debitis non officia, necessitatibus sequi,
-                eaque beatae consectetur! Facilis, incidunt aperiam!
+                Nosso objetivo é criar um espaço acessível e confiável para a
+                comunidade de desenvolvimento e design, facilitando o acesso a
+                recursos de qualidade que podem ajudar desde pequenos projetos
+                pessoais até grandes desafios profissionais.
               </p>
               <div className="flex flex-col">
                 <span>Snayder Rodrigues</span>
-                <span className="text-neutral-400">Desenvolvedor Frontend</span>
+                <span className="text-neutral-400">Criador Frontcards</span>
               </div>
             </div>
           </div>

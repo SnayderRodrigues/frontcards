@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="bg-neutral-950 border-t border-t-neutral-900">
       <div
         className={`wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 ${
-          isSmallMarginPath ? "pb-8" : "pb-28"
+          isSmallMarginPath ? "pb-6" : "pb-28"
         } md:pb-8`}
       >
         <div className="flex flex-col justify-between gap-4 md:gap-12">
@@ -76,11 +76,18 @@ const Footer = () => {
           >
             Indique um Card
           </a>
+          <a
+            href="https://forms.gle/ZVfjAj1TDQuinBVz8"
+            target="_blank"
+            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
+          >
+            Feedback e Sugestões
+          </a>
         </div>
         <button
           className={`w-fit absolute ${
-            isSmallMarginPath ? "bottom-8" : "bottom-28"
-          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 rounded-lg`}
+            isSmallMarginPath ? "bottom-6" : "bottom-28"
+          } right-0 flex md:hidden items-center gap-1 bg-neutral-800 p-3 rounded-lg`}
           onClick={scrollToTop}
           aria-label="Voltar para o topo da página"
         >

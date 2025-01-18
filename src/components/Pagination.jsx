@@ -12,7 +12,7 @@ const Pagination = ({
     <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
       <div className="flex items-center gap-2">
         <button
-          className={`bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
+          className={`bg-neutral-800 md:bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
             currentPage === 1 ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {
@@ -31,14 +31,16 @@ const Pagination = ({
               height="24px"
               viewBox="0 -960 960 960"
               fill="#fff"
-              className={`${currentPage === 1 ? "fill-neutral-800" : ""}`}
+              className={`${
+                currentPage === 1 ? "fill-neutral-700" : ""
+              }`}
             >
               <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg>
           </div>
         </button>
         <button
-          className={`bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
+          className={`bg-neutral-800 md:bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
             currentPage === totalPages ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {
@@ -58,7 +60,9 @@ const Pagination = ({
               viewBox="0 -960 960 960"
               fill="#fff"
               className={`${
-                currentPage === totalPages ? "fill-neutral-800" : ""
+                currentPage === totalPages
+                  ? "fill-neutral-700"
+                  : ""
               }`}
             >
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
