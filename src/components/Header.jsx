@@ -175,15 +175,16 @@ const Header = () => {
             target="_blank"
             className="w-full md:hidden flex items-center justify-center gap-2 text-lg font-medium bg-indigo-700 px-5 py-4 rounded-lg mt-4"
           >
-            <span className="shrink-0 xsm:mb-[2px]">Indique um Card</span>
+            <span className="shrink-0">Indique um Card</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
+              width="20px"
+              height="20px"
               viewBox="0 -960 960 960"
               fill="#fff"
+              className="w-5 mt-[2px]"
             >
-              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
             </svg>
           </a>
           <div className="flex-1 flex flex-col justify-end gap-3 text-sm">

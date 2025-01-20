@@ -72,16 +72,36 @@ const Footer = () => {
           <a
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
             target="_blank"
-            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
+            className="w-fit flex items-center gap-1 md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
           >
-            Indique um Card
+            <span>Indique um Card</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+              className="mt-[2px]"
+            >
+              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+            </svg>
           </a>
           <a
             href="https://forms.gle/ZVfjAj1TDQuinBVz8"
             target="_blank"
-            className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
+            className="w-fit flex items-center gap-1 md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"
           >
-            Feedback e Sugestões
+            <span>Feedback e Sugestões</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 -960 960 960"
+              fill="#fff"
+              className="mt-[2px]"
+            >
+              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+            </svg>
           </a>
         </div>
         <button

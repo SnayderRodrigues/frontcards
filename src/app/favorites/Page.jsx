@@ -17,7 +17,7 @@ const FavoritesPage = () => {
             </p>
             <Link
               to="/"
-              className="w-fit flex items-center justify-center gap-1 text-base sm:text-lg font-medium text-white bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 rounded-lg transition-colors hover:bg-neutral-800"
+              className="w-fit flex items-center justify-center gap-1 text-base sm:text-lg font-medium text-white bg-neutral-800 md:bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 rounded-lg transition-colors md:hover:bg-neutral-800"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const FavoritesPage = () => {
           <>
             <Link
               to="/"
-              className="w-fit flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 border-2 border-neutral-800 rounded-lg mb-8 transition-colors hover:bg-neutral-950"
+              className="w-fit flex items-center justify-center gap-1 text-base sm:text-lg lg:text-xl font-medium text-white bg-neutral-800 md:bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 rounded-lg mb-8 transition-colors md:hover:bg-neutral-950"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const FavoritesPage = () => {
               >
                 <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
               </svg>
-              <span className="xsm:mb-[2px]">Voltar</span>
+              <span className="xsm:mb-[2px]">Voltar à Página Inicial</span>
             </Link>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 sm:gap-4 md:gap-6 mb-6 md:mb-6">
               {favorites.map((tool) => (
