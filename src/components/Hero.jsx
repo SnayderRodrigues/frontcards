@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -14,23 +15,11 @@ const Hero = () => {
             Explore ferramentas selecionadas que irão ajudar você a aprimorar
             suas habilidades em desenvolvimento e design.
           </p>
-          <a
+          <Button
+            text="Indique um Card"
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
-            target="_blank"
-            className="w-fit md:hidden flex items-center gap-1 text-base sm:text-lg font-medium bg-indigo-700 px-4 py-3 rounded-lg mt-8 transition-colors cursor-pointer"
-          >
-            <span className="shrink-0">Indique um Card</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
-              viewBox="0 -960 960 960"
-              fill="#fff"
-              className="w-[18px] sm:w-5 lg:w-6 mt-[2px]"
-            >
-              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
-            </svg>
-          </a>
+            className="md:hidden px-4 py-3 mt-8"
+          />
         </div>
       </section>
     </>

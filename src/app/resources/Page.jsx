@@ -45,7 +45,7 @@ const ResourcePage = () => {
           <div className="flex gap-4">
             <Link
               onClick={() => navigate(-1)}
-              className="flex items-center justify-center gap-1 text-base sm:text-lg font-medium text-white bg-neutral-800 md:bg-neutral-900 px-3 py-3 xsm:px-4 xsm:py-3 md:px-6 md:py-4 rounded-lg transition-colors md:hover:bg-neutral-800"
+              className="flex items-center justify-center gap-1 text-base sm:text-lg font-medium text-white bg-neutral-800 md:bg-neutral-900 px-4 lg:px-6 py-3 lg:py-4 rounded-lg transition-colors md:hover:bg-neutral-800"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

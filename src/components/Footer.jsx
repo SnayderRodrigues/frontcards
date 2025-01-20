@@ -40,7 +40,7 @@ const Footer = () => {
             <span>Frontcards © 2025.</span>
           </div>
         </div>
-        <div className="shrink-0 flex flex-col gap-4 md:gap-1 text-lg font-medium">
+        <div className="shrink-0 flex flex-col gap-[18px] md:gap-1 text-lg font-medium">
           <Link
             to="/"
             className="w-fit md:p-2 lg:px-3 lg:py-2 rounded-lg md:hover:bg-neutral-800 transition-colors"

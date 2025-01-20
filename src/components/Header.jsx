@@ -102,19 +102,19 @@ const Header = () => {
           ></div>
         </button>
         <div
-          className={`w-full h-full fixed z-40 top-0 left-0 md:hidden flex flex-col gap-6 bg-neutral-950 px-[20px] sm:px-8 pt-32 pb-6 sm:pb-8 transition-opacity duration-300 ${
+          className={`w-full h-full fixed z-40 top-0 left-0 md:hidden flex flex-col gap-3 bg-neutral-950 px-[20px] sm:px-8 pt-32 pb-6 sm:pb-8 transition-opacity duration-300 ${
             openMenu ? "" : "opacity-0 select-none pointer-events-none"
           }`}
         >
           <Link
             to="/"
-            className="w-fit flex items-center gap-2 text-lg font-medium"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
+              width="18px"
+              height="18px"
               viewBox="0 -960 960 960"
               fill="#fff"
             >
@@ -124,13 +124,13 @@ const Header = () => {
           </Link>
           <Link
             to="/favorites"
-            className="w-fit flex items-center gap-2 text-lg font-medium"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
+              width="18px"
+              height="18px"
               viewBox="0 -960 960 960"
               fill="#fff"
             >
@@ -140,13 +140,13 @@ const Header = () => {
           </Link>
           <Link
             to="/about"
-            className="w-fit flex items-center gap-2 text-lg font-medium"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
+              width="18px"
+              height="18px"
               viewBox="0 -960 960 960"
               fill="#fff"
             >
@@ -156,13 +156,13 @@ const Header = () => {
           </Link>
           <Link
             to="/legal"
-            className="w-fit flex items-center gap-2 text-lg font-medium"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
+              width="18px"
+              height="18px"
               viewBox="0 -960 960 960"
               fill="#fff"
             >
@@ -170,23 +170,12 @@ const Header = () => {
             </svg>
             <span>Termos Legais</span>
           </Link>
-          <a
+          <Button
+            text="Indique um Card"
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
-            target="_blank"
-            className="w-full md:hidden flex items-center justify-center gap-2 text-lg font-medium bg-indigo-700 px-5 py-4 rounded-lg mt-4"
-          >
-            <span className="shrink-0">Indique um Card</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20px"
-              height="20px"
-              viewBox="0 -960 960 960"
-              fill="#fff"
-              className="w-5 mt-[2px]"
-            >
-              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
-            </svg>
-          </a>
+            className="w-full md:hidden gap-2 text-lg px-5 py-4 mt-5"
+            svgClass="w-[20px]"
+          />
           <div className="flex-1 flex flex-col justify-end gap-3 text-sm">
             <div className="text-neutral-400">
               Projetado e desenvolvido por:
