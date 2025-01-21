@@ -2,7 +2,9 @@
 import AccessibilityNotChecklist from "../assets/accessibility-not-checklist.webp";
 import AdobeIllustrator from "../assets/adobe-illustrator.svg";
 import Angular from "../assets/angular.svg";
+import Astro from "../assets/astro.svg";
 import Awwwards from "../assets/awwwards.svg";
+import Behance from "../assets/behance.svg";
 import Blender from "../assets/blender.svg";
 import Bootstrap from "../assets/bootstrap.svg";
 import ByHuy from "../assets/By Huy.webp";
@@ -10,20 +12,27 @@ import CanIUse from "../assets/caniuse.webp";
 import ChrisDevInDev from "../assets/Chris DevInDev.webp";
 import CodePen from "../assets/codepen.svg";
 import CoderCoder from "../assets/Coder Coder.webp";
+import CodigoFonteTV from "../assets/codigo-fonte-tv.webp";
 import ColorHunt from "../assets/color-hunt.webp";
 import CssBattle from "../assets/css-battle.webp";
 import DailyDev from "../assets/dailydev.svg";
 import DesignSystems from "../assets/design-systems.webp";
+import DevTo from "../assets/dev.to.svg";
 import Dribbble from "../assets/dribbble.svg";
+import FakerJS from "../assets/faker.svg";
 import Figma from "../assets/figma.svg";
 import Fireship from "../assets/Fireship.webp";
+import FluidTypographyCalculator from "../assets/fluid-typography-calculator.webp";
 import FluxAcademy from "../assets/Flux Academy.webp";
 import Fontshare from "../assets/fontshare.svg";
 import Framer from "../assets/framer.svg";
 import FreeCodeCamp from "../assets/freecodecamp.svg";
+import Freepik from "../assets/freepik.svg";
 import FrontendMentor from "../assets/frontend-mentor.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
+import GoogleFonts from "../assets/google-fonts.svg";
 import Gsap from "../assets/greensock.svg";
+import HeadlessUI from "../assets/headlessui.svg";
 import Hyperplexed from "../assets/Hyperplexed.webp";
 import Inkscape from "../assets/inkscape.svg";
 import JoshWComeau from "../assets/josh-w-comeau.webp";
@@ -32,12 +41,14 @@ import Kalypso from "../assets/Kalypso.webp";
 import KevinPowell from "../assets/Kevin Powell.webp";
 import LenisScroll from "../assets/lenis-scroll.webp";
 import Lighthouse from "../assets/lighthouse.svg";
+import LottieFiles from "../assets/lottiefiles.svg";
 import LunDev from "../assets/Lun Dev.webp";
 import MaterialUI from "../assets/material-ui.svg";
 import MaxiBestOf from "../assets/maxibestof.webp";
 import Mdn from "../assets/mdn.svg";
 import Midjourney from "../assets/midjourney.svg";
 import Next from "../assets/nextjs.svg";
+import Nuxt from "../assets/nuxt.svg";
 import OlivierLarose from "../assets/Olivier Larose.webp";
 import Photopea from "../assets/photopea.svg";
 import Photoshop from "../assets/photoshop.svg";
@@ -45,9 +56,12 @@ import Prettier from "../assets/prettier.svg";
 import React from "../assets/react.svg";
 import ReactHookForm from "../assets/react-hook-form.webp";
 import RealtimeColors from "../assets/realtime-colors.webp";
+import Redux from "../assets/redux.svg";
 import Relume from "../assets/relume.svg";
 import Roadmap from "../assets/roadmap-sh.svg";
+import Sajid from "../assets/sajid.webp";
 import Sass from "../assets/sass.svg";
+import Scrimba from "../assets/scrimba.webp";
 import ShadcnUI from "../assets/shadcn-ui.webp";
 import Shots from "../assets/shots-so.webp";
 import Sketch from "../assets/sketch.svg";
@@ -55,8 +69,11 @@ import SmashingMagazine from "../assets/smashing-magazine.svg";
 import Spline from "../assets/spline.webp";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
+import Strapi from "../assets/strapi.svg";
 import Svelte from "../assets/svelte.svg";
+import SVGator from "../assets/svgator.svg";
 import Tailwind from "../assets/tailwind.svg";
+import UIColors from "../assets/ui-colors.webp";
 import TheOdinProject from "../assets/the-odin-project.svg";
 import ThreeJs from "../assets/threejs.svg";
 import TinyPNG from "../assets/tinypng.svg";
@@ -71,6 +88,7 @@ import W3Schools from "../assets/w3schools.svg";
 import WebDevSimplified from "../assets/Web-Dev-Simplified.webp";
 import WebDev from "../assets/web.dev.svg";
 import Webflow from "../assets/webflow.svg";
+import Zustand from "../assets/zustand.webp";
 
 const ResourcesData = [
   {
@@ -108,6 +126,17 @@ const ResourcesData = [
   },
   {
     id: "4",
+    title: "Astro",
+    image: Astro,
+    category: "Frontend",
+    tags: ["Componentes", "Framework", "SSG"],
+    slug: "astro",
+    description:
+      "Framework para construção de sites rápidos e otimizados, com suporte a múltiplas bibliotecas de frontend.",
+    source: "https://astro.build/",
+  },
+  {
+    id: "5",
     title: "Awwwards",
     image: Awwwards,
     category: "Design",
@@ -118,7 +147,18 @@ const ResourcesData = [
     source: "https://www.awwwards.com/",
   },
   {
-    id: "5",
+    id: "6",
+    title: "Behance",
+    image: Behance,
+    category: "Design",
+    tags: ["Inspiração", "Portfólio", "UI/UX"],
+    slug: "behance",
+    description:
+      "Plataforma para designers e criativos compartilharem seus portfólios e encontrarem inspiração.",
+    source: "https://www.behance.net/",
+  },
+  {
+    id: "7",
     title: "Blender",
     image: Blender,
     category: "Design",
@@ -129,7 +169,7 @@ const ResourcesData = [
     source: "https://www.blender.org/",
   },
   {
-    id: "6",
+    id: "8",
     title: "Bootstrap",
     image: Bootstrap,
     category: "Frontend",
@@ -140,7 +180,7 @@ const ResourcesData = [
     source: "https://getbootstrap.com/",
   },
   {
-    id: "7",
+    id: "9",
     title: "By Huy",
     image: ByHuy,
     category: "Criadores",
@@ -151,7 +191,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@by_huy",
   },
   {
-    id: "8",
+    id: "10",
     title: "Can I Use",
     image: CanIUse,
     category: "Frontend",
@@ -162,7 +202,7 @@ const ResourcesData = [
     source: "https://caniuse.com/",
   },
   {
-    id: "9",
+    id: "11",
     title: "Christian Castro",
     image: ChrisDevInDev,
     category: "Criadores",
@@ -173,7 +213,7 @@ const ResourcesData = [
     source: "https://www.instagram.com/chrisdevindev/",
   },
   {
-    id: "10",
+    id: "12",
     title: "CodePen",
     image: CodePen,
     category: "Frontend",
@@ -184,7 +224,7 @@ const ResourcesData = [
     source: "https://codepen.io/",
   },
   {
-    id: "11",
+    id: "13",
     title: "Coder Coder",
     image: CoderCoder,
     category: "Criadores",
@@ -195,7 +235,18 @@ const ResourcesData = [
     source: "https://www.youtube.com/@TheCoderCoder",
   },
   {
-    id: "12",
+    id: "14",
+    title: "Código Fonte TV",
+    image: CodigoFonteTV,
+    category: "Criadores",
+    tags: ["Informações", "Programação", "Tecnologia"],
+    slug: "codigo-fonte-tv",
+    description:
+      "Canal no YouTube com conteúdos sobre desenvolvimento de software e tecnologia.",
+    source: "https://www.youtube.com/@codigofontetv",
+  },
+  {
+    id: "15",
     title: "Color Hunt",
     image: ColorHunt,
     category: "Design",
@@ -206,7 +257,7 @@ const ResourcesData = [
     source: "https://colorhunt.co/",
   },
   {
-    id: "13",
+    id: "16",
     title: "CSS Battle",
     image: CssBattle,
     category: "Frontend",
@@ -217,7 +268,7 @@ const ResourcesData = [
     source: "https://cssbattle.dev/",
   },
   {
-    id: "14",
+    id: "17",
     title: "Daily.dev",
     image: DailyDev,
     category: "Aprendizado",
@@ -228,7 +279,7 @@ const ResourcesData = [
     source: "https://daily.dev/",
   },
   {
-    id: "15",
+    id: "18",
     title: "Design Systems",
     image: DesignSystems,
     category: "Aprendizado",
@@ -239,7 +290,18 @@ const ResourcesData = [
     source: "https://designsystems.surf/design-systems",
   },
   {
-    id: "16",
+    id: "19",
+    title: "dev.to",
+    image: DevTo,
+    category: "Aprendizado",
+    tags: ["Comunidade", "Blog", "Desenvolvimento"],
+    slug: "dev-to",
+    description:
+      "Comunidade de desenvolvedores onde profissionais compartilham artigos, dicas e experiências.",
+    source: "https://dev.to/",
+  },
+  {
+    id: "20",
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
@@ -250,7 +312,18 @@ const ResourcesData = [
     source: "https://dribbble.com/",
   },
   {
-    id: "17",
+    id: "21",
+    title: "Faker JS",
+    image: FakerJS,
+    category: "Frontend",
+    tags: ["Desenvolvimento", "Mock Data"],
+    slug: "faker-js",
+    description:
+      "Biblioteca para geração de dados fictícios em JavaScript, útil para testes e desenvolvimento.",
+    source: "https://fakerjs.dev/",
+  },
+  {
+    id: "22",
     title: "Figma",
     image: Figma,
     category: "Design",
@@ -261,7 +334,7 @@ const ResourcesData = [
     source: "https://www.figma.com/",
   },
   {
-    id: "18",
+    id: "23",
     title: "Fireship",
     image: Fireship,
     category: "Criadores",
@@ -272,7 +345,18 @@ const ResourcesData = [
     source: "https://www.youtube.com/@Fireship",
   },
   {
-    id: "19",
+    id: "24",
+    title: "Fluid Typography Calculator",
+    image: FluidTypographyCalculator,
+    category: "Frontend",
+    tags: ["Responsividade", "Tipografia"],
+    slug: "fluid-typography-calculator",
+    description:
+      "Ferramenta online que utiliza a função Clamp do CSS para aplicar tipografia responsiva em sua página.",
+    source: "https://royalfig.github.io/fluid-typography-calculator/",
+  },
+  {
+    id: "25",
     title: "Flux Academy",
     image: FluxAcademy,
     category: "Criadores",
@@ -283,7 +367,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@FluxAcademy",
   },
   {
-    id: "20",
+    id: "26",
     title: "Fontshare",
     image: Fontshare,
     category: "Design",
@@ -294,7 +378,7 @@ const ResourcesData = [
     source: "https://www.fontshare.com/",
   },
   {
-    id: "21",
+    id: "27",
     title: "Framer",
     image: Framer,
     category: "Design",
@@ -305,7 +389,7 @@ const ResourcesData = [
     source: "https://www.framer.com/",
   },
   {
-    id: "22",
+    id: "28",
     title: "freeCodeCamp",
     image: FreeCodeCamp,
     category: "Aprendizado",
@@ -316,7 +400,18 @@ const ResourcesData = [
     source: "https://www.freecodecamp.org/",
   },
   {
-    id: "23",
+    id: "29",
+    title: "Freepik",
+    image: Freepik,
+    category: "Design",
+    tags: ["IA", "Ilustrações", "Recursos Gráficos"],
+    slug: "freepik",
+    description:
+      "Banco de imagens, vetores e ilustrações gratuitas para designers e desenvolvedores.",
+    source: "https://www.freepik.com/",
+  },
+  {
+    id: "30",
     title: "Frontend Mentor",
     image: FrontendMentor,
     category: "Aprendizado",
@@ -327,7 +422,7 @@ const ResourcesData = [
     source: "https://www.frontendmentor.io/",
   },
   {
-    id: "24",
+    id: "31",
     title: "GitHub Copilot",
     image: GithubCopilot,
     category: "Frontend",
@@ -338,7 +433,18 @@ const ResourcesData = [
     source: "https://github.com/features/copilot",
   },
   {
-    id: "25",
+    id: "32",
+    title: "Google Fonts",
+    image: GoogleFonts,
+    category: "Design",
+    tags: ["Ícones", "Tipografia", "Web Fonts"],
+    slug: "google-fonts",
+    description:
+      "Biblioteca gratuita de fontes e ícones otimizados para a web, oferecida pelo Google.",
+    source: "https://fonts.google.com/",
+  },
+  {
+    id: "33",
     title: "GSAP",
     image: Gsap,
     category: "Frontend",
@@ -349,7 +455,18 @@ const ResourcesData = [
     source: "https://gsap.com/",
   },
   {
-    id: "26",
+    id: "34",
+    title: "Headless UI",
+    image: HeadlessUI,
+    category: "Frontend",
+    tags: ["Componentes", "Tailwind"],
+    slug: "headless-ui",
+    description:
+      "Biblioteca de componentes acessíveis e sem estilos para React e Vue, desenvolvida pela equipe do Tailwind CSS.",
+    source: "https://headlessui.com/",
+  },
+  {
+    id: "35",
     title: "Hyperplexed",
     image: Hyperplexed,
     category: "Criadores",
@@ -360,7 +477,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@Hyperplexed",
   },
   {
-    id: "27",
+    id: "36",
     title: "Inkscape",
     image: Inkscape,
     category: "Design",
@@ -371,7 +488,7 @@ const ResourcesData = [
     source: "https://inkscape.org/",
   },
   {
-    id: "28",
+    id: "37",
     title: "Josh W Comeau",
     image: JoshWComeau,
     category: "Criadores",
@@ -382,7 +499,7 @@ const ResourcesData = [
     source: "https://www.joshwcomeau.com/",
   },
   {
-    id: "29",
+    id: "38",
     title: "Juxtopposed",
     image: Juxtopposed,
     category: "Criadores",
@@ -393,7 +510,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@juxtopposed",
   },
   {
-    id: "30",
+    id: "39",
     title: "Kalypso",
     image: Kalypso,
     category: "Criadores",
@@ -404,7 +521,7 @@ const ResourcesData = [
     source: "https://www.instagram.com/kalypsodesigns/",
   },
   {
-    id: "31",
+    id: "40",
     title: "Kevin Powell",
     image: KevinPowell,
     category: "Criadores",
@@ -415,7 +532,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@KevinPowell",
   },
   {
-    id: "32",
+    id: "41",
     title: "Lenis Scroll",
     image: LenisScroll,
     category: "Frontend",
@@ -426,7 +543,7 @@ const ResourcesData = [
     source: "https://lenis.darkroom.engineering/",
   },
   {
-    id: "33",
+    id: "42",
     title: "Lighthouse",
     image: Lighthouse,
     category: "Frontend",
@@ -437,7 +554,18 @@ const ResourcesData = [
     source: "https://developer.chrome.com/docs/lighthouse/overview",
   },
   {
-    id: "34",
+    id: "43",
+    title: "LottieFiles",
+    image: LottieFiles,
+    category: "Design",
+    tags: ["Animações", "SVG", "UI/UX"],
+    slug: "lottiefiles",
+    description:
+      "Plataforma para criar, editar e implementar animações Lottie em websites e aplicativos.",
+    source: "https://lottiefiles.com/",
+  },
+  {
+    id: "44",
     title: "Lun Dev",
     image: LunDev,
     category: "Criadores",
@@ -448,7 +576,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@LunDeveloper",
   },
   {
-    id: "35",
+    id: "45",
     title: "Material UI",
     image: MaterialUI,
     category: "Frontend",
@@ -459,7 +587,7 @@ const ResourcesData = [
     source: "https://mui.com/",
   },
   {
-    id: "36",
+    id: "46",
     title: "MaxiBestOf",
     image: MaxiBestOf,
     category: "Design",
@@ -470,7 +598,7 @@ const ResourcesData = [
     source: "https://maxibestof.one/",
   },
   {
-    id: "37",
+    id: "47",
     title: "MDN",
     image: Mdn,
     category: "Aprendizado",
@@ -481,7 +609,7 @@ const ResourcesData = [
     source: "https://developer.mozilla.org/en-US/",
   },
   {
-    id: "38",
+    id: "48",
     title: "Midjourney",
     image: Midjourney,
     category: "Design",
@@ -492,7 +620,7 @@ const ResourcesData = [
     source: "https://www.midjourney.com/",
   },
   {
-    id: "39",
+    id: "49",
     title: "Next.JS",
     image: Next,
     category: "Frontend",
@@ -503,7 +631,18 @@ const ResourcesData = [
     source: "https://nextjs.org/",
   },
   {
-    id: "40",
+    id: "50",
+    title: "Nuxt",
+    image: Nuxt,
+    category: "Frontend",
+    tags: ["Framework", "SSR", "Vue"],
+    slug: "nuxt",
+    description:
+      "Framework para Vue.js focado em SSR, geração de sites estáticos e desenvolvimento full-stack.",
+    source: "https://nuxt.com/",
+  },
+  {
+    id: "51",
     title: "Olivier Larose",
     image: OlivierLarose,
     category: "Criadores",
@@ -514,7 +653,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@olivierlarose1",
   },
   {
-    id: "41",
+    id: "52",
     title: "Photopea",
     image: Photopea,
     category: "Design",
@@ -525,7 +664,7 @@ const ResourcesData = [
     source: "https://www.photopea.com/",
   },
   {
-    id: "42",
+    id: "53",
     title: "Photoshop",
     image: Photoshop,
     category: "Design",
@@ -536,7 +675,7 @@ const ResourcesData = [
     source: "https://www.adobe.com/products/photoshop.html",
   },
   {
-    id: "43",
+    id: "54",
     title: "Prettier",
     image: Prettier,
     category: "Frontend",
@@ -547,7 +686,7 @@ const ResourcesData = [
     source: "https://prettier.io/",
   },
   {
-    id: "44",
+    id: "55",
     title: "React",
     image: React,
     category: "Frontend",
@@ -558,7 +697,7 @@ const ResourcesData = [
     source: "https://react.dev/",
   },
   {
-    id: "45",
+    id: "56",
     title: "React Hook Form",
     image: ReactHookForm,
     category: "Frontend",
@@ -569,7 +708,7 @@ const ResourcesData = [
     source: "https://react-hook-form.com/",
   },
   {
-    id: "46",
+    id: "57",
     title: "Realtime Colors",
     image: RealtimeColors,
     category: "Design",
@@ -580,7 +719,18 @@ const ResourcesData = [
     source: "https://realtimecolors.com/",
   },
   {
-    id: "47",
+    id: "58",
+    title: "Redux",
+    image: Redux,
+    category: "Frontend",
+    tags: ["Gerenciamento de Estado", "React"],
+    slug: "redux",
+    description:
+      "Biblioteca de gerenciamento de estado previsível para aplicações JavaScript, frequentemente usada com React.",
+    source: "https://redux.js.org/",
+  },
+  {
+    id: "59",
     title: "Relume",
     image: Relume,
     category: "Design",
@@ -591,7 +741,7 @@ const ResourcesData = [
     source: "https://www.relume.io/",
   },
   {
-    id: "48",
+    id: "60",
     title: "Roadmap.sh",
     image: Roadmap,
     category: "Aprendizado",
@@ -602,7 +752,18 @@ const ResourcesData = [
     source: "https://roadmap.sh/",
   },
   {
-    id: "49",
+    id: "61",
+    title: "Sajid",
+    image: Sajid,
+    category: "Criadores",
+    tags: ["Frontend", "UI/UX"],
+    slug: "sajid",
+    description:
+      "Criador de conteúdo sobre desenvolvimento frontend e design de interfaces no YouTube.",
+    source: "https://www.youtube.com/@whosajid",
+  },
+  {
+    id: "62",
     title: "Sass",
     image: Sass,
     category: "Frontend",
@@ -613,7 +774,18 @@ const ResourcesData = [
     source: "https://sass-lang.com/",
   },
   {
-    id: "50",
+    id: "63",
+    title: "Scrimba",
+    image: Scrimba,
+    category: "Aprendizado",
+    tags: ["Certificados", "Cursos", "Frontend"],
+    slug: "scrimba",
+    description:
+      "Plataforma de aprendizado interativa para desenvolvimento frontend e JavaScript.",
+    source: "https://scrimba.com/",
+  },
+  {
+    id: "64",
     title: "Shadcn UI",
     image: ShadcnUI,
     category: "Frontend",
@@ -624,7 +796,7 @@ const ResourcesData = [
     source: "https://ui.shadcn.dev/",
   },
   {
-    id: "51",
+    id: "65",
     title: "Shots.so",
     image: Shots,
     category: "Design",
@@ -635,7 +807,7 @@ const ResourcesData = [
     source: "https://shots.so/",
   },
   {
-    id: "52",
+    id: "66",
     title: "Sketch",
     image: Sketch,
     category: "Design",
@@ -646,7 +818,7 @@ const ResourcesData = [
     source: "https://www.sketch.com/",
   },
   {
-    id: "53",
+    id: "67",
     title: "Smashing Magazine",
     image: SmashingMagazine,
     category: "Aprendizado",
@@ -657,7 +829,7 @@ const ResourcesData = [
     source: "https://www.smashingmagazine.com/",
   },
   {
-    id: "54",
+    id: "68",
     title: "Spline",
     image: Spline,
     category: "Design",
@@ -668,7 +840,7 @@ const ResourcesData = [
     source: "https://spline.design/",
   },
   {
-    id: "55",
+    id: "69",
     title: "Stack Overflow",
     image: StackOverflow,
     category: "Aprendizado",
@@ -679,7 +851,7 @@ const ResourcesData = [
     source: "https://stackoverflow.com/",
   },
   {
-    id: "56",
+    id: "70",
     title: "Storybook",
     image: Storybook,
     category: "Frontend",
@@ -690,7 +862,18 @@ const ResourcesData = [
     source: "https://storybook.js.org/",
   },
   {
-    id: "57",
+    id: "71",
+    title: "Strapi",
+    image: Strapi,
+    category: "Frontend",
+    tags: ["API", "CMS", "Headless"],
+    slug: "strapi",
+    description:
+      "CMS headless de código aberto, flexível e personalizável para gerenciamento de conteúdo.",
+    source: "https://strapi.io/",
+  },
+  {
+    id: "72",
     title: "Svelte",
     image: Svelte,
     category: "Frontend",
@@ -701,7 +884,18 @@ const ResourcesData = [
     source: "https://svelte.dev/",
   },
   {
-    id: "58",
+    id: "73",
+    title: "SVGator",
+    image: SVGator,
+    category: "Design",
+    tags: ["Animações", "SVG"],
+    slug: "svgator",
+    description:
+      "Ferramenta online para criação e animação de SVG sem necessidade de código.",
+    source: "https://www.svgator.com/",
+  },
+  {
+    id: "74",
     title: "Tailwind CSS",
     image: Tailwind,
     category: "Frontend",
@@ -712,7 +906,18 @@ const ResourcesData = [
     source: "https://tailwindcss.com/",
   },
   {
-    id: "59",
+    id: "75",
+    title: "Tailwind CSS Color Generator",
+    image: UIColors,
+    category: "Frontend",
+    tags: ["Paleta de Cores"],
+    slug: "ui-colors",
+    description:
+      "Gere, edite e exporte cores para seu design, extendendo a paleta de cores do Tailwind CSS.",
+    source: "https://uicolors.app/create",
+  },
+  {
+    id: "76",
     title: "The Odin Project",
     image: TheOdinProject,
     category: "Aprendizado",
@@ -723,7 +928,7 @@ const ResourcesData = [
     source: "https://www.theodinproject.com/",
   },
   {
-    id: "60",
+    id: "77",
     title: "Three.JS",
     image: ThreeJs,
     category: "Frontend",
@@ -734,7 +939,7 @@ const ResourcesData = [
     source: "https://threejs.org/",
   },
   {
-    id: "61",
+    id: "78",
     title: "TinyPNG",
     image: TinyPNG,
     category: "Frontend",
@@ -745,7 +950,7 @@ const ResourcesData = [
     source: "https://tinypng.com/",
   },
   {
-    id: "62",
+    id: "79",
     title: "Udemy",
     image: Udemy,
     category: "Aprendizado",
@@ -756,7 +961,7 @@ const ResourcesData = [
     source: "https://www.udemy.com/",
   },
   {
-    id: "63",
+    id: "80",
     title: "Uiverse",
     image: Uiverse,
     category: "Design",
@@ -767,7 +972,7 @@ const ResourcesData = [
     source: "https://uiverse.io/",
   },
   {
-    id: "64",
+    id: "81",
     title: "Uncut",
     image: Uncut,
     category: "Design",
@@ -778,7 +983,7 @@ const ResourcesData = [
     source: "https://www.uncut.wtf/",
   },
   {
-    id: "65",
+    id: "82",
     title: "Unlighthouse",
     image: Unlighthouse,
     category: "Frontend",
@@ -789,7 +994,7 @@ const ResourcesData = [
     source: "https://unlighthouse.dev/",
   },
   {
-    id: "66",
+    id: "83",
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
@@ -800,7 +1005,7 @@ const ResourcesData = [
     source: "https://unsplash.com/",
   },
   {
-    id: "67",
+    id: "84",
     title: "Vite",
     image: Vite,
     category: "Frontend",
@@ -811,7 +1016,7 @@ const ResourcesData = [
     source: "https://vite.dev/",
   },
   {
-    id: "68",
+    id: "85",
     title: "Vue.js",
     image: Vue,
     category: "Frontend",
@@ -822,7 +1027,7 @@ const ResourcesData = [
     source: "https://vuejs.org/",
   },
   {
-    id: "69",
+    id: "86",
     title: "W3Schools",
     image: W3Schools,
     category: "Aprendizado",
@@ -833,7 +1038,7 @@ const ResourcesData = [
     source: "https://www.w3schools.com/",
   },
   {
-    id: "70",
+    id: "87",
     title: "Web Dev Simplified",
     image: WebDevSimplified,
     category: "Criadores",
@@ -844,7 +1049,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@WebDevSimplified",
   },
   {
-    id: "71",
+    id: "88",
     title: "Web.dev",
     image: WebDev,
     category: "Aprendizado",
@@ -855,7 +1060,7 @@ const ResourcesData = [
     source: "https://web.dev/",
   },
   {
-    id: "72",
+    id: "89",
     title: "Webflow",
     image: Webflow,
     category: "Design",
@@ -864,6 +1069,17 @@ const ResourcesData = [
     description:
       "Ferramenta de design e desenvolvimento visual para criar sites responsivos sem codificação manual.",
     source: "https://www.webflow.com/",
+  },
+  {
+    id: "90",
+    title: "Zustand",
+    image: Zustand,
+    category: "Frontend",
+    tags: ["Gerenciamento de Estado", "React"],
+    slug: "zustand",
+    description:
+      "Biblioteca leve e minimalista para gerenciamento de estado em aplicações React.",
+    source: "https://zustand-demo.pmnd.rs/",
   },
 ];
 
