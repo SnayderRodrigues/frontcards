@@ -294,7 +294,7 @@ const ResourcesData = [
     title: "dev.to",
     image: DevTo,
     category: "Aprendizado",
-    tags: ["Comunidade", "Blog", "Desenvolvimento"],
+    tags: ["Blog", "Comunidade", "Desenvolvimento"],
     slug: "dev-to",
     description:
       "Comunidade de desenvolvedores onde profissionais compartilham artigos, dicas e experiências.",

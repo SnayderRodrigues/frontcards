@@ -1,9 +1,12 @@
 import React from "react";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const ErrorPage = () => {
+  useDocumentTitle("Frontcards – Página não encontrada");
+
   return (
     <>
       <Header />

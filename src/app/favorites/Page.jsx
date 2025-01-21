@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import useFavoritesStore from "../../store/favoritesStore.js";
+import { Link } from "react-router-dom";
 import Card from "../../components/Card";
 
 const FavoritesPage = () => {
+  useDocumentTitle("Frontcards – Favoritos");
+
   const { favorites } = useFavoritesStore();
 
   return (

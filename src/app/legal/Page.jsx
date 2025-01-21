@@ -1,6 +1,9 @@
 import React from "react";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 const LegalPage = () => {
+  useDocumentTitle("Frontcards – Termos Legais");
+
   return (
     <>
       <section className="font-medium">

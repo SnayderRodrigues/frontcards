@@ -1,6 +1,9 @@
 import React from "react";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 const AboutPage = () => {
+  useDocumentTitle("Frontcards – Sobre");
+
   return (
     <>
       <section className="font-medium">

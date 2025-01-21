@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import useDocumentTitle from "../../hooks/useDocumentTitle.js";
 import resourcesData from "../../data/ResourcesData.js";
 import Filter from "../../components/Filter.jsx";
 import Card from "../../components/Card.jsx";
 import Pagination from "../../components/Pagination.jsx";
 
 const MainPage = () => {
+  useDocumentTitle(
+    "Frontcards – Ferramentas para Devs Frontend e Web Designers"
+  );
   const [searchParams, setSearchParams] = useSearchParams();
   const [currentPage, setCurrentPage] = useState(
     Number(searchParams.get("page")) || 1
