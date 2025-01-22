@@ -29,10 +29,13 @@ const Filter = ({
     "Criadores",
   ];
 
-  const handleCategoryClick = (category) => {
+  const handleCategoryChange = (category, scrollToTop = false) => {
     setSelectedCategory(category);
     setCurrentPage(1);
-    window.scrollTo({ top: 0 });
+
+    if (scrollToTop) {
+      window.scrollTo({ top: 0 });
+    }
   };
 
   return (
@@ -65,7 +68,7 @@ const Filter = ({
                   ? "bg-rose-600"
                   : ""
               }`}
-              onClick={() => handleCategoryClick(category)}
+              onClick={() => handleCategoryChange(category)}
             >
               {category}
             </li>
@@ -74,7 +77,7 @@ const Filter = ({
       </div>
       <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-800 p-3 rounded-xl mx-5 sm:mx-8">
         <button
-          className={`w-full md:hidden flex items-center gap-2 font-medium bg-neutral-700 p-3 rounded-lg`}
+          className={`w-full flex items-center gap-2 font-medium bg-neutral-700 p-3 rounded-lg`}
           onClick={handleCategoryIsOpen}
         >
           <svg
@@ -91,7 +94,7 @@ const Filter = ({
           </span>
         </button>
         <ul
-          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex flex-col md:hidden gap-2 text-base font-medium bg-neutral-800 p-3 rounded-xl transition-opacity duration-300 ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex flex-col gap-2 text-base font-medium bg-neutral-800 p-3 rounded-xl transition-opacity duration-300 ${
             isOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsOpen(!isOpen)}
@@ -122,7 +125,7 @@ const Filter = ({
                   ? "bg-rose-600"
                   : ""
               }`}
-              onClick={() => handleCategoryClick(category)}
+              onClick={() => handleCategoryChange(category, true)}
             >
               {category}
             </li>

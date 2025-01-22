@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import resourcesData from "../../data/ResourcesData.js";
 import useDocumentTitle from "../../hooks/useDocumentTitle.js";
 import Button from "../../components/Button.jsx";
@@ -26,26 +26,35 @@ const ResourcePage = () => {
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
               className={`w-fit flex items-center justify-center text-sm font-medium text-white px-4 py-2 rounded-lg ${
-                tool.category === "Frontend" ? "bg-indigo-700" : ""
-              } ${tool.category === "Design" ? "bg-violet-600" : ""} ${
-                tool.category === "Aprendizado" ? "bg-teal-700" : ""
-              } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
+                tool.category === "Frontend"
+                  ? "bg-indigo-700"
+                  : tool.category === "Design"
+                  ? "bg-violet-600"
+                  : tool.category === "Aprendizado"
+                  ? "bg-teal-700"
+                  : tool.category === "Criadores"
+                  ? "bg-rose-600"
+                  : ""
+              }`}
             >
               <span className="mb-[2px]">{tool.category}</span>
             </div>
             <span className="shrink-0 flex flex-wrap gap-2 w-fit text-sm font-medium">
-              {tool.tags.map((tag, index) => (
-                <span key={index} className="shrink-0">
-                  #{tag}
-                </span>
-              ))}
+              {tool.tags
+                .slice()
+                .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+                .map((tag) => (
+                  <span key={tag} className="shrink-0">
+                    #{tag}
+                  </span>
+                ))}
             </span>
           </div>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-neutral-200 mb-4">
             {tool.description}
           </p>
           <div className="flex gap-4">
-            <Link
+            <button
               onClick={() => navigate(-1)}
               className="flex items-center justify-center gap-1 text-base sm:text-lg font-medium text-white bg-neutral-800 md:bg-neutral-900 px-4 lg:px-6 py-3 lg:py-4 rounded-lg transition-colors md:hover:bg-neutral-800"
             >
@@ -60,7 +69,7 @@ const ResourcePage = () => {
                 <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
               </svg>
               <span className="xsm:mb-[2px]">Voltar</span>
-            </Link>
+            </button>
             <Button text="Explorar" href={tool.source} />
           </div>
         </div>

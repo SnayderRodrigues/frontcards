@@ -207,7 +207,7 @@ const ResourcesData = [
     image: ChrisDevInDev,
     category: "Criadores",
     tags: ["Aprendizado", "Carreira", "Mentoria"],
-    slug: "chris-devindev",
+    slug: "christian-castro",
     description:
       "Dicas sobre mercado e carreira, além de fornercer material de estudo e mentoria para devs de todos os níveis.",
     source: "https://www.instagram.com/chrisdevindev/",

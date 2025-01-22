@@ -35,35 +35,25 @@ const Card = ({ tool }) => {
         </div>
         <button
           aria-label="Favorito"
-          className={`group shrink-0 w-[40px] aspect-square absolute bottom-2 right-2 flex items-center justify-center text-sm font-medium text-white
-            ${
-              tool.category === "Frontend" && isFavorite
+          className={`group shrink-0 w-[40px] aspect-square absolute bottom-2 right-2 flex items-center justify-center text-sm font-medium text-white rounded-md transition-colors duration-300 ${
+            tool.category === "Frontend"
+              ? isFavorite
                 ? "bg-indigo-700"
-                : tool.category === "Frontend"
-                ? "bg-indigo-400 md:hover:bg-indigo-700"
-                : ""
-            }
-            ${
-              tool.category === "Design" && isFavorite
+                : "bg-indigo-400 md:hover:bg-indigo-700"
+              : tool.category === "Design"
+              ? isFavorite
                 ? "bg-violet-600"
-                : tool.category === "Design"
-                ? "bg-violet-400 md:hover:bg-violet-600"
-                : ""
-            }
-            ${
-              tool.category === "Aprendizado" && isFavorite
+                : "bg-violet-400 md:hover:bg-violet-600"
+              : tool.category === "Aprendizado"
+              ? isFavorite
                 ? "bg-teal-700"
-                : tool.category === "Aprendizado"
-                ? "bg-[#55aaa3] md:hover:bg-teal-700"
-                : ""
-            }
-            ${
-              tool.category === "Criadores" && isFavorite
+                : "bg-[#55aaa3] md:hover:bg-teal-700"
+              : tool.category === "Criadores"
+              ? isFavorite
                 ? "bg-rose-600"
-                : tool.category === "Criadores"
-                ? "bg-rose-400 md:hover:bg-rose-600"
-                : ""
-            } rounded-md transition-colors duration-300`}
+                : "bg-rose-400 md:hover:bg-rose-600"
+              : ""
+          }`}
           onClick={handleFavoriteClick}
         >
           <svg
@@ -75,6 +65,7 @@ const Card = ({ tool }) => {
             className={`absolute transition-all duration-300 ${
               isFavorite ? "opacity-100" : "opacity-0"
             }`}
+            aria-hidden="true"
           >
             <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z" />
           </svg>
@@ -87,6 +78,7 @@ const Card = ({ tool }) => {
             className={`absolute transition-opacity duration-300 ${
               isFavorite ? "opacity-0" : "opacity-100"
             }`}
+            aria-hidden="true"
           >
             <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z" />
           </svg>
@@ -97,19 +89,27 @@ const Card = ({ tool }) => {
           <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
         </div>
         <div className="flex-1 flex flex-wrap gap-[6px] text-neutral-400">
-          {tool.tags.map((tag, index) => (
-            <span key={index} className="shrink-0">
-              #{tag}
-            </span>
-          ))}
+          {tool.tags
+            .slice()
+            .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+            .map((tag) => (
+              <span key={tag} className="shrink-0">
+                #{tag}
+              </span>
+            ))}
         </div>
-        {/* <p className="flex-1 text-neutral-400">{tool.description}</p> */}
         <div
           className={`w-fit flex items-center justify-center text-sm font-medium text-white px-3 py-2 rounded-md ${
-            tool.category === "Frontend" ? "bg-indigo-700" : ""
-          } ${tool.category === "Design" ? "bg-violet-600" : ""} ${
-            tool.category === "Aprendizado" ? "bg-teal-700" : ""
-          } ${tool.category === "Criadores" ? "bg-rose-600" : ""}`}
+            tool.category === "Frontend"
+              ? "bg-indigo-700"
+              : tool.category === "Design"
+              ? "bg-violet-600"
+              : tool.category === "Aprendizado"
+              ? "bg-teal-700"
+              : tool.category === "Criadores"
+              ? "bg-rose-600"
+              : ""
+          }`}
         >
           <span className="mb-[2px]">{tool.category}</span>
         </div>
