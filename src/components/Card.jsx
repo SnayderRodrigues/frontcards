@@ -1,5 +1,5 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 import useFavoritesStore from "../store/favoritesStore.js";
 
 const Card = ({ tool }) => {
@@ -116,6 +116,17 @@ const Card = ({ tool }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  tool: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    slug: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };
 
 export default Card;

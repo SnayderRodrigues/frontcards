@@ -1,13 +1,6 @@
-import React from "react";
+import PropTypes from "prop-types";
 
-const Pagination = ({
-  totalPages,
-  currentPage,
-  startIndex,
-  filteredTools,
-  itemsPerPage,
-  setCurrentPage,
-}) => {
+const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
   return (
     <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
       <div className="flex items-center gap-2">
@@ -31,9 +24,7 @@ const Pagination = ({
               height="24px"
               viewBox="0 -960 960 960"
               fill="#fff"
-              className={`${
-                currentPage === 1 ? "fill-neutral-700" : ""
-              }`}
+              className={`${currentPage === 1 ? "fill-neutral-700" : ""}`}
             >
               <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg>
@@ -60,9 +51,7 @@ const Pagination = ({
               viewBox="0 -960 960 960"
               fill="#fff"
               className={`${
-                currentPage === totalPages
-                  ? "fill-neutral-700"
-                  : ""
+                currentPage === totalPages ? "fill-neutral-700" : ""
               }`}
             >
               <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
@@ -88,17 +77,14 @@ const Pagination = ({
           </button>
         ))}
       </div>
-      {/* <div className="text-base lg:text-lg text-neutral-400 cursor-default">
-        <span className="text-white">
-          {startIndex + 1} -{" "}
-          {currentPage == totalPages
-            ? filteredTools.length
-            : itemsPerPage * currentPage}
-        </span>{" "}
-        de {filteredTools.length} cards
-      </div> */}
     </div>
   );
+};
+
+Pagination.propTypes = {
+  totalPages: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  setCurrentPage: PropTypes.func.isRequired,
 };
 
 export default Pagination;

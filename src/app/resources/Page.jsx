@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import resourcesData from "../../data/ResourcesData.js";
 import useDocumentTitle from "../../hooks/useDocumentTitle.js";
@@ -9,7 +8,7 @@ const ResourcePage = () => {
   const navigate = useNavigate();
 
   const tool = resourcesData.find((tool) => tool.slug === slug);
-  useDocumentTitle(tool.title);
+  useDocumentTitle(`Frontcards – ${tool.title}`);
 
   return (
     <div className="wrapper pt-32 pb-12 md:pb-16 lg:pb-32">

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Button = ({ text, href, className, svgClass }) => {
   return (
@@ -22,6 +22,13 @@ const Button = ({ text, href, className, svgClass }) => {
       </svg>
     </a>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  svgClass: PropTypes.string,
 };
 
 export default Button;

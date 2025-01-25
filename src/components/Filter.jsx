@@ -1,5 +1,5 @@
-import React from "react";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Filter = ({
   totalPages,
@@ -174,6 +174,14 @@ const Filter = ({
       </div>
     </div>
   );
+};
+
+Filter.propTypes = {
+  totalPages: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  setCurrentPage: PropTypes.func.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
+  setSelectedCategory: PropTypes.func.isRequired,
 };
 
 export default Filter;

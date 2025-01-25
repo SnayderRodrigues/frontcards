@@ -1,4 +1,3 @@
-import React from "react";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import useFavoritesStore from "../../store/favoritesStore.js";
 import { Link } from "react-router-dom";
