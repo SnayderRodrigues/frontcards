@@ -5,7 +5,7 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
     <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
       <div className="flex items-center gap-2">
         <button
-          className={`bg-neutral-800 md:bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
+          className={`bg-neutral-900 p-2 border border-neutral-800 rounded-lg md:rounded-xl transition-colors ${
             currentPage === 1 ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {
@@ -31,7 +31,7 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
           </div>
         </button>
         <button
-          className={`bg-neutral-800 md:bg-neutral-900 p-2 rounded-lg md:rounded-xl transition-colors ${
+          className={`bg-neutral-900 p-2 border border-neutral-800 rounded-lg md:rounded-xl transition-colors ${
             currentPage === totalPages ? "" : "md:hover:bg-neutral-800"
           }`}
           onClick={() => {
@@ -59,7 +59,7 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
           </div>
         </button>
       </div>
-      <div className="w-fit hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 rounded-xl overflow-hidden">
+      <div className="w-fit hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border border-neutral-800 rounded-xl overflow-hidden">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}

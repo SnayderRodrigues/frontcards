@@ -28,7 +28,7 @@ const Footer = () => {
                 height={60}
                 className="w-12 md:w-16"
               />
-              <div className="text-4xl md:text-5xl font-bold">Frontcards</div>
+              <div className="text-4xl md:text-[54px] font-bold">Frontcards</div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
               Uma coleção selecionada de recursos de desenvolvimento e design,
@@ -106,7 +106,7 @@ const Footer = () => {
         <button
           className={`w-fit absolute ${
             isSmallMarginPath ? "bottom-6" : "bottom-28"
-          } right-0 flex md:hidden items-center gap-1 bg-neutral-800 p-3 rounded-lg`}
+          } right-0 flex md:hidden items-center gap-1 bg-neutral-900 p-3 border border-neutral-800 rounded-lg`}
           onClick={scrollToTop}
           aria-label="Voltar para o topo da página"
         >

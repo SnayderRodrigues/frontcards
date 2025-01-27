@@ -20,7 +20,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-800"
+      className="w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-800"
       onClick={handleCardClick}
     >
       <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">

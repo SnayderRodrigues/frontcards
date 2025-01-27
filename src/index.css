@@ -20,30 +20,42 @@
   .button:hover {
     @apply bg-red-700;
   }
+  .bg-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(
+        to right,
+        #171717 1px,
+        transparent 0px
+      ),
+      linear-gradient(#171717 1px, transparent 0px);
+  }
 } */
 
 @font-face {
   font-display: swap;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../public/fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2');
+  src: url("../public/fonts/plus-jakarta-sans-v8-latin-regular.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
-  src: url('../public/fonts/plus-jakarta-sans-v8-latin-500.woff2') format('woff2');
+  src: url("../public/fonts/plus-jakarta-sans-v8-latin-500.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../public/fonts/plus-jakarta-sans-v8-latin-700.woff2') format('woff2');
+  src: url("../public/fonts/plus-jakarta-sans-v8-latin-700.woff2")
+    format("woff2");
 }
 
 :root {
@@ -63,13 +75,20 @@ html {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
   background-color: #0a0a0a;
   margin: 0;
   overflow-x: hidden;
+  background-size: 40px 40px;
+    background-image: linear-gradient(
+        to right,
+        #171717 1px,
+        transparent 0px
+      ),
+      linear-gradient(#171717 1px, transparent 0px);
 }
 
 li {

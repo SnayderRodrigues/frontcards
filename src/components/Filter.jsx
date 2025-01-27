@@ -41,7 +41,7 @@ const Filter = ({
   return (
     <div className="md:mb-8">
       <div className="flex flex-wrap items-center justify-center gap-2">
-        <ul className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 rounded-xl">
+        <ul className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border border-neutral-800 rounded-xl">
           {categories.map((category) => (
             <li
               key={category}
@@ -75,7 +75,7 @@ const Filter = ({
           ))}
         </ul>
       </div>
-      <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-800 p-3 rounded-xl mx-5 sm:mx-8">
+      <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-800 p-3 border border-neutral-700 rounded-xl mx-5 sm:mx-8">
         <button
           className={`w-full flex items-center gap-2 font-medium bg-neutral-700 p-3 rounded-lg`}
           onClick={handleCategoryIsOpen}
@@ -94,7 +94,7 @@ const Filter = ({
           </span>
         </button>
         <ul
-          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex flex-col gap-2 text-base font-medium bg-neutral-800 p-3 rounded-xl transition-opacity duration-300 ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex flex-col gap-2 text-base font-medium bg-neutral-800 p-3 border border-neutral-700 rounded-xl transition-opacity duration-300 ${
             isOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsOpen(!isOpen)}
@@ -149,7 +149,7 @@ const Filter = ({
           </svg>
         </button>
         <div
-          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 flex md:hidden flex-col gap-2 bg-neutral-800 p-3 rounded-xl transition-opacity duration-300 overflow-hidden ${
+          className={`absolute left-[-2px] right-[-2px] bottom-[78px] z-10 md:hidden grid grid-cols-2 gap-2 bg-neutral-800 p-3 border border-neutral-700 rounded-xl transition-opacity duration-300 overflow-hidden ${
             isPaginationOpen ? "" : "opacity-0 select-none pointer-events-none"
           }`}
           onClick={() => setIsPaginationOpen(!isPaginationOpen)}
@@ -162,9 +162,7 @@ const Filter = ({
                 window.scrollTo({ top: 0 });
               }}
               className={`w-full flex items-center justify-start text-base font-medium p-3 rounded-lg transition-colors ${
-                currentPage === index + 1
-                  ? "bg-neutral-700"
-                  : "hover:bg-neutral-700"
+                currentPage === index + 1 ? "bg-neutral-700" : ""
               }`}
             >
               {index + 1}

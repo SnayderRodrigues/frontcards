@@ -17,7 +17,7 @@ const Hero = () => {
           <Button
             text="Indique um Card"
             href="https://forms.gle/Rh2qCEwa7H3DAUQ26"
-            className="md:hidden px-4 py-3 mt-8"
+            className="md:hidden px-5 py-4 mt-8"
           />
         </div>
       </section>

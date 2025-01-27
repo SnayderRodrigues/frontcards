@@ -81,7 +81,7 @@ const Header = () => {
           />
         </div>
         <button
-          className="aspect-square w-12 relative z-50 md:hidden flex flex-col items-center justify-center gap-[6px] bg-neutral-800 p-3 rounded-lg"
+          className="aspect-square w-12 relative z-50 md:hidden flex flex-col items-center justify-center gap-[6px] bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
           onClick={handleOpenMenu}
           aria-label="Menu"
         >
@@ -108,7 +108,7 @@ const Header = () => {
         >
           <Link
             to="/"
-            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
@@ -124,7 +124,7 @@ const Header = () => {
           </Link>
           <Link
             to="/favorites"
-            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
@@ -140,7 +140,7 @@ const Header = () => {
           </Link>
           <Link
             to="/about"
-            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
@@ -156,7 +156,7 @@ const Header = () => {
           </Link>
           <Link
             to="/legal"
-            className="w-full flex items-center gap-2 font-medium bg-neutral-800 p-3 rounded-lg"
+            className="w-full flex items-center gap-2 font-medium bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
             onClick={handleMenuAction}
           >
             <svg
@@ -183,7 +183,7 @@ const Header = () => {
             <a
               target="_blank"
               href="https://snayderrodrigues.vercel.app/"
-              className="w-full flex items-center justify-between gap-1 bg-neutral-800 px-3 py-3 rounded-lg"
+              className="w-full flex items-center justify-between gap-1 bg-neutral-900 p-3 border border-neutral-800 rounded-lg"
             >
               <span className="mb-[3px]">Snayder Rodrigues</span>
               <svg
