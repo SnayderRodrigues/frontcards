@@ -24,7 +24,7 @@ const Card = ({ tool }) => {
       onClick={handleCardClick}
     >
       <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">
-        <div className="absolute w-2/3 overflow-hidden">
+        <div className="absolute w-2/3">
           <img
             src={tool.image}
             alt={tool.title}

@@ -39,7 +39,7 @@ const Header = () => {
   }, [openMenu]);
 
   return (
-    <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b border-b-neutral-900">
+    <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b border-b-neutral-800 mt-[-81px] md:mt-[-85px] lg:mt-[-93px]">
       <nav className="wrapper overfl flex items-center justify-between gap-4 py-4">
         <a href="/" className="relative z-50 flex items-center gap-2 xsm:gap-3">
           <img

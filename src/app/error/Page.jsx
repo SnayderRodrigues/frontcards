@@ -10,7 +10,7 @@ const ErrorPage = () => {
     <>
       <Header />
       <main>
-        <div className="wrapper flex flex-col pt-32 sm:pt-36 lg:pt-36 xl:pt-40 pb-12 xsm:pb-16 md:pb-20">
+        <div className="wrapper flex flex-col pt-12 xl:pt-16 pb-12 xsm:pb-16 md:pb-20">
           <h1 className="max-w-[19ch] mb-8 lg:mb-12">Página não encontrada.</h1>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl max-w-[48ch] text-neutral-200 mb-8 lg:mb-12">
             Lamentamos, mas a página que você está procurando não existe ou foi

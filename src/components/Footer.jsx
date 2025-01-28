@@ -12,7 +12,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-neutral-950 border-t border-t-neutral-900">
+    <footer className="bg-neutral-950 border-t border-t-neutral-800">
       <div
         className={`wrapper relative flex flex-col md:flex-row justify-between gap-16 pt-16 ${
           isSmallMarginPath ? "pb-6" : "pb-28"

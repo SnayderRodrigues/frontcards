@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
   return (
-    <div className="flex items-center md:justify-center gap-6 mb-12 md:mb-16">
+    <div className="flex items-center md:justify-center gap-6 pb-12 md:pb-16">
       <div className="flex items-center gap-2">
         <button
           className={`bg-neutral-900 p-2 border border-neutral-800 rounded-lg md:rounded-xl transition-colors ${

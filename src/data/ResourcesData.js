@@ -437,7 +437,7 @@ const ResourcesData = [
     title: "Google Fonts",
     image: GoogleFonts,
     category: "Design",
-    tags: ["Ícones", "Tipografia", "Web Fonts"],
+    tags: ["Fontes", "Ícones", "Tipografia"],
     slug: "google-fonts",
     description:
       "Biblioteca gratuita de fontes e ícones otimizados para a web, oferecida pelo Google.",
