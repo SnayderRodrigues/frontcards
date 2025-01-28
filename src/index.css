@@ -61,11 +61,25 @@ body {
 }
 
 main {
+  position: relative;
+  z-index: 1;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  z-index: -1;
+  width: calc(100% + 1px);
+  height: 100%;
   background-image: linear-gradient(to right, #171717 1px, transparent 0px),
     linear-gradient(#171717 1px, transparent 0px);
   background-size: 40px 40px;
-  position: relative;
-  z-index: 1;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px -48px 64px -28px inset,
+    rgba(0, 0, 0, 0.45) 0px 48px 64px -28px inset,
+    rgba(0, 0, 0, 0.45) -48px 0px 64px -28px inset,
+    rgba(0, 0, 0, 0.45) 48px 0px 64px -28px inset; */
 }
 
 main::after {
@@ -75,7 +89,7 @@ main::after {
   z-index: -1;
   width: 100%;
   height: 120px;
-  background-image: linear-gradient(180deg, transparent 0%, #0a0a0a 100%);
+  background-image: linear-gradient(180deg, transparent 20%, #0a0a0a 100%);
 }
 
 li {

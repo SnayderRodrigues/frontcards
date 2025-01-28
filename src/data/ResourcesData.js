@@ -6,7 +6,6 @@ import Astro from "../assets/astro.svg";
 import Awwwards from "../assets/awwwards.svg";
 import Behance from "../assets/behance.svg";
 import Blender from "../assets/blender.svg";
-// import Bootstrap from "../assets/bootstrap.svg";
 import ByHuy from "../assets/By Huy.webp";
 import CanIUse from "../assets/caniuse.webp";
 import ChrisDevInDev from "../assets/Chris DevInDev.webp";
@@ -19,6 +18,7 @@ import DailyDev from "../assets/dailydev.svg";
 import DesignSystems from "../assets/design-systems.webp";
 import DevTo from "../assets/dev.to.svg";
 import Dribbble from "../assets/dribbble.svg";
+import FabioAkita from "../assets/fabio-akita.webp";
 import FakerJS from "../assets/faker.svg";
 import Figma from "../assets/figma.svg";
 import Fireship from "../assets/Fireship.webp";
@@ -70,10 +70,13 @@ import Spline from "../assets/spline.webp";
 import StackOverflow from "../assets/stackoverflow.svg";
 import Storybook from "../assets/storybook.svg";
 import Strapi from "../assets/strapi.svg";
+import SujeitoProgramador from "../assets/sujeito-programador.webp";
 import Svelte from "../assets/svelte.svg";
 import SVGator from "../assets/svgator.svg";
 import Tailwind from "../assets/tailwind.svg";
 import UIColors from "../assets/ui-colors.webp";
+import UIUXHeroes from "../assets/ui-ux-heroes.webp";
+import TheGuideToDesign from "../assets/the-guide-to-design.webp";
 import TheOdinProject from "../assets/the-odin-project.svg";
 import ThreeJs from "../assets/threejs.svg";
 import TinyPNG from "../assets/tinypng.svg";
@@ -88,6 +91,7 @@ import W3Schools from "../assets/w3schools.svg";
 import WebDevSimplified from "../assets/Web-Dev-Simplified.webp";
 import WebDev from "../assets/web.dev.svg";
 import Webflow from "../assets/webflow.svg";
+import Zod from "../assets/zod.svg";
 import Zustand from "../assets/zustand.webp";
 
 const ResourcesData = [
@@ -168,19 +172,8 @@ const ResourcesData = [
       "Ferramenta gratuita e de código aberto para modelagem 3D, animações e renderizações realistas.",
     source: "https://www.blender.org/",
   },
-  // {
-  //   id: 8,
-  //   title: "Bootstrap",
-  //   image: Bootstrap,
-  //   category: "Frontend",
-  //   tags: ["Componentes", "CSS Framework"],
-  //   slug: "bootstrap",
-  //   description:
-  //     "Framework front-end para criar websites responsivos e com design consistente.",
-  //   source: "https://getbootstrap.com/",
-  // },
   {
-    id: 9,
+    id: 8,
     title: "By Huy",
     image: ByHuy,
     category: "Criadores",
@@ -191,7 +184,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@by_huy",
   },
   {
-    id: 10,
+    id: 9,
     title: "Can I Use",
     image: CanIUse,
     category: "Frontend",
@@ -202,7 +195,7 @@ const ResourcesData = [
     source: "https://caniuse.com/",
   },
   {
-    id: 11,
+    id: 10,
     title: "Christian Castro",
     image: ChrisDevInDev,
     category: "Criadores",
@@ -213,7 +206,7 @@ const ResourcesData = [
     source: "https://www.instagram.com/chrisdevindev/",
   },
   {
-    id: 12,
+    id: 11,
     title: "CodePen",
     image: CodePen,
     category: "Frontend",
@@ -224,7 +217,7 @@ const ResourcesData = [
     source: "https://codepen.io/",
   },
   {
-    id: 13,
+    id: 12,
     title: "Coder Coder",
     image: CoderCoder,
     category: "Criadores",
@@ -235,7 +228,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@TheCoderCoder",
   },
   {
-    id: 14,
+    id: 13,
     title: "Código Fonte TV",
     image: CodigoFonteTV,
     category: "Criadores",
@@ -246,7 +239,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@codigofontetv",
   },
   {
-    id: 15,
+    id: 14,
     title: "Color Hunt",
     image: ColorHunt,
     category: "Design",
@@ -257,7 +250,7 @@ const ResourcesData = [
     source: "https://colorhunt.co/",
   },
   {
-    id: 16,
+    id: 15,
     title: "CSS Battle",
     image: CssBattle,
     category: "Frontend",
@@ -268,7 +261,7 @@ const ResourcesData = [
     source: "https://cssbattle.dev/",
   },
   {
-    id: 17,
+    id: 16,
     title: "Daily.dev",
     image: DailyDev,
     category: "Aprendizado",
@@ -279,7 +272,7 @@ const ResourcesData = [
     source: "https://daily.dev/",
   },
   {
-    id: 18,
+    id: 17,
     title: "Design Systems",
     image: DesignSystems,
     category: "Aprendizado",
@@ -290,7 +283,7 @@ const ResourcesData = [
     source: "https://designsystems.surf/design-systems",
   },
   {
-    id: 19,
+    id: 18,
     title: "dev.to",
     image: DevTo,
     category: "Aprendizado",
@@ -301,7 +294,7 @@ const ResourcesData = [
     source: "https://dev.to/",
   },
   {
-    id: 20,
+    id: 19,
     title: "Dribbble",
     image: Dribbble,
     category: "Design",
@@ -310,6 +303,17 @@ const ResourcesData = [
     description:
       "Comunidade criativa para designers se conectarem e exibirem seus portfólios.",
     source: "https://dribbble.com/",
+  },
+  {
+    id: 20,
+    title: "Fábio Akita",
+    image: FabioAkita,
+    category: "Criadores",
+    tags: ["Programação", "Tecnologia"],
+    slug: "fabio-akita",
+    description:
+      "Criador de conteúdo no YouTube, compartilha conhecimento sobre desenvolvimento, tecnologia e mercado de software.",
+    source: "https://www.youtube.com/@Akitando",
   },
   {
     id: 21,
@@ -874,6 +878,17 @@ const ResourcesData = [
   },
   {
     id: 72,
+    title: "Sujeito Programador",
+    image: SujeitoProgramador,
+    category: "Criadores",
+    tags: ["Desenvolvimento Web", "Tutoriais"],
+    slug: "sujeito-programador",
+    description:
+      "Canal no YouTube que ensina programação web e mobile com conteúdos práticos e didáticos.",
+    source: "https://www.youtube.com/@Sujeitoprogramador",
+  },
+  {
+    id: 73,
     title: "Svelte",
     image: Svelte,
     category: "Frontend",
@@ -884,7 +899,7 @@ const ResourcesData = [
     source: "https://svelte.dev/",
   },
   {
-    id: 73,
+    id: 74,
     title: "SVGator",
     image: SVGator,
     category: "Design",
@@ -895,7 +910,7 @@ const ResourcesData = [
     source: "https://www.svgator.com/",
   },
   {
-    id: 74,
+    id: 75,
     title: "Tailwind CSS",
     image: Tailwind,
     category: "Frontend",
@@ -906,7 +921,7 @@ const ResourcesData = [
     source: "https://tailwindcss.com/",
   },
   {
-    id: 75,
+    id: 76,
     title: "Tailwind CSS Color Generator",
     image: UIColors,
     category: "Frontend",
@@ -917,7 +932,18 @@ const ResourcesData = [
     source: "https://uicolors.app/create",
   },
   {
-    id: 76,
+    id: 77,
+    title: "The Guide to Design",
+    image: TheGuideToDesign,
+    category: "Aprendizado",
+    tags: ["Referências", "UX Design"],
+    slug: "the-guide-to-design",
+    description:
+      "Um ensino gratuito e autoguiado para ajudar você a dar os primeiros passos no design de produtos digitais.",
+    source: "https://start.uxdesign.cc/",
+  },
+  {
+    id: 78,
     title: "The Odin Project",
     image: TheOdinProject,
     category: "Aprendizado",
@@ -928,7 +954,7 @@ const ResourcesData = [
     source: "https://www.theodinproject.com/",
   },
   {
-    id: 77,
+    id: 79,
     title: "Three.JS",
     image: ThreeJs,
     category: "Frontend",
@@ -939,7 +965,7 @@ const ResourcesData = [
     source: "https://threejs.org/",
   },
   {
-    id: 78,
+    id: 80,
     title: "TinyPNG",
     image: TinyPNG,
     category: "Frontend",
@@ -950,7 +976,7 @@ const ResourcesData = [
     source: "https://tinypng.com/",
   },
   {
-    id: 79,
+    id: 81,
     title: "Udemy",
     image: Udemy,
     category: "Aprendizado",
@@ -961,7 +987,18 @@ const ResourcesData = [
     source: "https://www.udemy.com/",
   },
   {
-    id: 80,
+    id: 82,
+    title: "UI-UX Heroes",
+    image: UIUXHeroes,
+    category: "Design",
+    tags: ["Inspiração", "UI/UX"],
+    slug: "ui-ux-heroes",
+    description:
+      "Perfil no Instagram que compartilha dicas, inspirações e boas práticas para UI/UX design.",
+    source: "https://www.instagram.com/uxui.heroes/",
+  },
+  {
+    id: 83,
     title: "Uiverse",
     image: Uiverse,
     category: "Design",
@@ -972,7 +1009,7 @@ const ResourcesData = [
     source: "https://uiverse.io/",
   },
   {
-    id: 81,
+    id: 84,
     title: "Uncut",
     image: Uncut,
     category: "Design",
@@ -983,7 +1020,7 @@ const ResourcesData = [
     source: "https://www.uncut.wtf/",
   },
   {
-    id: 82,
+    id: 85,
     title: "Unlighthouse",
     image: Unlighthouse,
     category: "Frontend",
@@ -994,7 +1031,7 @@ const ResourcesData = [
     source: "https://unlighthouse.dev/",
   },
   {
-    id: 83,
+    id: 86,
     title: "Unsplash",
     image: Unsplash,
     category: "Design",
@@ -1005,7 +1042,7 @@ const ResourcesData = [
     source: "https://unsplash.com/",
   },
   {
-    id: 84,
+    id: 87,
     title: "Vite",
     image: Vite,
     category: "Frontend",
@@ -1016,7 +1053,7 @@ const ResourcesData = [
     source: "https://vite.dev/",
   },
   {
-    id: 85,
+    id: 88,
     title: "Vue.js",
     image: Vue,
     category: "Frontend",
@@ -1027,7 +1064,7 @@ const ResourcesData = [
     source: "https://vuejs.org/",
   },
   {
-    id: 86,
+    id: 89,
     title: "W3Schools",
     image: W3Schools,
     category: "Aprendizado",
@@ -1038,7 +1075,7 @@ const ResourcesData = [
     source: "https://www.w3schools.com/",
   },
   {
-    id: 87,
+    id: 90,
     title: "Web Dev Simplified",
     image: WebDevSimplified,
     category: "Criadores",
@@ -1049,7 +1086,7 @@ const ResourcesData = [
     source: "https://www.youtube.com/@WebDevSimplified",
   },
   {
-    id: 88,
+    id: 91,
     title: "Web.dev",
     image: WebDev,
     category: "Aprendizado",
@@ -1060,7 +1097,7 @@ const ResourcesData = [
     source: "https://web.dev/",
   },
   {
-    id: 89,
+    id: 92,
     title: "Webflow",
     image: Webflow,
     category: "Design",
@@ -1071,7 +1108,18 @@ const ResourcesData = [
     source: "https://www.webflow.com/",
   },
   {
-    id: 90,
+    id: 93,
+    title: "Zod",
+    image: Zod,
+    category: "Frontend",
+    tags: ["TypeScript", "Validação"],
+    slug: "zod",
+    description:
+      "Biblioteca de TypeScript para validação e parsing de schemas de dados de forma segura e tipada.",
+    source: "https://zod.dev/",
+  },
+  {
+    id: 94,
     title: "Zustand",
     image: Zustand,
     category: "Frontend",

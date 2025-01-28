@@ -20,7 +20,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-950 md:hover:border-neutral-600"
+      className="group w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-800"
       onClick={handleCardClick}
     >
       <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">
@@ -95,7 +95,7 @@ const Card = ({ tool }) => {
             .map((tag) => (
               <span
                 key={tag}
-                className="shrink-0 w-fit h-fit text-sm text-neutral-400 bg-neutral-800 p-2 rounded-md"
+                className="shrink-0 w-fit h-fit text-sm text-neutral-400 bg-neutral-800 p-2 rounded-md transition-colors md:group-hover:text-neutral-200 md:group-hover:bg-neutral-700"
               >
                 #{tag}
               </span>
