@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="mt-[81px] md:mt-[85px] lg:mt-[93px]">
+      <main className="mt-[80px] md:mt-[84px] lg:mt-[92px]">
         {location.pathname === "/" && <Hero />}
         <Outlet />
       </main>

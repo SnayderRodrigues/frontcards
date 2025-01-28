@@ -6,7 +6,7 @@ import Astro from "../assets/astro.svg";
 import Awwwards from "../assets/awwwards.svg";
 import Behance from "../assets/behance.svg";
 import Blender from "../assets/blender.svg";
-import Bootstrap from "../assets/bootstrap.svg";
+// import Bootstrap from "../assets/bootstrap.svg";
 import ByHuy from "../assets/By Huy.webp";
 import CanIUse from "../assets/caniuse.webp";
 import ChrisDevInDev from "../assets/Chris DevInDev.webp";
@@ -168,17 +168,17 @@ const ResourcesData = [
       "Ferramenta gratuita e de código aberto para modelagem 3D, animações e renderizações realistas.",
     source: "https://www.blender.org/",
   },
-  {
-    id: 8,
-    title: "Bootstrap",
-    image: Bootstrap,
-    category: "Frontend",
-    tags: ["Componentes", "CSS Framework"],
-    slug: "bootstrap",
-    description:
-      "Framework front-end para criar websites responsivos e com design consistente.",
-    source: "https://getbootstrap.com/",
-  },
+  // {
+  //   id: 8,
+  //   title: "Bootstrap",
+  //   image: Bootstrap,
+  //   category: "Frontend",
+  //   tags: ["Componentes", "CSS Framework"],
+  //   slug: "bootstrap",
+  //   description:
+  //     "Framework front-end para criar websites responsivos e com design consistente.",
+  //   source: "https://getbootstrap.com/",
+  // },
   {
     id: 9,
     title: "By Huy",

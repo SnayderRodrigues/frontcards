@@ -20,7 +20,7 @@ const Card = ({ tool }) => {
 
   return (
     <div
-      className="w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-800"
+      className="w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-950 md:hover:border-neutral-600"
       onClick={handleCardClick}
     >
       <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">
@@ -88,18 +88,21 @@ const Card = ({ tool }) => {
         <div className="flex items-start justify-between gap-3">
           <span className="text-xl md:text-2xl font-bold">{tool.title}</span>
         </div>
-        <div className="flex-1 flex flex-wrap gap-[6px] text-neutral-400">
+        <div className="flex-1 flex flex-wrap gap-[6px]">
           {tool.tags
             .slice()
             .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
             .map((tag) => (
-              <span key={tag} className="shrink-0">
+              <span
+                key={tag}
+                className="shrink-0 w-fit h-fit text-sm text-neutral-400 bg-neutral-800 p-2 rounded-md"
+              >
                 #{tag}
               </span>
             ))}
         </div>
         <div
-          className={`w-fit flex items-center justify-center text-sm font-medium text-white px-3 py-2 rounded-md ${
+          className={`w-fit flex items-center justify-center font-medium text-white px-4 py-2 rounded-md ${
             tool.category === "Frontend"
               ? "bg-indigo-700"
               : tool.category === "Design"
@@ -111,7 +114,7 @@ const Card = ({ tool }) => {
               : ""
           }`}
         >
-          <span className="mb-[2px]">{tool.category}</span>
+          <span className="mb-[1px]">{tool.category}</span>
         </div>
       </div>
     </div>
