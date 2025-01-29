@@ -990,7 +990,7 @@ const ResourcesData = [
     id: 82,
     title: "UI-UX Heroes",
     image: UIUXHeroes,
-    category: "Design",
+    category: "Criadores",
     tags: ["Inspiração", "UI/UX"],
     slug: "ui-ux-heroes",
     description:

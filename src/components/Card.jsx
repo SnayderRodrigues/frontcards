@@ -102,7 +102,7 @@ const Card = ({ tool }) => {
             ))}
         </div>
         <div
-          className={`w-fit flex items-center justify-center font-medium text-white px-4 py-2 rounded-md ${
+          className={`w-fit flex items-center justify-center font-medium text-white px-3 py-2 rounded-md ${
             tool.category === "Frontend"
               ? "bg-indigo-700"
               : tool.category === "Design"
@@ -114,7 +114,7 @@ const Card = ({ tool }) => {
               : ""
           }`}
         >
-          <span className="mb-[1px]">{tool.category}</span>
+          <span>{tool.category}</span>
         </div>
       </div>
     </div>

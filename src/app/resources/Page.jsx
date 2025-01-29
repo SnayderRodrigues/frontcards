@@ -24,7 +24,7 @@ const ResourcePage = () => {
           </h1>
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <div
-              className={`w-fit flex items-center justify-center font-medium text-white px-4 py-2 rounded-md ${
+              className={`w-fit flex items-center justify-center font-medium text-white px-3 py-2 rounded-md ${
                 tool.category === "Frontend"
                   ? "bg-indigo-700"
                   : tool.category === "Design"
@@ -36,7 +36,7 @@ const ResourcePage = () => {
                   : ""
               }`}
             >
-              <span className="mb-[1px]">{tool.category}</span>
+              <span>{tool.category}</span>
             </div>
             <span className="shrink-0 flex flex-wrap gap-2 w-fit">
               {tool.tags

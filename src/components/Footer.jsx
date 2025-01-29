@@ -28,15 +28,37 @@ const Footer = () => {
                 height={60}
                 className="w-12 md:w-16"
               />
-              <div className="text-4xl md:text-[54px] font-bold">Frontcards</div>
+              <div className="text-4xl md:text-[54px] font-bold">
+                Frontcards
+              </div>
             </a>
             <p className="max-w-[40ch] text-base md:text-lg lg:text-xl text-neutral-200">
               Uma coleção selecionada de recursos de desenvolvimento e design,
               frequentemente atualizada para a comunidade.
             </p>
           </div>
-          <div className="text-base font-medium">
+          <div className="text-base font-medium flex flex-col">
             <span>Frontcards © 2025.</span>
+            <div className="flex gap-1 text-neutral-400">
+              <span>Criado por</span>
+              <a
+                href="https://snayderrodrigues.vercel.app/"
+                target="_blank"
+                className="group relative flex items-center gap-[2px] transition-colors md:hover:text-neutral-200"
+              >
+                <span>Snayder Rodrigues</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 -960 960 960"
+                  fill="#a3a3a3"
+                  className="md:fill-[#e5e5e5] mt-[3px] opacity-100 md:opacity-0 transition-opacity group-hover:opacity-100"
+                >
+                  <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <div className="shrink-0 flex flex-col gap-[18px] md:gap-1 text-lg font-medium">
