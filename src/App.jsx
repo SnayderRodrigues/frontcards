@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -14,6 +15,7 @@ const App = () => {
         <Outlet />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 };
