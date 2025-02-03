@@ -32,6 +32,7 @@ import FrontendMentor from "../assets/frontend-mentor.svg";
 import GithubCopilot from "../assets/github-copilot.svg";
 import GoogleFonts from "../assets/google-fonts.svg";
 import Gsap from "../assets/greensock.svg";
+import GustavoGuanabara from "../assets/gustavo-guanabara.webp";
 import HeadlessUI from "../assets/headlessui.svg";
 import Hyperplexed from "../assets/Hyperplexed.webp";
 import Inkscape from "../assets/inkscape.svg";
@@ -457,6 +458,17 @@ const ResourcesData = [
     description:
       "Biblioteca poderosa para criar animações interativas e de alto desempenho na web.",
     source: "https://gsap.com/",
+  },
+  {
+    id: 95,
+    title: "Gustavo Guanabara",
+    image: GustavoGuanabara,
+    category: "Criadores",
+    tags: ["Aprendizado", "Cursos", "Programação"],
+    slug: "gustavo-guanabara",
+    description:
+      "Professor e criador do Curso em Vídeo, plataforma gratuita com cursos sobre programação e tecnologia.",
+    source: "https://www.youtube.com/cursoemvideo",
   },
   {
     id: 34,
