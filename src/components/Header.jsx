@@ -41,7 +41,10 @@ const Header = () => {
   return (
     <header className="fixed z-50 w-full flex items-center justify-center bg-neutral-950 border-b border-b-neutral-800 mt-[-80px] md:mt-[-84px] lg:mt-[-92px]">
       <nav className="wrapper overfl flex items-center justify-between gap-4 py-4">
-        <a href="/" className="relative z-50 flex items-center gap-2 xsm:gap-3">
+        <a
+          href="/"
+          className="relative z-50 flex items-center gap-2 xsm:gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:rounded-md"
+        >
           <img
             src={Logo}
             alt="Logo"

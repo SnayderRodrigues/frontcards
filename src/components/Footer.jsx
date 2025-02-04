@@ -20,7 +20,10 @@ const Footer = () => {
       >
         <div className="flex flex-col justify-between gap-4 md:gap-12">
           <div className="flex flex-col gap-4">
-            <a href="/" className="w-fit flex items-center gap-4 mb-4">
+            <a
+              href="/"
+              className="w-fit flex items-center gap-4 mb-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:rounded-md"
+            >
               <img
                 src={Logo}
                 alt="Logo"

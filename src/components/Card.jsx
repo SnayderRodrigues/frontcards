@@ -22,6 +22,14 @@ const Card = ({ tool }) => {
     <div
       className="group w-full flex flex-col justify-between gap-4 p-[22px] bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden ease-in cursor-pointer transition-colors md:hover:bg-neutral-800"
       onClick={handleCardClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          navigate(`/resources/${tool.slug}`);
+          window.scrollTo({ top: 0 });
+        }
+      }}
+      role="button"
+      tabIndex="0"
     >
       <div className="relative flex items-center justify-center pt-[50%] pb-[50%] bg-neutral-100 rounded-lg">
         <div className="absolute w-2/3">
@@ -55,6 +63,7 @@ const Card = ({ tool }) => {
               : ""
           }`}
           onClick={handleFavoriteClick}
+          onKeyDown={(e) => e.stopPropagation()}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

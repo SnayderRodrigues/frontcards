@@ -41,10 +41,11 @@ const Filter = ({
   return (
     <div className="md:mb-8">
       <div className="flex flex-wrap items-center justify-center gap-2">
-        <ul className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border border-neutral-800 rounded-xl">
+        <div className="hidden md:flex items-center gap-2 text-lg font-medium bg-neutral-900 p-2 border border-neutral-800 rounded-xl">
           {categories.map((category) => (
-            <li
+            <button
               key={category}
+              aria-label={category}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer transition-colors ${
                 selectedCategory === category ? "" : "hover:bg-neutral-800"
               } ${
@@ -71,9 +72,9 @@ const Filter = ({
               onClick={() => handleCategoryChange(category)}
             >
               {category}
-            </li>
+            </button>
           ))}
-        </ul>
+        </div>
       </div>
       <div className="fixed bottom-4 left-0 right-0 z-40 flex md:hidden gap-2 bg-neutral-800 p-3 border border-neutral-700 rounded-xl mx-5 sm:mx-8">
         <button
