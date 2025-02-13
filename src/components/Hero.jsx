@@ -19,8 +19,14 @@ const Hero = () => {
           </div>
           <h1 className="max-w-[23ch] mb-8 lg:mb-12">
             Sua coleção de ferramentas para{" "}
-            <span className="text-indigo-400">Devs Frontend</span> e{" "}
-            <span className="text-purple-400">Web Designers</span>.
+            <span className="text-transparent bg-gradient-to-r from-[#6a6ff3] via-[#7279f5] to-indigo-400 bg-clip-text">
+              Devs Frontend
+            </span>{" "}
+            e{" "}
+            <span className="text-transparent bg-gradient-to-r from-[#ad61f8] via-[#b36cf9] to-purple-400 bg-clip-text">
+              Web Designers
+            </span>
+            .
           </h1>
           <p className="max-w-[44ch] text-base sm:text-lg lg:text-xl xl:text-2xl text-neutral-200">
             Explore ferramentas selecionadas que irão ajudar você a aprimorar

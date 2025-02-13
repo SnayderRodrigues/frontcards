@@ -75,17 +75,17 @@ import SujeitoProgramador from "../assets/sujeito-programador.webp";
 import Svelte from "../assets/svelte.svg";
 import SVGator from "../assets/svgator.svg";
 import Tailwind from "../assets/tailwind.svg";
-import UIColors from "../assets/ui-colors.webp";
-import UIUXHeroes from "../assets/ui-ux-heroes.webp";
 import TheGuideToDesign from "../assets/the-guide-to-design.webp";
 import TheOdinProject from "../assets/the-odin-project.svg";
 import ThreeJs from "../assets/threejs.svg";
 import TinyPNG from "../assets/tinypng.svg";
 import Udemy from "../assets/udemy.svg";
+import UIColors from "../assets/ui-colors.webp";
 import Uiverse from "../assets/uiverse.svg";
 import Uncut from "../assets/uncut.svg";
 import Unlighthouse from "../assets/unlighthouse.svg";
 import Unsplash from "../assets/unsplash.svg";
+import UXUIHeroes from "../assets/ux-ui-heroes.webp";
 import Vite from "../assets/vitejs.svg";
 import Vue from "../assets/vue.svg";
 import W3Schools from "../assets/w3schools.svg";
@@ -999,17 +999,6 @@ const ResourcesData = [
     source: "https://www.udemy.com/",
   },
   {
-    id: 82,
-    title: "UI-UX Heroes",
-    image: UIUXHeroes,
-    category: "Criadores",
-    tags: ["Inspiração", "UI/UX"],
-    slug: "ui-ux-heroes",
-    description:
-      "Perfil no Instagram que compartilha dicas, inspirações e boas práticas para UI/UX design.",
-    source: "https://www.instagram.com/uxui.heroes/",
-  },
-  {
     id: 83,
     title: "Uiverse",
     image: Uiverse,
@@ -1052,6 +1041,17 @@ const ResourcesData = [
     description:
       "Banco de imagens de alta qualidade e uso gratuito para projetos criativos e comerciais.",
     source: "https://unsplash.com/",
+  },
+  {
+    id: 82,
+    title: "UX-UI Heroes",
+    image: UXUIHeroes,
+    category: "Criadores",
+    tags: ["Inspiração", "Recursos", "UI/UX"],
+    slug: "ux-ui-heroes",
+    description:
+      "Perfil no Instagram que compartilha dicas, inspirações e boas práticas para UI/UX design.",
+    source: "https://www.instagram.com/uxui.heroes/",
   },
   {
     id: 87,
